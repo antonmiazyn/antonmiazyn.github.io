@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>WATCHFILM</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+	
+	<header>
+		<div class="logo">
+			<img src="logo.png" alt="logo">
+			WATCHFILM
+		</div>
+		<menu>
+			<li><a href="#">Жанры</a></li>
+			<li><a href="#">Новинки</a></li>
+			<li><a href="#">Премьеры</a></li>
+		</menu>
+		<div class="search">
+			<a id="mag" class="mag"><img src="search.png" alt="#"></a>
+			<form action="#"><input type="text"></form>
+		</div>
+	</header>
+
+	<!--for mobile-->
+
+	<div class="search-mobile">
+		<form action="#"><input type="text"></form>
+	</div>
+
+	<section id="content">
+		<div class="wrapper">
+			<div class="film-aligner">
+				<div class="promo">
+					<img src="film.png" alt="promo">
+				</div>
+				<div class="film-info">
+					<div class="film-name">Название (<span class="film-year">2000</span>)</div>
+					<div class="film-capture">Capture</div>
+					<ul>
+						<br>
+						<li><span>Длина фильма: 120 мин.</span></li>
+						<br>
+						<li><span>Жанр:</span> <a href="#">Жанр1</a>, <a href="#">Жанр2</a></li>
+						<li><span>Страна:</span> <a href="#">США</a>
+						<li><span>Режисёр</span> <a href="#">Тояма Токанава</a></li>
+						<li><span>Актёры:</span> <a href="#">Комуто Херовато</a>, <a href="#">СуньХуй Вчай</a>, <a href="#">Вынь Сухим</a>, <a href="#">Дайподержать Другим</a></li>
+						<li><span>Качество:</span> <a href="#">720р</a></li>
+						<li><span>Еще строка:</span> <a href="#">Ссылка</a></li>
+						<li><span>Еще строка:</span> <a href="#">Ссылка</a></li>
+						<li><span>Еще строка:</span> <a href="#">Ссылка</a></li>
+						<br>
+						<li>Строка 1</li>
+						<li>Строка 2</li>
+						<li>Строка 3</li>
+						<li>Строка 4</li>
+						<li>Строка 5</li>
+						<li>Строка 6</li>
+						<li>Строка 7</li>
+					</ul>
+				</div>
+			</div>
+			<div class="video">
+				<div class="video-name">Текст, целая строка, с кучей всяких разных слов</div>
+				<video controls="controls" autoplay="autoplay" src="vid.mp4" type="#">
+			</div>
+			<span class="title">РЕКОМЕНДУЕМ К ПРОСМОТРУ</span>
+			<div class="cat">
+				<a class="other-films" href="#">
+					<img src="prew.png" alt="#">
+					<div class="other-name">Название фильма</div>
+				</a>
+				<a class="other-films" href="#">
+					<img src="prew.png" alt="#">
+					<div class="other-name">Название фильма</div>
+				</a>
+				<a class="other-films" href="#">
+					<img src="prew.png" alt="#">
+					<div class="other-name">Название фильма</div>
+				</a>
+				<a class="other-films" href="#">
+					<img src="prew.png" alt="#">
+					<div class="other-name">Название фильма</div>
+				</a>
+				<a class="other-films" href="#">
+					<img src="prew.png" alt="#">
+					<div class="other-name">Название фильма</div>
+				</a>
+				<a class="other-films" href="#">
+					<img src="prew.png" alt="#">
+					<div class="other-name">Название фильма</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="footer-wrapper">
+			<div class="infoblock">
+				<ul>
+					<li class="footer-title">Разделы сайта:</li>
+					<li><a href="">Главная</a></li>
+					<li><a href="">Жанры</a></li>
+					<li><a href="">Новинки</a></li>
+					<li><a href="">Премьеры</a></li>
+					<li><a href="">Строка 1</a></li>
+					<li><a href="">Строка2</a></li>
+				</ul>
+			</div>
+			<div class="infoblock">
+				<ul>
+					<li class="footer-title">Социальные сети:</li>
+					<li><a href="">Vk.com</a></li>
+					<li><a href="">Facebook.com</a></li>
+					<li><a href="">Строка 1</a></li>
+					<li><a href="">Строка2</a></li>
+				</ul>
+			</div>
+			<div class="infoblock">
+				<ul>
+					<li><a href="">Для правообладателей</a></li>
+					<li><a href="">Правила</a></li>
+					<li><a href="">Связь с админом</a></li>
+				</ul>
+			</div>
+			<div class="infoblock">
+				<ul>
+					<li>Все права защищены</li>
+					<li>domain.com (c) 2017</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!--Script for search-->
+
+	<script type="text/javascript">
+		var mag = document.querySelector("#mag").onclick = function () {
+			if ( window.innerWidth > 1024 ) {
+				var link = document.querySelector(".mag").style.right = "286px";
+				var field = document.querySelector(".search form").style.top = "5px";
+			} else if ( window.innerWidth < 1025 ) {
+				var mobile = document.querySelector(".search-mobile");
+				mobile.style.top = "0";
+				mobile.style.margin = "0";
+			}
+		}
+	</script>
+
+</body>
+</html>

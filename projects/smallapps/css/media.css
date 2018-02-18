@@ -1,0 +1,333 @@
+@media screen and (max-width: 1280px) {
+	.slick-prev:before,
+    .slick-next:before { display: none; }
+}
+
+@media screen and (max-width: 1024px) {
+	header .wrapper .performance { left: 0; }
+
+	header .wrapper img { opacity: 1; }
+
+	#features h1 { opacity: 1; }
+
+	#features .description { left: 0; }
+
+	#learn .wrapper .aligner .learn-info { left: 0; }
+
+	#info .wrapper .aligner .learn-info { top: 0; }
+
+	#gallery .wrapper h1 { opacity: 1; }
+
+	#gallery .wrapper .description { left: 0; }
+
+	#report .wrapper h1 { opacity: 1; }
+
+	footer .wrapper .social { opacity: 1; }
+
+	/*--------------------*/
+
+	#gallery .wrapper .slider .slick-dots li button:before { font-size: 12px; }
+
+	/*--------------------*/
+
+	.wrapper { 
+		padding-left: 46px;
+		padding-right: 46px;
+	}
+
+	/*--------------------*/
+
+	p { font-size: 10px; }
+
+	body { font-size: 14px; }
+
+	blockquote { font-size: 18px; }
+
+	.topline .wrapper nav ul li a { font-size: 12px; }
+
+	.topline .wrapper .contact ul li { font-size: 12px; }
+
+	header .wrapper .performance .download-button { font-size: 17px; }
+
+	.features-navigation ul li { font-size: 16px; }
+
+	.features-navigation ul li .icon { font-size: 36px; }
+
+	.features-block .icon { font-size: 100px; }
+
+	.learn-more { font-size: 17px; }
+
+	.username { font-size: 18px; }
+
+	#letter .wrapper form input { font-size: 12px; }
+
+	#letter .wrapper form .submit-button { font-size: 16px; }
+
+	footer .wrapper .social a { font-size: 40px; }
+
+	footer .wrapper .footer-menu ul li a { font-size: 12px; }
+
+	/*--------------------*/
+
+	.description { margin: 30px auto; }
+
+	.container {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.topline .wrapper nav ul li {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.topline .wrapper nav ul li.logotype {
+		padding-top: 22px;
+		padding-bottom: 22px;
+	}
+
+	.topline .wrapper .contact ul li {
+		padding: 0px;
+		padding-top: 6px;
+	}
+
+	header .wrapper .performance .download-button {
+		padding: 16px;
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+
+	.features-navigation ul li {
+		padding-top: 28px;
+		padding-bottom: 28px;
+	}
+
+	.features-navigation ul li .icon { margin-right: 28px; }
+
+	.features-block .icon { margin: 40px auto; }
+
+	.learn-more {
+		padding: 16px;
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+
+	.learn-info {
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+
+	.slider {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	.gallery-item { width: 60%; }
+
+	.gallery-item p { margin-top: 36px; }
+
+	#report .wrapper .report-slider img { margin: 30px auto; }
+
+	.username { margin: 30px; }
+
+	#letter {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	#letter .wrapper form { margin: 30px auto; }
+
+	#letter .wrapper form input {
+		display: block;
+		margin: 30px auto;
+		padding: 160px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		text-align: center;
+	}
+
+	#letter .wrapper form .submit-button {
+		position: static;
+		margin: 30px auto;
+		padding: 16px;
+		padding-left: 36px;
+		padding-right: 36px;
+		box-sizing: border-box;
+	}
+
+	footer {
+		padding-top: 45px;
+		padding-bottom: 10px;
+	}
+
+	footer .wrapper .social {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	footer .wrapper .footer-menu { padding-top: 16px; }
+
+	footer .wrapper .footer-menu ul li { padding: 12px; }
+
+	/*--------------------*/
+
+	.hidden { display: none; }
+
+	.mobile-menu { display: inline-block; }
+
+	.mobile-menu li a { font-size: 30px; }
+
+	.features-content {
+		width: 100%;
+		text-align: center;
+	}
+
+		.features-content h2 { text-align: center; }
+
+		.features-content p {
+			width: 70%;
+			margin: 30px auto;
+		}
+
+	.features-navigation {
+		width: 100%;
+		border-bottom: solid 1px #dbe2e2;
+		border-right: none;
+	}
+
+		.features-navigation ul li {
+			display: inline-block;
+			width: 25%;
+		}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	header .wrapper .performance { width: 70%; }
+
+	.description { width: 100%; }
+
+	.features-navigation ul li {
+		font-size: 14px;
+		border: none;
+	}
+
+	.features-navigation ul li span { bottom: 0; }
+
+	.features-navigation ul li .icon {
+		font-size: 14px;
+		margin-right: 10px;
+	}
+
+		.features-navigation ul li:hover { border: none; }
+
+	.learn-info { width: 100%; }
+
+	#learn .wrapper .aligner .mobile, #info .wrapper .aligner .mobile { width: 100%; }
+
+		#info .wrapper .aligner .mobile img {
+			display: block;
+			margin: 0 auto;
+			width: 30%;
+		}
+
+	#learn .wrapper .aligner { flex-direction: column-reverse; }
+
+		#learn .wrapper .aligner .mobile img {
+			display: block;
+			margin: 0 auto;
+			width: 22%;
+		}
+
+	#letter .wrapper form input {
+		padding: 46px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+}
+
+@media screen and (max-width: 425px) {
+
+	.wrapper {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	header { height: 420px; }
+
+	header .wrapper { height: 420px; }
+
+	header .wrapper img { display: none; }
+
+	header .wrapper .performance {
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+	}
+
+	header .wrapper .performance h1 { text-align: center; }
+
+	/*--------------------*/
+
+	body { font-size: 10px; }
+
+	.topline .wrapper nav ul li.logotype {
+		font-size: 16px;
+	}
+
+	.mobile-menu {
+		margin-right: 30px;
+		padding-top: 5px;
+	}
+
+	.mobile-menu li a { font-size: 16px; }
+
+	header .wrapper .performance .download-button { font-size: 12px; }
+
+	p { font-size: 8px; }
+
+	.features-navigation ul {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		position: relative;
+		left: -20px;
+	}
+
+	.features-navigation ul li span { display: none; }
+
+	.features-navigation ul li {
+		width: auto;
+		padding: 15px;
+		position: static;
+		left: 0;
+		text-align: center;
+	}
+
+	.features-navigation ul li .icon { margin: 0; }
+
+	.features-block .icon { font-size: 36px; }
+
+	.learn-more { font-size: 12px; }
+
+	.gallery-item img { width: 40%; }
+
+	.gallery-item p { width: 100%; }
+
+	#report .wrapper .report-slider img { width: 60px; }
+
+	#letter .wrapper form input { width: 100%; }
+
+	footer .wrapper .footer-menu ul {
+		position: relative;
+		left: -20px;
+	}
+
+	footer .wrapper .footer-menu ul li {
+		padding: 15px;
+		padding-bottom: 0;
+	}
+
+}

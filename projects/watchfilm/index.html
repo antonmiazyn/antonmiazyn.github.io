@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>WATCHFILM</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+	
+	<header>
+		<div class="logo">
+			<img src="logo.png" alt="logo">
+			WATCHFILM
+		</div>
+		<menu>
+			<li><a href="#">Жанры</a></li>
+			<li><a href="#">Новинки</a></li>
+			<li><a href="#">Премьеры</a></li>
+		</menu>
+		<div class="search">
+			<a id="mag" class="mag"><img src="search.png" alt="#"></a>
+			<form action="#"><input type="text"></form>
+		</div>
+	</header>
+
+	<!--for mobile-->
+
+	<div class="search-mobile">
+		<form action="#"><input type="text"></form>
+	</div>
+
+	<section id="content">
+		<div class="wrapper">
+			<span class="title">НОВЫЕ ФИЛЬМЫ</span>
+			<div class="cat">
+				<div class="films">
+					<a href="file.html">
+						<img src="img.png" alt="">
+						<div class="name">Название</div>
+						<div class="about"><span>2017</span> Боевик</div>
+					</a>
+				</div>
+				<div class="films">
+					<a href="file.html">
+						<img src="img.png" alt="">
+						<div class="name">Название</div>
+						<div class="about"><span>2017</span> Боевик</div>
+					</a>
+				</div>
+				<div class="films">
+					<a href="file.html">
+						<img src="img.png" alt="">
+						<div class="name">Название</div>
+						<div class="about"><span>2017</span> Боевик</div>
+					</a>
+				</div>
+				<div class="films">
+					<a href="file.html">
+						<img src="img.png" alt="">
+						<div class="name">Название</div>
+						<div class="about"><span>2017</span> Боевик</div>
+					</a>
+				</div>
+			</div>
+			<a href="" class="view">Смотреть все</a>
+			<span class="title">РЕКОМЕНДУЕМ</span>
+			<div class="cat">
+				<div class="films">
+					<a href="file.html">
+						<img src="img.png" alt="">
+						<div class="name">Название</div>
+						<div class="about"><span>2017</span> Боевик</div>
+					</a>
+				</div>
+				<div class="films">
+					<a href="file.html">
+						<img src="img.png" alt="">
+						<div class="name">Название</div>
+						<div class="about"><span>2017</span> Боевик</div>
+					</a>
+				</div>
+				<div class="films">
+					<a href="file.html">
+						<img src="img.png" alt="">
+						<div class="name">Название</div>
+						<div class="about"><span>2017</span> Боевик</div>
+					</a>
+				</div>
+				<div class="films">
+					<a href="file.html">
+						<img src="img.png" alt="">
+						<div class="name">Название</div>
+						<div class="about"><span>2017</span> Боевик</div>
+					</a>
+				</div>
+			</div>
+			<a href="" class="view">Смотреть все</a>
+			<span class="title">ПОПУЛЯРНОЕ</span>
+			<div class="cat">
+				<div class="films">
+					<a href="file.html">
+						<img src="img.png" alt="">
+						<div class="name">Название</div>
+						<div class="about"><span>2017</span> Боевик</div>
+					</a>
+				</div>
+				<div class="films">
+					<a href="file.html">
+						<img src="img.png" alt="">
+						<div class="name">Название</div>
+						<div class="about"><span>2017</span> Боевик</div>
+					</a>
+				</div>
+				<div class="films">
+					<a href="file.html">
+						<img src="img.png" alt="">
+						<div class="name">Название</div>
+						<div class="about"><span>2017</span> Боевик</div>
+					</a>
+				</div>
+				<div class="films">
+					<a href="file.html">
+						<img src="img.png" alt="">
+						<div class="name">Название</div>
+						<div class="about"><span>2017</span> Боевик</div>
+					</a>
+				</div>
+			</div>
+			<a href="" class="view">Смотреть все</a>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-wrapper">
+			<div class="infoblock">
+				<ul>
+					<li class="footer-title">Разделы сайта:</li>
+					<li><a href="">Главная</a></li>
+					<li><a href="">Жанры</a></li>
+					<li><a href="">Новинки</a></li>
+					<li><a href="">Премьеры</a></li>
+					<li><a href="">Строка 1</a></li>
+					<li><a href="">Строка2</a></li>
+				</ul>
+			</div>
+			<div class="infoblock">
+				<ul>
+					<li class="footer-title">Социальные сети:</li>
+					<li><a href="">Vk.com</a></li>
+					<li><a href="">Facebook.com</a></li>
+					<li><a href="">Строка 1</a></li>
+					<li><a href="">Строка2</a></li>
+				</ul>
+			</div>
+			<div class="infoblock">
+				<ul>
+					<li><a href="">Для правообладателей</a></li>
+					<li><a href="">Правила</a></li>
+					<li><a href="">Связь с админом</a></li>
+				</ul>
+			</div>
+			<div class="infoblock">
+				<ul>
+					<li>Все права защищены</li>
+					<li>domain.com (c) 2017</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!--Script for search-->
+
+	<script type="text/javascript">
+		var mag = document.querySelector("#mag").onclick = function () {
+			if ( window.innerWidth > 1024 ) {
+				var link = document.querySelector(".mag").style.right = "286px";
+				var field = document.querySelector(".search form").style.top = "5px";
+			} else if ( window.innerWidth < 1025 ) {
+				var mobile = document.querySelector(".search-mobile");
+				mobile.style.top = "0";
+				mobile.style.margin = "0";
+			}
+		}
+	</script>
+
+</body>
+
+</html>
