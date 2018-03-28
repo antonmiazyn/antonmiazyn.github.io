@@ -348,16 +348,13 @@
                 var header = document.querySelector("#header");
                 var logo = document.querySelector(".logotype");
                 
-                if ( scrollTop > 200 ) {
-                    header.style.position = "fixed";
-                    header.style.top = "0";
-                    header.style.left = "0";
-                    header.style.right = "0";
-                    header.style.height = "20px";
+                if ( scrollTop > 10 ) {
+                    header.style.height = "5px";
+                    header.style.margin = "0 0 60px 0";
                     logo.style.display = "none";
                 } else {
-                    header.style.position = "static";
                     header.style.height = "500px";
+                    header.style.margin = "0";
                     logo.style.display = "flex";
                 }
             }
