@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Информатика. Сайт-визитка</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+        <style>
+            * {
+                box-sizing: border-box;
+                transition: 0.4s;
+                text-decoration: none;
+                flex-wrap: wrap;
+                font-family: "Open Sans", sans-serif;
+                margin: 0;
+                padding: 0;
+                letter-spacing: 1px;
+            }
+            
+            body {
+                margin: 0 auto;
+                background-color: #e0fcff;
+                font-size: 14px;
+                line-height: 20px;
+                color: #181818;
+            }
+            
+            #wrapper {
+                margin: 0 auto;
+                min-width: 1280px;
+                max-width: 1440px;
+                background-color: #f9f9f9;
+            }
+            
+            header {
+                margin: 0 auto;
+                display: flex;
+                height: 500px;
+                justify-content: center;
+                align-items: center;
+                background-color: #006ced;
+                
+            }
+            
+            .logotype {
+                display: flex;
+                align-items: center;
+                position: relative;
+            }
+            
+            h1 {
+                font-size: 22px;
+                letter-spacing: 2px;
+                color: #f9f9f9;
+                font-family: 'Rubik Mono One', sans-serif;
+                font-weight: 100;
+            }
+            
+            h2 {
+                font-size: 16px;
+                letter-spacing: 2px;
+                color: #111;
+                font-family: 'Rubik Mono One', sans-serif;
+                font-weight: 100;
+                line-height: 24px;
+            }
+            
+            .logotype img {
+                width: 40px;
+                margin-right: 40px;
+                margin-left: 40px;
+            }
+            
+            header span {
+                display: block;
+                color: #f9f9f9;
+                position: absolute;
+                right: 120px;
+                top: 40px;
+            }
+            
+            .about {
+                margin: 0 auto;
+                padding: 60px;
+                padding-left: 100px;
+                padding-right: 100px;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .about-col, .about-img {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .about-img img {
+                width: 80%;
+                display: block;
+                margin: 0 auto;
+            }
+            
+            .about-me {
+                margin-top: 40px;
+            }
+            
+            .about-me ul {
+                margin-top: 20px;
+                list-style-position: inside;
+                list-style-image: url(list.png);
+            }
+            
+            .about-me ul li {
+                margin-top: 10px;
+            }
+            
+            .features {
+                background-color: #7098da;
+                margin: 0 auto;
+                padding: 60px;
+                padding-left: 100px;
+                padding-right: 100px;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .features-block {
+                width: 280px;
+                text-align: center;
+                color: #f9f9f9;
+            }
+            
+            .features-block h1 {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-color: #f9f9f9;
+                color: #006ced;
+                font-size: 30px;
+                box-shadow: 5px 5px 15px #6088ca;
+                margin-bottom: 40px;
+            }
+            
+            .features-block h1:hover {
+                transform: scale(1.05);
+            }
+            
+            .features-title {
+                font-size: 16px;
+                letter-spacing: 2px;
+                color: #111;
+                font-family: 'Rubik Mono One', sans-serif;
+                font-weight: 100;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
+            
+            .portfolio {
+                background-color: #006ced;
+                margin: 0 auto;
+                padding: 20px;
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+            
+            .portfolio a {
+                display: block;
+                margin: 0 auto;
+                padding: 15px;
+                color: #f9f9f9;
+                text-align: center;
+                border: solid 2px #f9f9f9;
+                width: 300px;
+            }
+            
+            .portfolio a:hover {
+                background-color: #f9f9f9;
+                color: #006ced;
+            }
+            
+            .how {
+                margin: 0 auto;
+                padding: 60px;
+                padding-left: 100px;
+                padding-right: 100px;
+                display: flex;
+            }
+            
+            .how h2 {
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+            
+            .how-block {
+                margin: 0 auto;
+                margin-top: 60px;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .how-col {
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .how-col img {
+                width: 90%;
+            }
+            
+            .how-col p {
+                margin: 0 auto;
+                width: 80%;
+            }
+            
+            .how-col span {
+                letter-spacing: 2px;
+                color: #006ced;
+                font-family: 'Rubik Mono One', sans-serif;
+                font-weight: 100;
+            }
+            
+            footer {
+                background-color: #111;
+                margin: 0 auto;
+                padding: 20px;
+                padding-left: 100px;
+                padding-right: 100px;
+                text-align: center;
+                color: #f9f9f9;
+            }
+            
+            footer img {
+                margin-right: 5px;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div id="wrapper">
+            <header id="header">
+                <div class="logotype">
+                    <img src="logo.png" alt=""> <h1>АНТОН МЯЗИН. К уроку информатики 29.03.18</h1> <img src="logo.png" alt=""> <span>САЙТ-ВИЗИТКА</span>
+                </div>
+            </header>
+            
+            <div class="about">
+               <div class="about-col">
+                    <h2>
+                        Меня зовут Антон, я ученик 11-А класса ШОШ №4
+                    </h2>
+                    <div class="about-me">
+                        Занимаюсь веб-разработкой (сайтов):
+                        <ul>
+                            <li>Верстка</li>
+                            <li>Дизайн</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <img src="6wmhXEA-6Uc.jpg" alt="">
+                </div>
+            </div>
+            
+            <div class="features">
+                <div class="features-block">
+                    <h1>В</h1>
+                    <div class="features-title">
+                        ВЕРСТКА
+                    </div>
+                    <div class="features-description">
+                        Адаптивная, отзывчивая HTML5, CSS3, JS(JQuery) верстка по PSD-макетам
+                    </div>
+                </div>
+                <div class="features-block">
+                    <h1>Р</h1>
+                    <div class="features-title">
+                        РАЗРАБОТКА LANDING PAGE
+                    </div>
+                    <div class="features-description">
+                        Создание продающей страницы с нуля, включая ее дизайн, верстку, настройку и поддержку
+                    </div>
+                </div>
+                <div class="features-block">
+                    <h1>Д</h1>
+                    <div class="features-title">
+                        ДИЗАЙН
+                    </div>
+                    <div class="features-description">
+                        Разработка дизайна сайта, продающей страницы
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio">
+                <a href="../../index.html">ПОСМОТРЕТЬ ПОРТФОЛИО</a>
+            </div>
+            
+            <div class="how">
+                <h2>КАК СОЗДАВАЛСЯ ЭТОТ САЙТ</h2>
+                <div class="how-block">
+                    <div class="how-col">
+                        <p>СОЗДАНИЕ ОБЩЕГО КОНЦЕПТА И ПРОТОТИПИРОВАНИЕ ЭЛЕМЕНТОВ В
+                        <span> PHOTOSHOP</span></p>
+                    </div>
+                    <div class="how-col">
+                        <img src="prototype.png" alt="">
+                    </div>
+                </div>
+                <div class="how-block">
+                   <div class="how-col">
+                        <img src="creating.png" alt="">
+                    </div>
+                    <div class="how-col">
+                        <p>ВЕРСТКА В РЕДАКТОРЕ
+                        <span> BRACKETS</span></p>
+                    </div>
+                </div>
+                <div class="how-block">
+                    <div class="how-col">
+                        <p>ТЕСТИРОВАНИЕ САЙТА И "ЗАЛИВКА" ЕГО НА
+                        <span> GITHUB</span></p>
+                    </div>
+                    <div class="how-col">
+                        <img src="site.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <img src="list.png" alt=""> Copyrigth Anton Miazyn 2018 | Для урока информатики 29.03.19
+        </footer>
+        
+        <script>
+            window.onscroll = function () {
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                var header = document.querySelector("#header");
+                var logo = document.querySelector(".logotype");
+                
+                if ( scrollTop > 200 ) {
+                    header.style.position = "fixed";
+                    header.style.top = "0";
+                    header.style.left = "0";
+                    header.style.right = "0";
+                    header.style.height = "20px";
+                    logo.style.display = "none";
+                } else {
+                    header.style.position = "static";
+                    header.style.height = "500px";
+                    logo.style.display = "flex";
+                }
+            }
+        </script>
+        
+    </body>
+    
+</html>
