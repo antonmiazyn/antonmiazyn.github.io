@@ -1,0 +1,63 @@
+/*short normalize*/
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: .2s;
+    cursor: pointer;
+}
+
+p {
+    width: 100%;
+    line-height: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav {
+    list-style: none;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+h1 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 2.6em;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h1 > span, h2 > span, h3 > span {
+    color: #4ecca3;
+}
+
+h2 {
+    margin: auto;
+    font-weight: 400;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #232931;
+    text-align: left;
+}
+
+h3 {
+    margin: auto;
+    font-weight: 300;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
