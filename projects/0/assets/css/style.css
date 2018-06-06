@@ -121,6 +121,21 @@ header {
     color: #232931;
 }
 
+.show-menu {
+    font-size: 1.8em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: none;
+}
+
+.show-menu:hover {
+    background-color: #eee;
+    transition: .1s;
+}
+
 .hero {
     background-size: cover;
     height: 500px;
