@@ -194,7 +194,7 @@
     
     .logotype {
         padding: 20px 20px 20px 20px;
-        margin-left: -15px;
+        margin-left: -20px;
     }
     
     .hero {
@@ -223,6 +223,10 @@
     
     .portfolio-block_cover > p {
         min-height: 120px;
+    }
+    
+    .contact-list > li > span {
+        margin-right: 10px;
     }
     
 }
