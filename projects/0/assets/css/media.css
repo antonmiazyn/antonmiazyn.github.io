@@ -151,6 +151,7 @@
     
     .portfolio-block {
         min-height: 0;
+        font-size: 10px;
     }
     
     .portfolio-block > a {
@@ -226,7 +227,9 @@
     }
     
     .contact-list > li > span {
-        margin-right: 10px;
+        display: block;
+        width: 100%;
+        padding-bottom: 15px;
     }
     
 }
@@ -235,6 +238,10 @@
     
     .portfolio-block_cover > p {
         min-height: 80px;
+    }
+    
+    .portfolio-block_cover > p {
+        min-height: 90px;
     }
     
 }
