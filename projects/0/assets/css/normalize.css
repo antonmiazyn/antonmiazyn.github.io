@@ -44,6 +44,7 @@ h1 {
 
 h1 > span, h2 > span, h3 > span {
     color: #4ecca3;
+    animation: pulse_4 infinite 3s ease-in-out;
 }
 
 h2 {

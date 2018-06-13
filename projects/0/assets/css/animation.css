@@ -1,0 +1,186 @@
+/*animation keyframes*/
+
+@keyframes pulse_1 {
+    25% {
+        background-color: rgba(78,204,163, .15);
+    }
+    50% {
+        background-color: rgba(78,204,163, .35);
+    }
+    75% {
+        background-color: rgba(78,204,163, .15);
+    }
+}
+
+@keyframes pulse_2 {
+    25% {
+        background-color: rgba(78,204,163, .65);
+    }
+    50% {
+        background-color: rgba(78,204,163, 1);
+    }
+    75% {
+        background-color: rgba(78,204,163, .65);
+    }
+}
+
+@keyframes pulse_3 {
+    25% {
+        opacity: .15;
+    }
+    50% {
+        opacity: .35;
+    }
+    75% {
+        opacity: .15;
+    }
+}
+
+@keyframes pulse_4 {
+    25% {
+        opacity: .65;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: .65;
+    }
+}
+
+@keyframes left_move {
+    from {
+        opacity: 0;
+        position: relative;
+        left: calc(-100% - 80px);
+    }
+    to {
+        opacity: 1;
+        position: relative;
+        left: 0;
+    }
+}
+
+@keyframes right_move {
+    from {
+        opacity: 0;
+        position: relative;
+        right: calc(-100% - 80px);
+    }
+    to {
+        opacity: 1;
+        position: relative;
+        right: 0;
+    }
+}
+
+@keyframes absolute_opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes serenity_1 {
+    from {
+        background-color: rgba(35,41,49, .75);
+    }
+    to {
+        background-color: rgba(35,41,49, .85);
+    }
+}
+
+@keyframes serenity_2 {
+    from {
+        background-color: rgba(255,255,255, 1);
+    }
+    to {
+        background-color: rgba(255,255,255, 0);
+    }
+}
+
+@keyframes serenity_3 {
+    from {
+        background-color: rgba(57,62,70, .65);
+    }
+    to {
+        background-color: rgba(57,62,70, .85);
+    }
+}
+
+@keyframes serenity_4 {
+    from {
+        background-color: #afafaf;
+    }
+    to {
+        background-color: #eee;
+    }
+}
+
+@keyframes serenity_5 {
+    from {
+        background-color: rgba(78,204,163, .65);
+    }
+    to {
+        background-color: rgba(78,204,163, .35);
+    }
+}
+
+.left-animate {
+    animation: left_move 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.left-animate:nth-child(2) {
+    animation: left_move 1.7s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.left-animate:nth-child(3) {
+    animation: left_move 1.9s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.left-animate:nth-child(4) {
+    animation: left_move 2.1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.right-animate {
+    animation: right_move 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.bg-serenity_1 {
+    animation: serenity_1 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.bg-serenity_2 {
+    animation: serenity_2 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.bg-serenity_3 {
+    animation: serenity_3 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.bg-serenity_4 {
+    animation: serenity_4 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.bg-serenity_5 {
+    animation: serenity_5 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+.opacity-change {
+    animation: absolute_opacity 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+

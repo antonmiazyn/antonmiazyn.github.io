@@ -7,6 +7,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: #232931;
+    overflow-x: hidden;
 }
 
 #wrapper {
@@ -76,6 +77,28 @@ body {
     z-index: -1;
 }
 
+/*promo styles*/
+
+.promo-link {
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: .35;
+    animation: pulse_3 infinite 3s;
+}
+
+.promo-link > img {
+    width: 100%;
+    height: 100%;
+}
+
+.promo-link:hover {
+    animation: none;
+    opacity: 1;
+}
+
 header {
     margin: auto;
     background-color: #fff;
@@ -111,12 +134,12 @@ header {
     margin-right: -2px;
 }
 
-.menu > li > a {
+.menu-link{
     padding: 20px 40px 20px 40px;
     color: #000;
 }
 
-.menu > li > a:hover {
+.menu-link:hover {
     background-color: #eee;
     color: #232931;
 }
@@ -150,6 +173,14 @@ header {
 
 .hero-content, .hero-buttons {
     width: 100%;
+}
+
+/*for animation*/
+
+.hero-content h1, .hero-content h3,
+.hero-content div {
+    position: relative;
+    left: calc(-100% - 80px);
 }
 
 .hero-buttons {
@@ -201,22 +232,8 @@ header {
     color: #eee;
 }
 
-.promo-link {
-    width: 90px;
-    height: 30px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    opacity: .35;
-}
-
-.promo-link > img {
-    width: 100%;
-    height: 100%;
-}
-
-.promo-link:hover {
-    opacity: 1;
+#team {
+    background-color: rgba(255,255,255, 1);
 }
 
 .stats-container {
@@ -226,6 +243,8 @@ header {
     color: #232931;
     padding-top: 40px;
     padding-bottom: 40px;
+    animation: pulse_1 3s infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .stats-number {
@@ -237,7 +256,7 @@ header {
 }
 
 .services-content {
-    background-color: rgba(57,62,70, .85);
+    background-color: rgba(57,62,70, .65);
 }
 
 .services-content > h2 {
@@ -287,6 +306,7 @@ header {
     background-color: rgba(57,62,70, .35);
     color: #232931;
     min-height: 160px;
+    opacity: 0;
 }
 
 .services-block_content {
@@ -300,6 +320,7 @@ header {
     justify-content: center;
     color: #eee;
     flex-direction: column;
+    animation: pulse_2 3s infinite;
 }
 
 .services-block_price > p {
@@ -353,6 +374,7 @@ header {
     padding: 15px;
     background-color: #4ecca3;
     color: #232931;
+    animation: pulse_2 3s infinite;
 }
 
 .order-form_content > input,
@@ -383,7 +405,7 @@ header {
 }
 
 .portfolio-content {
-    background-color: #eee;
+    background-color: #afafaf;
     text-align: center;
 }
 
@@ -395,6 +417,8 @@ header {
     margin: 0;
     padding: 0;
     margin-bottom: -50px;
+    position: relative;
+    left: calc(-100% - 80px);
 }
 
 .jcarousel-control-next,
@@ -407,6 +431,7 @@ header {
     border-radius: 0;
     text-shadow: none;
     background-color: #4ecca3;
+    animation: pulse_2 3s infinite;
 }
 
 .jcarousel-control-next:hover,
@@ -430,7 +455,6 @@ header {
 }
 
 .portfolio-block {
-    min-height: 280px;
     text-align: left;
 }
 
@@ -478,12 +502,14 @@ header {
 }
 
 .contact-content {
-    background-color: rgba(78,204,163, .35);
+    background-color: rgba(78,204,163, .65);
 }
 
 .contact-list {
     list-style: none;
     width: 40%;
+    position: relative;
+    left: calc(-100% - 80px);
 }
 
 .contact-list > li {
@@ -508,6 +534,8 @@ header {
     padding: 20px;
     min-height: 320px;
     background-color: rgba(57,62,70, .15);
+    position: relative;
+    right: calc(-100% - 80px);
 }
 
 #map {
