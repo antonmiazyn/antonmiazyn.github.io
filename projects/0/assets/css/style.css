@@ -63,6 +63,21 @@ body {
     align-items: center;
 }
 
+.preloader {
+    width: 100%;
+    height: 100%;
+    background-color: #232931;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .substrate {
     width: 100%;
     height: 100%;

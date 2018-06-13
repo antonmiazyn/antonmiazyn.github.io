@@ -3,15 +3,23 @@
 /*-----*/
 
 window.onload = function () {
-    var hero = document.querySelector(".hero-cover");
     
-    var heroes = document.querySelector(".hero-content").children;
+    setTimeout( function () { 
+        
+        var hero = document.querySelector(".hero-cover");
+
+        var heroes = document.querySelector(".hero-content").children;
+
+        for (var c = 0; c < heroes.length; c++) {
+            heroes[c].classList.add("left-animate");
+        }
+
+        hero.classList.add("bg-serenity_1");
     
-    for (var c = 0; c < heroes.length; c++) {
-        heroes[c].classList.add("left-animate");
-    }
-    
-    hero.classList.add("bg-serenity_1");
+        var preloader = document.querySelector(".preloader");
+        preloader.style.display = "none";
+        
+    }, 12000);
 }
 
 /*-----*/
