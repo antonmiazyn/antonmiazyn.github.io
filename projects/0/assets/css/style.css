@@ -550,7 +550,7 @@ header {
     min-height: 320px;
     background-color: rgba(57,62,70, .15);
     position: relative;
-    right: calc(-100% - 80px);
+    left: calc(-100% - 80px);
 }
 
 #map {

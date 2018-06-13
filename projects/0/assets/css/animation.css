@@ -61,19 +61,6 @@
     }
 }
 
-@keyframes right_move {
-    from {
-        opacity: 0;
-        position: relative;
-        right: calc(-100% - 80px);
-    }
-    to {
-        opacity: 1;
-        position: relative;
-        right: 0;
-    }
-}
-
 @keyframes absolute_opacity {
     from {
         opacity: 0;
@@ -145,11 +132,6 @@
 
 .left-animate:nth-child(4) {
     animation: left_move 2.1s ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-.right-animate {
-    animation: right_move 1.5s ease-in-out;
     animation-fill-mode: forwards;
 }
 

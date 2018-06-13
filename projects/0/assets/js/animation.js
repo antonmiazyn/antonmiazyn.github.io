@@ -19,7 +19,7 @@ window.onload = function () {
         var preloader = document.querySelector(".preloader");
         preloader.style.display = "none";
         
-    }, 12000);
+    }, 6000);
 }
 
 /*-----*/
@@ -79,7 +79,7 @@ function contactAnimate() {
     var contactMap = document.querySelector(".map-wrapper");
     
     contactList.classList.add("left-animate");
-    contactMap.classList.add("right-animate");
+    contactMap.classList.add("left-animate");
     
     contact.classList.add("bg-serenity_5");
     
