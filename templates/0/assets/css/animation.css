@@ -116,53 +116,53 @@
 }
 
 .left-animate {
-    animation: left_move 1.5s ease-in-out;
+    animation: left_move 1s ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .left-animate:nth-child(2) {
-    animation: left_move 1.7s ease-in-out;
+    animation: left_move 1.2s ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .left-animate:nth-child(3) {
-    animation: left_move 1.9s ease-in-out;
+    animation: left_move 1.4s ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .left-animate:nth-child(4) {
-    animation: left_move 2.1s ease-in-out;
+    animation: left_move 1.6s ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .bg-serenity_1 {
-    animation: serenity_1 1.5s ease-in-out;
+    animation: serenity_1 1s ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .bg-serenity_2 {
-    animation: serenity_2 1.5s ease-in-out;
+    animation: serenity_2 1s ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .bg-serenity_3 {
-    animation: serenity_3 1.5s ease-in-out;
+    animation: serenity_3 1s ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .bg-serenity_4 {
-    animation: serenity_4 1.5s ease-in-out;
+    animation: serenity_4 1s ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .bg-serenity_5 {
-    animation: serenity_5 1.5s ease-in-out;
+    animation: serenity_5 1s ease-in-out;
     animation-fill-mode: forwards;
 }
 
 
 .opacity-change {
-    animation: absolute_opacity 1.5s ease-in-out;
+    animation: absolute_opacity 1s ease-in-out;
     animation-fill-mode: forwards;
 }
 
