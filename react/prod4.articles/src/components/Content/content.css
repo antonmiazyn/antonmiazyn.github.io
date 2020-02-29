@@ -1,0 +1,43 @@
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.acticle__container {
+  width: calc(50% - 15px);
+  line-height: 1.4em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  padding: 50px 30px 50px 30px;
+  border: solid 1px #dedede;
+  opacity: 1;
+  animation: opacity 0.3s ease-in;
+}
+
+.acticle__container p {
+  margin-top: 15px;
+}
+
+.more__button {
+  background-color: #dedede;
+  border: none;
+  padding: 15px;
+  width: 150px;
+  margin: auto;
+  margin-top: 15px;
+  cursor: pointer;
+  border: solid 2px transparent;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.more__button:hover {
+  border: solid 2px #4488aa;
+  background-color: transparent;
+  color: #323232;
+}
