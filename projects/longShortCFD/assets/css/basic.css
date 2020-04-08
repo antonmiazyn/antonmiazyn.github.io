@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+/*=========================*/
+
+h1, h2, h3, h4 { font-weight: normal; }
+
+h1 { font-size: 50px; }
+
+h2 { font-size: 45px; }
+
+h3 { font-size: 30px; }
+
+h4 { font-size: inherit; }
+
+/*=========================*/
+
+ul, nav, menu { list-style: none; }
+
+/*=========================*/
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*=========================*/
+
+img { max-width: 100%; }
+
+/*=========================*/
+
+body {
+  margin: auto;
+  background-color: #000;
+  font-family: "TT Firs Regular";
+  font-weight: normal;
+  font-size: 20px;
+  color: #fff;
+}
+
+/*=========================*/
+
+.bg__white { background-color: #fff; }
+
+.bg__black { background-color: #000; }
+
+.bg__blue { background-color: #2f29f8; }
+
+.bg__purple {
+  background: linear-gradient(left, #000, #460d6a);
+  background: -webkit-linear-gradient(left, #000, #460d6a);
+  background: -moz-linear-gradient(left, #000, #460d6a);
+  background: -o-linear-gradient(left, #000, #460d6a);
+  background: -ms-linear-gradient(left, #000, #460d6a);
+}
+
+.bg__red {
+  background: linear-gradient(left, #000, #c51c1b);
+  background: -webkit-linear-gradient(left, #000, #c51c1b);
+  background: -moz-linear-gradient(left, #000, #c51c1b);
+  background: -o-linear-gradient(left, #000, #c51c1b);
+  background: -ms-linear-gradient(left, #000, #c51c1b);
+}
+
+/*=========================*/
+
+.cols_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cols_2__container { width: 50%; }

@@ -1,0 +1,44 @@
+@font-face {
+  src: url(../font/TTFirs/TTFirsNeue-Regular.ttf);
+  font-family: "TT Firs Regular";
+}
+
+@font-face {
+  src: url(../font/TTFirs/TTFirsNeue-Thin.ttf);
+  font-family: "TT Firs Thin";
+}
+
+@font-face {
+  src: url(../font/TTFirs/TTFirsNeue-Medium.ttf);
+  font-family: "TT Firs Medium";
+}
+
+@font-face {
+  src: url(../font/TTFirs/TTFirsNeue-Bold.ttf);
+  font-family: "TT Firs Bold";
+}
+
+@font-face {
+  src: url(../font/TTFirs/TTFirsNeue-ExtraBold.ttf);
+  font-family: "TT Firs ExtraBold";
+}
+
+/*=========================*/
+
+.font__thin { font-family: "TT Firs Thin"; }
+
+.font__medium { font-family: "TT Firs Medium"; }
+
+.font__bold { font-family: "TT Firs Bold"; }
+
+.font__extra-bold { font-family: "TT Firs ExtraBold"; }
+
+/*=========================*/
+
+.font__black { color: #000; }
+
+.font__gray { color: #5b5b5b; }
+
+/*=========================*/
+
+.font__uppercase { text-transform: uppercase; }

@@ -1,0 +1,73 @@
+.btn__circle {
+  display: block;
+  width: 99px;
+  height: 99px;
+  cursor: pointer;
+}
+
+.btn__circle > div {
+  width: 99px;
+  height: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.btn__circle > div > div {
+  width: 66px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.btn__circle .btn__circle_arrow {
+  width: 14px;
+  height: 14px;
+  border: solid 1px transparent;
+  transform: rotate(-45deg);
+  position: relative;
+  top: -3px;
+}
+
+.btn__circle_blue > div { background-color: #17157c; }
+
+.btn__circle_blue > div > div { background-color: #2f29f8; }
+
+.btn__circle_red > div { background-color: #1d0404; }
+
+.btn__circle_red > div > div { background-color: #c31c1b; }
+
+.btn__circle_white > div { background-color: #100ac1; }
+
+.btn__circle_white > div > div { background-color: #fff; }
+
+.btn__circle_blue .btn__circle_arrow,
+.btn__circle_red .btn__circle_arrow {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+
+.btn__circle_white .btn__circle_arrow {
+  border-bottom-color: #2f29f8;
+  border-left-color: #2f29f8;
+}
+
+/*=========================*/
+
+.btn__regular {
+  display: block;
+  text-align: center;
+  width: 215px;
+  padding: 15px;
+  border-radius: 200px;
+  border: solid 1px transparent;
+}
+
+.btn__regular.active {
+  background-color: #2f29f8;
+  border: solid 1px #2f29f8;
+  color: #fff;
+}
