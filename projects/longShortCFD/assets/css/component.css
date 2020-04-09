@@ -2,13 +2,23 @@
   margin: auto;
   max-width: 1440px;
   background-color: #fff;
+  position: relative;
 }
 
 .screen__height { min-height: 100vh; }
 
+.screen__width {
+  width: 100%;
+  padding-right: 0 !important;
+  padding-left: 0;
+}
+
 /*=========================*/
 
-.logotype { width: 120px; }
+.logotype {
+  width: 120px;
+  cursor: pointer;
+}
 
 /*=========================*/
 
@@ -31,6 +41,7 @@ header nav li {
   width: 118px;
   cursor: pointer;
   position: relative;
+  padding-left: 20px;
 }
 
 .menu__switcher {
@@ -38,7 +49,7 @@ header nav li {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 118px;
+  width: 98px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,6 +62,8 @@ header nav li {
   top: -60px;
   font-size: 15px;
 }
+
+.menu__switcher-contrast { border-right: solid 1px #fff; }
 
 .menu__switcher_arrow {
   width: 29px;
@@ -88,24 +101,87 @@ header nav li {
 
 /*=========================*/
 
+.faq_accordeon .cols_2 {
+  cursor: pointer;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.faq_accordeon .faq_accordeon-state {
+  width: 46px;
+  height: 46px;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.faq_accordeon-state.open::before,
+.faq_accordeon-state.close::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 10px);
+}
+
+.faq_accordeon-state.open::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 10px);
+  transform: rotate(90deg);
+}
+
+.faq_accordeon .cols_2 p {
+  width: calc(100% - 46px);
+  padding-right: 20px;
+}
+
+.faq_accordeon-content { margin-top: 70px; }
+
+.faq_accordeon-textblock { margin-top: 30px; }
+
+.faq_accordeon-textblock p,
+.faq_accordeon-textblock ul { padding: 15px 0; }
+
+/*=========================*/
+
 .hero {
   width: calc(100% - 118px);
   padding: 50px 0;
 }
 
-.hero__content > div:nth-child(1) {
-  width: 45%;
-  padding: 40px 20px;
-}
-
 .hero__image,
-.hero__right-part { width: 55%; }
+.hero__right-side,
+.hero__align-center { width: 58%; }
 
-.hero__image img {
-  max-width: 100%;
+.hero__right-side,
+.hero__content-row,
+.hero__left-side {
+  padding: 110px 20px;
+  padding-bottom: 0;
 }
 
-.hero__content > div:nth-child(1) h1 { margin: 70px 0; }
+.hero__left-side { width: 42%; }
+
+.hero__align-center {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__image img { max-width: 100%; }
+
+.hero__image { text-align: right; }
+
+.hero__left-side h1 { margin-bottom: 70px; }
 
 .hero__learn-more {
   display: block;
@@ -125,8 +201,6 @@ header nav li {
 
 .hero__action_element
 .btn__circle { margin-left: 100px; }
-
-.hero__trades { padding: 110px 20px; }
 
 .hero__trades-container { width: calc(50% - 10px); }
 
@@ -185,3 +259,71 @@ header nav li {
 }
 
 .hero__trades_amount .btn__regular { margin-top: 70px; }
+
+.hero__purple-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hero__purple-image img {
+  position: relative;
+  bottom: -6px;
+}
+
+.hero__licenses-container {
+  padding: 30px 50px;
+  width: 430px;
+}
+
+.hero__licenses-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+}
+
+.hero__licenses-content {
+  width: calc(100% - 90px);
+  color: #d798f1;
+}
+
+.hero__licenses-content  div { margin-bottom: 5px; }
+
+.hero__blog-link {
+  width: 46%;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.hero__blog-image { width: 54%; }
+
+.hero__blog-image img { height: 100%; }
+
+.hero__blog-element:nth-child(2)
+.hero__blog-link {
+  border-top: solid 1px #1a1a1a;
+  border-bottom: solid 1px #1a1a1a;
+}
+
+.hero__account-faq { width: 45%; }
+
+.hero__account-form { width: 35%; }
+
+.hero__account-form h1,
+.hero__account-faq h1 { margin-bottom: 70px; }
+
+.hero__account-form .btn__regular {
+  margin-top: 40px;
+  float: right;
+  cursor: pointer;
+}
+
+.hero__account-faq { padding-right: 20px; }
+
+.hero__account_accordeon {
+  margin-top: 85px;
+  margin-bottom: 90px;
+}

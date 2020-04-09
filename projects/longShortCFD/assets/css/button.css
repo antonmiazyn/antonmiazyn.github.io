@@ -57,6 +57,26 @@
 
 /*=========================*/
 
+.btn__video {
+  display: block;
+  width: 122px;
+  height: 122px;
+  background-color: #ff2315;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn__video_play {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: calc(50% - 16px);
+  border: solid 22px transparent;
+  border-left: solid 40px #fff;
+}
+
+/*=========================*/
+
 .btn__regular {
   display: block;
   text-align: center;
