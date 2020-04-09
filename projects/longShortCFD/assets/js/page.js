@@ -1,4 +1,3 @@
-function page() {
   let section = document.querySelectorAll(".main-page-section");
   let prew = document.querySelectorAll(".menu__switcher_arrow_top");
   let next = document.querySelectorAll(".btn__circle");
@@ -23,5 +22,3 @@ function page() {
       section[i].classList.remove("hidden");
     }
   }
-
-}

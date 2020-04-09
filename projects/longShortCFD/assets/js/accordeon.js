@@ -1,4 +1,4 @@
-function accordeon() {
+
   let link = document.querySelectorAll(".faq_accordeon-link");
   let turn = document.querySelectorAll(".faq_accordeon-turn");
   let content = document.querySelectorAll(".faq_accordeon-content");
@@ -19,4 +19,3 @@ function accordeon() {
       });
     }
   }
-}
