@@ -83,10 +83,10 @@
   width: 215px;
   padding: 15px;
   border-radius: 200px;
-  border: solid 1px transparent;
+  border: solid 1px #fff;
 }
 
-.btn__regular.active {
+.btn__regular.primary {
   background-color: #2f29f8;
   border: solid 1px #2f29f8;
   color: #fff;

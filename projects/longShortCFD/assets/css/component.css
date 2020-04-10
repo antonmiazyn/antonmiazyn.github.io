@@ -1,7 +1,6 @@
 .container {
   margin: auto;
   max-width: 1440px;
-  background-color: #fff;
   position: relative;
 }
 
@@ -32,8 +31,49 @@ header nav {
 
 header nav li {
   padding: 0 20px;
-  margin-left: 67px;
+  margin-left: 65px;
 }
+
+header nav a { cursor: pointer; }
+
+/*=========================*/
+
+.menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  background-color: #000;
+  padding: 50px 0;
+  z-index: 5;
+  overflow-y: scroll;
+  left: -100%;
+  transition: left .3s ease-in-out;
+}
+
+.menu header nav li { margin-left: 0; }
+
+.menu__container {
+  width: calc(100% - 118px);
+}
+
+.menu__container menu {
+  width: 58%;
+  padding: 110px 20px;
+  padding-bottom: 0;
+}
+
+.menu__container .menu__right-side {
+  width: 42%;
+  padding: 110px 20px;
+  padding-right: 110px;
+}
+
+.menu__container .menu__right-side ul { padding: 5px 20px; }
+
+.menu__container .menu__right-side ul li { padding: 5px; }
+
+.menu__content menu li { padding: 10px 0; }
 
 /*=========================*/
 
@@ -69,7 +109,7 @@ header nav li {
   width: 29px;
   height: 29px;
   position: fixed;
-  left: calc(60px - 14px);
+  left: calc(60px - 25px);
   bottom: 70px;
   cursor: pointer;
 }
@@ -98,6 +138,39 @@ header nav li {
 }
 
 .menu__switcher_arrow_top { transform: rotate(90deg); }
+
+/*=========================*/
+
+.login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  z-index: 4;
+}
+
+.login header {
+  padding-top: 50px;
+  padding-left: 138px;
+}
+
+.login__container {
+  padding: 50px 138px;
+  padding-bottom: 110px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.login-form input::placeholder { color: #5b5b5b; }
+
+.login__container h1 { margin-bottom: 50px; }
+
+.login__container .btn__regular {
+  margin: auto;
+  margin-top: 110px;
+}
 
 /*=========================*/
 
@@ -197,6 +270,7 @@ header nav li {
   align-items: center;
   margin: 120px 0;
   margin-bottom: 90px;
+  z-index: 2;
 }
 
 .hero__action_element
@@ -288,7 +362,7 @@ header nav li {
   color: #d798f1;
 }
 
-.hero__licenses-content  div { margin-bottom: 5px; }
+.hero__licenses-content div { margin-bottom: 5px; }
 
 .hero__blog-link {
   width: 46%;
@@ -310,7 +384,7 @@ header nav li {
 
 .hero__account-faq { width: 45%; }
 
-.hero__account-form { width: 35%; }
+.hero__account-form { width: 38%; }
 
 .hero__account-form h1,
 .hero__account-faq h1 { margin-bottom: 70px; }
@@ -327,3 +401,5 @@ header nav li {
   margin-top: 85px;
   margin-bottom: 90px;
 }
+
+.hero__account-option { padding: 20px 0; }

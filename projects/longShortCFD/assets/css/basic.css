@@ -26,7 +26,14 @@ ul, nav, menu { list-style: none; }
 
 /*=========================*/
 
-input {
+form {
+  max-width: 690px;
+  margin: auto;
+}
+
+input,
+.select-input,
+.select-selection_choice {
   display: block;
   width: 100%;
   border-bottom: solid 1px #1a1a1a;
@@ -37,6 +44,85 @@ input {
 }
 
 input::placeholder { color: #fff; }
+
+/*=========================*/
+
+.select-input {
+  cursor: pointer;
+  position: relative;
+}
+
+.select-caret {
+  position: absolute;
+  right: 4px;
+  width: 14px;
+  height: 14px;
+  border: solid 1px transparent;
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+
+.select-caret.open {
+  top: calc(50% - 12px);
+  transform: rotate(-45deg);
+}
+
+.select-caret.close {
+  top: calc(50% - 3px);
+  transform: rotate(135deg);
+}
+
+.select-input_flag,
+.select-selection_choice img {
+  position: relative;
+  top: 5px;
+  margin-right: 60px;
+}
+
+.select-selection_choice img { margin-right: 20px; }
+
+.select-input-country .select-caret {
+  left: 80px;
+  border-bottom-color: #1a1a1a;
+  border-left-color: #1a1a1a;
+}
+
+.select-selection {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+}
+
+.select-selection_choice { padding-left: 20px; }
+
+.select-selection_choice:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/*=========================*/
+
+.option-input {
+  padding: 10px 0;
+  align-items: center;
+}
+
+.option-input-state {
+  width: 46px;
+  height: 46px;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.option-input p {
+  width: calc(100% - 46px);
+  padding-left: 40px;
+}
 
 /*=========================*/
 
@@ -117,4 +203,34 @@ body {
   transform: rotate(-45deg);
   position: relative;
   top: -8px;
+}
+
+/*=========================*/
+
+.modal-times {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.modal-times::before {
+  content: "";
+  width: 40px;
+  height: 1px;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.modal-times::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  transform: rotate(-45deg);
 }
