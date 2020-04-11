@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../assets/css/fonts.css">
+  <link rel="stylesheet" href="../../assets/css/basic.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/button.css">
+  <title>Long Short CFD</title>
+</head>
+<body>
+
+  <section class="menu-section" id="menu">
+    <div class="menu screen__height">
+      <div class="container bg__black">
+        <div class="cols">
+          <div class="menu__sider">
+            <a class="menu__switcher menu__hide hidden">
+              <span class="font__uppercase font__gray">close</span>
+            </a>
+          </div>
+          <div class="menu__container">
+            <header class="cols">
+              <a class="logotype">
+                <img src="../../assets/img/logo_1.png" alt="logotype">
+              </a>
+              <nav class="font__medium">
+                <li><a class="font__uppercase" href="#">ru</a></li>
+                <li><a class="font__uppercase font__gray" href="#">en</a></li>
+              </nav>
+            </header>
+            <div class="menu__content cols">
+              <menu>
+                <li>
+                  <h1><a href="#">НОВОСТИ</a></h1>
+                </li>
+                <li>
+                  <h1><a href="#">О КОМПАНИИ</a></h1>
+                </li>
+                <li>
+                  <h1><a href="#">ТИПЫ СЧЕТОВ вар.1</a></h1>
+                </li>
+                <li>
+                  <h1><a href="#">ТИПЫ СЧЕТОВ вар.2</a></h1>
+                </li>
+                <li>
+                  <h1><a href="#">ИНСТРУМЕНТЫ</a></h1>
+                </li>
+                <li>
+                  <h1><a href="#">СЕРВИСЫ</a></h1>
+                </li>
+                <li>
+                  <h1><a href="#">ОБУЧЕНИЕ</a></h1>
+                </li>
+              </menu>
+              <nav class="menu__right-side cols">
+                <ul>
+                  <li class="font__thin"><a href="#">FAQ</a></li>
+                  <li class="font__thin"><a href="#">Блог</a></li>
+                  <li class="font__thin"><a href="#">Карьера</a></li>
+                </ul>
+                <ul>
+                  <li class="font__thin"><a href="#">Теги</a></li>
+                  <li class="font__thin"><a href="#">Подписаться</a></li>
+                  <li class="font__thin"><a href="#">Карта сайта</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal-section login-section" id="login">
+    <div class="modal login screen__height hidden">
+      <div class="container bg__black">
+        <header class="cols">
+          <a class="logotype">
+            <img src="../../assets/img/logo_1.png" alt="logotype">
+          </a>
+          <div class="login-hide modal-times"></div>
+        </header>
+        <div class="modal-form__container">
+          <form action="#" class="login-form">
+            <h1>Вход</h1>
+            <fieldset>
+              <input class="font__gray" type="text" placeholder="E-mail">
+              <input class="font__gray" type="password" placeholder="Пароль">
+            </fieldset>
+          </form>
+          <a href="#" class="hero__learn-more font__gray">Забыли пароль?</a>
+          <a href="#" class="btn__regular primary font__uppercase">вход</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal-section account-section" id="account">
+    <div class="modal account screen__height hidden">
+      <div class="container bg__black">
+        <header class="cols">
+          <a class="logotype">
+            <img src="../../assets/img/logo_1.png" alt="logotype">
+          </a>
+          <div class="modal-times"></div>
+        </header>
+        <div class="modal-form__container">
+          <form action="#" id="modal-form-start" class="account-form">
+            <h1>Открыть счет</h1>
+            <fieldset>
+              <input type="text" placeholder="Фамилия">
+              <input type="text" placeholder="Имя">
+              <input type="text" placeholder="E-mail">
+              <input type="password" placeholder="Пароль">
+              <input type="password" placeholder="Повторить пароль">
+            </fieldset>
+            <a class="btn__regular primary modal__account-form-next font__uppercase">ДАЛЕЕ</a>
+          </form>
+          <form action="#" id="modal-form-end" class="modal__account-form account-form hidden">
+            <h1>Открыть счет</h1>
+            <fieldset class="modal__select-form">
+              <div class="select-input">
+                <span class="select-input_value">+03:00 GMT</span>
+                <div class="select-caret open"></div>
+                <div class="select-selection bg__black hidden">
+                  <div class="select-selection_choice">+02:00 GMT</div>
+                  <div class="select-selection_choice">+00:00 GMT</div>
+                  <div class="select-selection_choice">+05:00 GMT</div>
+                </div>
+              </div>
+              <div class="select-input">
+                <span class="select-input_value">Belarus</span>
+                <div class="select-caret open"></div>
+                <div class="select-selection bg__black hidden">
+                  <div class="select-selection_choice">Belarus</div>
+                  <div class="select-selection_choice">Ukraine</div>
+                  <div class="select-selection_choice">Russia</div>
+                  <div class="select-selection_choice">Poland</div>
+                </div>
+              </div>
+              <div class="select-input select-input-country">
+                <span class="select-input_flag"><img src="../../assets/img/flag/flag_belarus.png" alt="ukraine"></span>
+                <span class="select-input_value">+375</span>
+                <div class="select-caret open"></div>
+                <div class="select-selection bg__black hidden">
+                  <div class="select-selection_choice">
+                    <img src="../../assets/img/flag/flag_belarus.png" alt="belarus">
+                    +375
+                  </div>
+                  <div class="select-selection_choice">
+                    <img src="../../assets/img/flag/flag_ukraine.png" alt="ukraine">
+                    +38
+                  </div>
+                  <div class="select-selection_choice">
+                    <img src="../../assets/img/flag/flag_russia.png" alt="russia">
+                    +7
+                  </div>
+                  <div class="select-selection_choice">
+                    <img src="../../assets/img/flag/flag_poland.png" alt="poland">
+                    +48
+                  </div>
+                </div>
+              </div>
+              <div class="select-input">
+                <span class="select-input_value">BTC</span>
+                <div class="select-caret open"></div>
+                <div class="select-selection bg__black hidden">
+                  <div class="select-selection_choice">HTZ</div>
+                  <div class="select-selection_choice">PMK</div>
+                </div>
+              </div>
+              <input type="text" placeholder="Промокод">
+              <div class="hero__account-option">
+                <div class="option-input cols">
+                  <div class="option-input-state"><img class="option-input-mark hidden" src="../../assets/img/ico/mark.svg" alt="mark"></div>
+                  <p>
+                    I accept and understand all the Terms & Conditions
+                  </p>
+                </div>
+                <div class="option-input cols">
+                  <div class="option-input-state"><img class="option-input-mark hidden" src="../../assets/img/ico/mark.svg" alt="mark"></div>
+                  <p>
+                    I am over 18 and the information provided in this form is true and correct.
+                  </p>
+                </div>
+              </div>
+              <div class="cols modal__account_button-set">
+                <a class="btn__regular modal__account-form-prev font__uppercase">НАЗАД</a>
+                <a class="btn__regular primary font__uppercase">открыть счет</a>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-page-section" id="main-hero-1">
+    <div class="container">
+      <div class="screen cols bg__black">
+        <div class="menu__sider">
+          <a class="menu__switcher menu__show">
+            <span class="font__uppercase font__gray">меню</span>
+          </a>
+          <a href="index.html" class="menu__switcher_arrow"></a>
+        </div>
+        <div class="hero screen__height">
+          <header class="cols">
+            <a class="logotype">
+              <img src="../../assets/img/logo_1.png" alt="logotype">
+            </a>
+            <nav class="font__medium">
+              <li><a class="header-login">Вход</a></li>
+              <li><a class="header-account">Открыть новый счет</a></li>
+            </nav>
+          </header>
+          <div class="cols hero__content">
+            <div class="hero__left-side">
+              <h1>Личный Менеджер</h1>
+              <h3 class="font__thin">
+                Персональный менеджер для клиента - это услуга,
+                используемая нами для того, чтобы укрепить вашу
+                лояльность к нам и предоставить единый центр
+                обслуживания для различных продуктов и услуг.
+              </h3>
+            </div>
+            <div class="hero__image">
+              <img src="../../assets/img/hero/main-hero-2.png" alt="image">
+            </div>
+          </div>
+          <div class="cols hero__content">
+            <div class="hero__image">
+              <img src="../../assets/img/hero/main-hero-3.png" alt="image">
+            </div>
+            <div class="hero__left-side hero__left-side_reverse hero__left-side_titleless">
+              <h3 class="font__thin">
+                Используйте любой удобный вам способ связи
+              </h3>
+            </div>
+          </div>
+          <div class="cols hero__content">
+            <div class="hero__left-side hero__left-side_titleless">
+              <h3 class="font__thin">
+                Полное сопровождение - от первой консультации до вывода прибыли.
+              </h3>
+            </div>
+            <div class="hero__image">
+              <img src="../../assets/img/hero/main-hero-7.png" alt="image">
+            </div>
+          </div>
+          <div class="hero__content hero__button-content">
+            <a class="btn__regular primary">Открыть счет</a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer__contact cols font__thin">
+          <a class="logotype footer__contact-cell"></a>
+          <div class="footer__contact-cell">
+            Crypto CFD and Exchanges brockerage
+          </div>
+          <div class="footer__contact-lowersize footer__contact-cell">
+            Служба поддержки 24/7:
+          </div>
+          <div class="cols footer__contact-cell">
+            <img src="../../assets/img/ico/phone.svg" alt="phone"><a href="tel:3728801334">+372-880–1334</a>
+          </div>
+          <div class="cols footer__contact-cell">
+            <a href="#"><img src="../../assets/img/ico/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="../../assets/img/ico/youtube.svg" alt="youtube"></a>
+            <a href="#"><img src="../../assets/img/ico/email.svg" alt="email"></a>
+          </div>
+        </div>
+        <menu class="footer__menu cols font__thin">
+          <div class="footer__menu-description footer__menu-element">
+            LongShortCFD является уверенным участником
+            всех CFD рынков. Наши независимые брокерские
+            службы имеют более 15 лет опыта работы в отрасли.
+          </div>
+          <div class="footer__menu-element">
+            <h4 class="font__medium">Инструменты</h4>
+            <ul>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-element">
+            <h4 class="font__medium">Инструменты</h4>
+            <ul>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-element">
+            <h4 class="font__medium">Инструменты</h4>
+            <ul>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-element footer__menu-element_contact">
+            <h4 class="font__medium">Контакты</h4>
+            <ul>
+              <li class="cols">
+                <div><img src="../../assets/img/ico/phone.svg" alt="phone"></div>
+                <a href="tel:3728801334">+372-880–1334</a>
+              </li>
+              <li class="cols">
+                <div><img src="../../assets/img/ico/email.svg" alt="phone"></div>
+                <a href="mailto:info@longshortcfd.com">info@longshortcfd.com</a>
+              </li>
+              <li class="cols">
+                <div><img src="../../assets/img/ico/marker.svg" alt="phone"></div>
+                <p>GENIX SYSTEM OU,<br>
+                11415 Harju maakond, Tallinn,<br>
+                Lasnamae Linnaosa,<br>
+                Peterburitee 47</p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-element">
+            <h4 class="font__medium">Инструменты</h4>
+            <ul>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-element">
+            <h4 class="font__medium">Инструменты</h4>
+            <ul>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-element">
+            <h4 class="font__medium">Инструменты</h4>
+            <ul>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+            </ul>
+          </div>
+        </menu>
+        <div class="footer__warning font__thin">
+          ПРЕДУПРЕЖДЕНИЕ О ВЫСОКОМ РИСКЕ ИНВЕСТИЦИЙ:
+          Торговля CFD очень спекулятивна, сопряжена
+          со значительным риском убытков и подходит
+          не для всех инвесторов. Перед началом
+          торговли настоятельно рекомендуем
+          прочитать и убедиться, что вы понимаете
+          информацию о рисках и предупреждены о них.
+          Существует значительный риск того, что вы
+          можете потерять все свои первоначальные
+          инвестиции. Мы советуем вам рассмотреть
+          вопрос о том, подходит ли вам торговля
+          с использованием заемных средств в свете
+          ваших личных обстоятельств. Мы рекомендуем
+          вам убедиться, что вы полностью понимаете
+          все риски, связанные с торговлей. Торговля
+          через онлайн-платформу несет дополнительные
+          риски. Обратитесь к нашему разделу правил
+          здесь. Для получения более подробной информации,
+          пожалуйста, ознакомьтесь с Условиями. Сайт
+          принадлежит Genix system ÖU.
+          <a href="#top" class="footer__top">
+            <div class="footer__top-caret"></div>
+          </a>
+        </div>
+        <div class="footer__copyright font__uppercase font__thin">
+          © LONGSHORTCFD, 2020
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="../../assets/js/page.js"></script>
+  <script type="text/javascript" src="../../assets/js/modal.js"></script>
+  <script type="text/javascript" src="../../assets/js/menu.js"></script>
+  <script type="text/javascript" src="../../assets/js/form.js"></script>
+  <script type="text/javascript" src="../../assets/js/accordeon.js"></script>
+  <script type="text/javascript" src="../../assets/js/select.js"></script>
+
+  <script type="text/javascript">
+    let heroOpenAccount = document.querySelector(".hero__button-content").onclick = () => {
+      accountForm.classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>

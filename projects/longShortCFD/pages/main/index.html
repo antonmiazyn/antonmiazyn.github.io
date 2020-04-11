@@ -15,14 +15,14 @@
   <section class="menu-section" id="menu">
     <div class="menu screen__height">
       <div class="container bg__black">
-        <div class="cols_2">
+        <div class="cols">
           <div class="menu__sider">
             <a class="menu__switcher menu__hide hidden">
               <span class="font__uppercase font__gray">close</span>
             </a>
           </div>
           <div class="menu__container">
-            <header class="cols_2">
+            <header class="cols">
               <a class="logotype">
                 <img src="../../assets/img/logo_1.png" alt="logotype">
               </a>
@@ -31,7 +31,7 @@
                 <li><a class="font__uppercase font__gray" href="#">en</a></li>
               </nav>
             </header>
-            <div class="menu__content cols_2">
+            <div class="menu__content cols">
               <menu>
                 <li>
                   <h1><a href="#">НОВОСТИ</a></h1>
@@ -55,7 +55,7 @@
                   <h1><a href="#">ОБУЧЕНИЕ</a></h1>
                 </li>
               </menu>
-              <nav class="menu__right-side cols_2">
+              <nav class="menu__right-side cols">
                 <ul>
                   <li class="font__thin"><a href="#">FAQ</a></li>
                   <li class="font__thin"><a href="#">Блог</a></li>
@@ -74,16 +74,28 @@
     </div>
   </section>
 
-  <section class="login-section" id="login">
-    <div class="login screen__height hidden">
+  <!-- There are should be video-modal
+  <section class="modal-section video-section" id="video">
+    <div class="main-video screen__height">
       <div class="container bg__black">
-        <header class="cols_2">
+        <div class="cols">
+          <iframe src="" width="" height=""></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <section class="modal-section login-section" id="login">
+    <div class="modal login screen__height hidden">
+      <div class="container bg__black">
+        <header class="cols">
           <a class="logotype">
             <img src="../../assets/img/logo_1.png" alt="logotype">
           </a>
           <div class="login-hide modal-times"></div>
         </header>
-        <div class="login__container">
+        <div class="modal-form__container">
           <form action="#" class="login-form">
             <h1>Вход</h1>
             <fieldset>
@@ -98,25 +110,125 @@
     </div>
   </section>
 
+  <section class="modal-section account-section" id="account">
+    <div class="modal account screen__height hidden">
+      <div class="container bg__black">
+        <header class="cols">
+          <a class="logotype">
+            <img src="../../assets/img/logo_1.png" alt="logotype">
+          </a>
+          <div class="modal-times"></div>
+        </header>
+        <div class="modal-form__container">
+          <form action="#" id="modal-form-start" class="account-form">
+            <h1>Открыть счет</h1>
+            <fieldset>
+              <input type="text" placeholder="Фамилия">
+              <input type="text" placeholder="Имя">
+              <input type="text" placeholder="E-mail">
+              <input type="password" placeholder="Пароль">
+              <input type="password" placeholder="Повторить пароль">
+            </fieldset>
+            <a class="btn__regular primary modal__account-form-next font__uppercase">ДАЛЕЕ</a>
+          </form>
+          <form action="#" id="modal-form-end" class="modal__account-form account-form hidden">
+            <h1>Открыть счет</h1>
+            <fieldset class="modal__select-form">
+              <div class="select-input">
+                <span class="select-input_value">+03:00 GMT</span>
+                <div class="select-caret open"></div>
+                <div class="select-selection bg__black hidden">
+                  <div class="select-selection_choice">+02:00 GMT</div>
+                  <div class="select-selection_choice">+00:00 GMT</div>
+                  <div class="select-selection_choice">+05:00 GMT</div>
+                </div>
+              </div>
+              <div class="select-input">
+                <span class="select-input_value">Belarus</span>
+                <div class="select-caret open"></div>
+                <div class="select-selection bg__black hidden">
+                  <div class="select-selection_choice">Belarus</div>
+                  <div class="select-selection_choice">Ukraine</div>
+                  <div class="select-selection_choice">Russia</div>
+                  <div class="select-selection_choice">Poland</div>
+                </div>
+              </div>
+              <div class="select-input select-input-country">
+                <span class="select-input_flag"><img src="../../assets/img/flag/flag_belarus.png" alt="ukraine"></span>
+                <span class="select-input_value">+375</span>
+                <div class="select-caret open"></div>
+                <div class="select-selection bg__black hidden">
+                  <div class="select-selection_choice">
+                    <img src="../../assets/img/flag/flag_belarus.png" alt="belarus">
+                    +375
+                  </div>
+                  <div class="select-selection_choice">
+                    <img src="../../assets/img/flag/flag_ukraine.png" alt="ukraine">
+                    +38
+                  </div>
+                  <div class="select-selection_choice">
+                    <img src="../../assets/img/flag/flag_russia.png" alt="russia">
+                    +7
+                  </div>
+                  <div class="select-selection_choice">
+                    <img src="../../assets/img/flag/flag_poland.png" alt="poland">
+                    +48
+                  </div>
+                </div>
+              </div>
+              <div class="select-input">
+                <span class="select-input_value">BTC</span>
+                <div class="select-caret open"></div>
+                <div class="select-selection bg__black hidden">
+                  <div class="select-selection_choice">HTZ</div>
+                  <div class="select-selection_choice">PMK</div>
+                </div>
+              </div>
+              <input type="text" placeholder="Промокод">
+              <div class="hero__account-option">
+                <div class="option-input cols">
+                  <div class="option-input-state"><img class="option-input-mark hidden" src="../../assets/img/ico/mark.svg" alt="mark"></div>
+                  <p>
+                    I accept and understand all the Terms & Conditions
+                  </p>
+                </div>
+                <div class="option-input cols">
+                  <div class="option-input-state"><img class="option-input-mark hidden" src="../../assets/img/ico/mark.svg" alt="mark"></div>
+                  <p>
+                    I am over 18 and the information provided in this form is true and correct.
+                  </p>
+                </div>
+              </div>
+              <div class="cols modal__account_button-set">
+                <a class="btn__regular modal__account-form-prev font__uppercase">НАЗАД</a>
+                <a class="btn__regular primary font__uppercase">открыть счет</a>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="main-page-section" id="main-hero-1">
     <div class="container">
-      <div class="screen cols_2 bg__black">
+      <div class="screen cols bg__black">
         <div class="menu__sider">
           <a class="menu__switcher menu__show">
             <span class="font__uppercase font__gray">меню</span>
           </a>
         </div>
         <div class="hero screen__height">
-          <header class="cols_2">
+          <header class="cols">
             <a class="logotype">
               <img src="../../assets/img/logo_1.png" alt="logotype">
             </a>
             <nav class="font__medium">
               <li><a class="header-login">Вход</a></li>
-              <li><a>Открыть новый счет</a></li>
+              <li><a class="header-account">Открыть новый счет</a></li>
             </nav>
           </header>
-          <div class="cols_2 hero__content">
+          <div class="cols hero__content">
             <div class="hero__left-side">
               <h1>Лучшая торговая платформа</h1>
               <h3 class="font__thin">
@@ -146,7 +258,7 @@
 
   <section class="main-page-section" id="main-hero-2">
     <div class="container">
-      <div class="screen cols_2 bg__black">
+      <div class="screen cols bg__black">
         <div class="menu__sider">
           <a href="#" class="menu__switcher menu__show">
             <span class="font__uppercase font__gray">меню</span>
@@ -154,16 +266,16 @@
           <a class="menu__switcher_arrow menu__switcher_arrow_top"></a>
         </div>
         <div class="hero screen__height">
-          <header class="cols_2 hero__content">
+          <header class="cols hero__content">
             <a class="logotype">
               <img src="../../assets/img/logo_1.png" alt="logotype">
             </a>
             <nav class="font__medium">
               <li><a class="header-login">Вход</a></li>
-              <li><a>Открыть новый счет</a></li>
+              <li><a class="header-account">Открыть новый счет</a></li>
             </nav>
           </header>
-          <div class="cols_2 hero__content">
+          <div class="cols hero__content">
             <div class="hero__left-side">
               <h1>Личный менеджер</h1>
               <h3 class="font__thin">
@@ -193,7 +305,7 @@
 
   <section class="main-page-section" id="main-hero-3">
     <div class="container">
-      <div class="screen cols_2 bg__black">
+      <div class="screen cols bg__black">
         <div class="menu__sider">
           <a class="menu__switcher menu__show">
             <span class="font__uppercase font__gray">меню</span>
@@ -201,16 +313,16 @@
           <a href="#" class="menu__switcher_arrow menu__switcher_arrow_top"></a>
         </div>
         <div class="hero screen__height">
-          <header class="cols_2">
+          <header class="cols">
             <a class="logotype">
               <img src="../../assets/img/logo_1.png" alt="logotype">
             </a>
             <nav class="font__medium">
               <li><a class="header-login">Вход</a></li>
-              <li><a>Открыть новый счет</a></li>
+              <li><a class="header-account">Открыть новый счет</a></li>
             </nav>
           </header>
-          <div class="cols_2 hero__content">
+          <div class="cols hero__content">
             <div class="hero__left-side">
               <h1>Мировой охват</h1>
               <h3 class="font__thin">
@@ -240,7 +352,7 @@
 
   <section class="main-page-section" id="main-hero-4">
     <div class="container">
-      <div class="screen cols_2 bg__black">
+      <div class="screen cols bg__black">
         <div class="menu__sider">
           <a class="menu__switcher menu__show">
             <span class="font__uppercase font__gray">меню</span>
@@ -248,16 +360,16 @@
           <a href="#" class="menu__switcher_arrow menu__switcher_arrow_top"></a>
         </div>
         <div class="hero screen__height">
-          <header class="cols_2">
+          <header class="cols">
             <a class="logotype">
               <img src="../../assets/img/logo_1.png" alt="logotype">
             </a>
             <nav class="font__medium">
               <li><a class="header-login">Вход</a></li>
-              <li><a>Открыть новый счет</a></li>
+              <li><a class="header-account">Открыть новый счет</a></li>
             </nav>
           </header>
-          <div class="cols_2 hero__content">
+          <div class="cols hero__content">
             <div class="hero__left-side">
               <h1>Грамотное обучение</h1>
               <h3 class="font__thin">
@@ -286,7 +398,7 @@
 
   <section class="main-page-section" id="main-hero-5">
     <div class="container">
-      <div class="screen cols_2 bg__black">
+      <div class="screen cols bg__black">
         <div class="menu__sider">
           <a class="menu__switcher menu__show">
             <span class="font__uppercase font__gray">меню</span>
@@ -294,16 +406,16 @@
           <a href="#" class="menu__switcher_arrow menu__switcher_arrow_top"></a>
         </div>
         <div class="hero screen__height">
-          <header class="cols_2">
+          <header class="cols">
             <a class="logotype">
               <img src="../../assets/img/logo_1.png" alt="logotype">
             </a>
             <nav class="font__medium">
               <li><a class="header-login">Вход</a></li>
-              <li><a>Открыть новый счет</a></li>
+              <li><a class="header-account">Открыть новый счет</a></li>
             </nav>
           </header>
-          <div class="cols_2 hero__content">
+          <div class="cols hero__content">
             <div class="hero__left-side">
               <h1>Торгуйте и инвестируйте в лучшие акции и ETF</h1>
               <h3 class="font__thin">
@@ -322,7 +434,7 @@
               </div>
             </div>
             <div class="hero__right-side hero__trades">
-              <div class="cols_2">
+              <div class="cols">
                 <div class="hero__trades-container">
                   <div class="hero__trades-element">
                     <div>
@@ -339,7 +451,7 @@
                   </div>
                 </div>
                 <div class="hero__trades-container">
-                  <div class="hero__trades-element cols_2">
+                  <div class="hero__trades-element cols">
                       <div>
                         <img src="../../assets/img/trades_microsoft.png" alt="microsoft">
                       </div>
@@ -352,7 +464,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="hero__trades-element cols_2">
+                  <div class="hero__trades-element cols">
                       <div>
                         <img src="../../assets/img/trades_facebook.png" alt="facebook">
                       </div>
@@ -381,7 +493,7 @@
 
   <section class="main-page-section" id="main-hero-6">
     <div class="container">
-      <div class="screen cols_2 bg__purple">
+      <div class="screen cols bg__purple">
         <div class="menu__sider">
           <a class="menu__switcher menu__show">
             <span class="font__uppercase font__gray">меню</span>
@@ -389,16 +501,16 @@
           <a href="#" class="menu__switcher_arrow menu__switcher_arrow_top"></a>
         </div>
         <div class="hero screen__height">
-          <header class="cols_2">
+          <header class="cols">
             <a class="logotype">
               <img src="../../assets/img/logo_1.png" alt="logotype">
             </a>
             <nav class="font__medium">
               <li><a class="header-login">Вход</a></li>
-              <li><a>Открыть новый счет</a></li>
+              <li><a class="header-account">Открыть новый счет</a></li>
             </nav>
           </header>
-          <div class="cols_2 hero__content">
+          <div class="cols hero__content">
             <div class="hero__left-side">
               <h1>Регулирование EC</h1>
               <h3 class="font__thin">
@@ -421,7 +533,7 @@
               </div>
             </div>
             <div class="hero__right-side hero__licenses">
-              <div class="hero__licenses-container cols_2 font__uppercase">
+              <div class="hero__licenses-container cols font__uppercase">
                 <div class="hero__licenses-icon">
                   <img src="../../assets/img/ico/eu_license.svg" alt="eu license">
                 </div>
@@ -430,7 +542,7 @@
                   virtual currency exchange
                 </div>
               </div>
-              <div class="hero__licenses-container cols_2 font__uppercase">
+              <div class="hero__licenses-container cols font__uppercase">
                 <div class="hero__licenses-icon">
                   <img src="../../assets/img/ico/eu_license.svg" alt="eu license">
                 </div>
@@ -451,7 +563,7 @@
 
   <section class="main-page-section" id="main-hero-7">
     <div class="container">
-      <div class="screen cols_2 bg__red">
+      <div class="screen cols bg__red">
         <div class="menu__sider">
           <a class="menu__switcher menu__show">
             <span class="font__uppercase font__gray">меню</span>
@@ -459,16 +571,16 @@
           <a href="#" class="menu__switcher_arrow menu__switcher_arrow_top"></a>
         </div>
         <div class="hero screen__height">
-          <header class="cols_2">
+          <header class="cols">
             <a class="logotype">
               <img src="../../assets/img/logo_1.png" alt="logotype">
             </a>
             <nav class="font__medium">
               <li><a class="header-login">Вход</a></li>
-              <li><a>Открыть новый счет</a></li>
+              <li><a class="header-account">Открыть новый счет</a></li>
             </nav>
           </header>
-          <div class="cols_2 hero__content">
+          <div class="cols hero__content">
             <div class="hero__left-side">
               <h1>Безопасность</h1>
               <h3 class="font__thin">
@@ -501,7 +613,7 @@
 
   <section class="main-page-section" id="main-hero-8">
     <div class="container">
-      <div class="screen cols_2 bg__blue">
+      <div class="screen cols bg__blue">
         <div class="menu__sider">
           <a class="menu__switcher menu__show menu__switcher-contrast">
             <span class="font__uppercase">меню</span>
@@ -509,16 +621,16 @@
           <a href="#" class="menu__switcher_arrow menu__switcher_arrow_top"></a>
         </div>
         <div class="hero screen__height">
-          <header class="cols_2">
+          <header class="cols">
             <a class="logotype">
               <img src="../../assets/img/logo_1.png" alt="logotype">
             </a>
             <nav class="font__medium">
               <li><a class="header-login">Вход</a></li>
-              <li><a>Открыть новый счет</a></li>
+              <li><a class="header-account">Открыть новый счет</a></li>
             </nav>
           </header>
-          <div class="cols_2 hero__content">
+          <div class="cols hero__content">
             <div class="hero__left-side">
               <h1>Обзор платформы</h1>
               <h3 class="font__thin">
@@ -553,7 +665,7 @@
 
   <section class="main-page-section" id="main-hero-9">
     <div class="container">
-      <div class="screen cols_2 bg__black">
+      <div class="screen cols bg__black">
         <div class="menu__sider">
           <a class="menu__switcher menu__show">
             <span class="font__uppercase font__gray">меню</span>
@@ -561,19 +673,19 @@
           <a href="#" class="menu__switcher_arrow menu__switcher_arrow_top"></a>
         </div>
         <div class="hero screen__height">
-          <header class="cols_2">
+          <header class="cols">
             <a class="logotype">
               <img src="../../assets/img/logo_1.png" alt="logotype">
             </a>
             <nav class="font__medium">
               <li><a class="header-login">Вход</a></li>
-              <li><a>Открыть новый счет</a></li>
+              <li><a class="header-account">Открыть новый счет</a></li>
             </nav>
           </header>
           <div class="hero__content">
             <div class="hero__content-row screen__width">
               <div class="hero__blog-container">
-                <div class="hero__blog-element cols_2">
+                <div class="hero__blog-element cols">
                   <div class="hero__blog-link font__thin">
                     <h3><a href="#">Концепция балансирующих рынков</a></h3>
                   </div>
@@ -581,7 +693,7 @@
                     <img src="../../assets/img/hero/main-hero-blog-1.png" alt="blog">
                   </div>
                 </div>
-                <div class="hero__blog-element cols_2">
+                <div class="hero__blog-element cols">
                   <div class="hero__blog-link font__thin">
                     <h3><a href="#">Краткосрочный взгляд на перспективу биткоина</a></h3>
                   </div>
@@ -589,7 +701,7 @@
                     <img src="../../assets/img/hero/main-hero-blog-2.png" alt="blog">
                   </div>
                 </div>
-                <div class="hero__blog-element cols_2">
+                <div class="hero__blog-element cols">
                   <div class="hero__blog-link font__thin">
                     <h3><a href="#">Хроника пандемии. Все достижения 3-летнего роста уничтожены за 18 дней</a></h3>
                   </div>
@@ -617,7 +729,7 @@
 
   <section class="main-page-section" id="main-hero-10">
     <div class="container">
-      <div class="screen cols_2 bg__black">
+      <div class="screen cols bg__black">
         <div class="menu__sider">
           <a class="menu__switcher menu__show">
             <span class="font__uppercase font__gray">меню</span>
@@ -625,17 +737,17 @@
           <a href="#" class="menu__switcher_arrow menu__switcher_arrow_top"></a>
         </div>
         <div class="hero screen__height">
-          <header class="cols_2">
+          <header class="cols">
             <a class="logotype">
               <img src="../../assets/img/logo_1.png" alt="logotype">
             </a>
             <nav class="font__medium">
               <li><a class="header-login">Вход</a></li>
-              <li><a>Открыть новый счет</a></li>
+              <li><a class="header-account">Открыть новый счет</a></li>
             </nav>
           </header>
           <div class="hero__content">
-            <div class="hero__content-row cols_2">
+            <div class="hero__content-row cols">
               <form action="#" id="form-start" class="hero__account-form account-form">
                 <h1>Открыть счет</h1>
                 <fieldset>
@@ -702,13 +814,13 @@
                   </div>
                   <input type="text" placeholder="Промокод">
                   <div class="hero__account-option">
-                    <div class="option-input cols_2">
+                    <div class="option-input cols">
                       <div class="option-input-state"><img class="option-input-mark hidden" src="../../assets/img/ico/mark.svg" alt="mark"></div>
                       <p>
                         I accept and understand all the Terms & Conditions
                       </p>
                     </div>
-                    <div class="option-input cols_2">
+                    <div class="option-input cols">
                       <div class="option-input-state"><img class="option-input-mark hidden" src="../../assets/img/ico/mark.svg" alt="mark"></div>
                       <p>
                         I am over 18 and the information provided in this form is true and correct.
@@ -716,7 +828,7 @@
                     </div>
                   </div>
                 </fieldset>
-                <div class="cols_2">
+                <div class="cols">
                   <a class="btn__regular account-form-prev font__uppercase">НАЗАД</a>
                   <a class="btn__regular primary font__uppercase">открыть счет</a>
                 </div>
@@ -724,13 +836,13 @@
               <div class="hero__account-faq">
                 <h1>FAQ</h1>
                 <div class="hero__account_accordeon faq_accordeon">
-                  <div class="faq_accordeon-link cols_2">
+                  <div class="faq_accordeon-link cols">
                     <p>
                       Как вывести денежные средства со счета?
                     </p>
                     <div class="faq_accordeon-state open"></div>
                   </div>
-                  <div class="faq_accordeon-link cols_2">
+                  <div class="faq_accordeon-link cols">
                     <p>
                       Сколько времени понадобится для обработки
                       запроса на вывод средств и когда я смогу
@@ -738,33 +850,33 @@
                     </p>
                     <div class="faq_accordeon-state open"></div>
                   </div>
-                  <div class="faq_accordeon-link cols_2">
+                  <div class="faq_accordeon-link cols">
                     <p>
                       Как аннулировать запрос на вывод средств?
                     </p>
                     <div class="faq_accordeon-state open"></div>
                   </div>
-                  <div class="faq_accordeon-link cols_2">
+                  <div class="faq_accordeon-link cols">
                     <p>
                       Какие условия необходимо выполнить для оформления
                       запроса на вывод денежных средств?
                     </p>
                     <div class="faq_accordeon-state open"></div>
                   </div>
-                  <div class="faq_accordeon-link cols_2">
+                  <div class="faq_accordeon-link cols">
                     <p>
                       Взимается ли комиссия за вывод средств на счет?
                     </p>
                     <div class="faq_accordeon-state open"></div>
                   </div>
-                  <div class="faq_accordeon-link cols_2">
+                  <div class="faq_accordeon-link cols">
                     <p>
                       Как узнать о завершении обработки моего
                       запроса на вывод денежных средств?
                     </p>
                     <div class="faq_accordeon-state open"></div>
                   </div>
-                  <div class="faq_accordeon-link cols_2">
+                  <div class="faq_accordeon-link cols">
                     <p>
                       Что мне следует делать, если мои денежные
                       средства не появляются на моем банковском счете?
@@ -775,7 +887,7 @@
                   <!--FAQ contents-->
 
                   <div class="faq_accordeon-content hidden">
-                    <div class="faq_accordeon-turn cols_2">
+                    <div class="faq_accordeon-turn cols">
                       <p>
                         Как вывести денежные средства со счета?
                       </p>
@@ -804,7 +916,7 @@
                     </div>
                   </div>
                   <div class="faq_accordeon-content hidden">
-                    <div class="faq_accordeon-turn cols_2">
+                    <div class="faq_accordeon-turn cols">
                       <p>
                         Сколько времени понадобится для обработки
                         запроса на вывод средств и когда я смогу
@@ -835,7 +947,7 @@
                     </div>
                   </div>
                   <div class="faq_accordeon-content hidden">
-                    <div class="faq_accordeon-turn cols_2">
+                    <div class="faq_accordeon-turn cols">
                       <p>
                         Как аннулировать запрос на вывод средств?
                       </p>
@@ -864,7 +976,7 @@
                     </div>
                   </div>
                   <div class="faq_accordeon-content hidden">
-                    <div class="faq_accordeon-turn cols_2">
+                    <div class="faq_accordeon-turn cols">
                       <p>
                         Какие условия необходимо выполнить для оформления
                         запроса на вывод денежных средств?
@@ -894,7 +1006,7 @@
                     </div>
                   </div>
                   <div class="faq_accordeon-content hidden">
-                    <div class="faq_accordeon-turn cols_2">
+                    <div class="faq_accordeon-turn cols">
                       <p>
                         Взимается ли комиссия за вывод средств на счет?
                       </p>
@@ -923,7 +1035,7 @@
                     </div>
                   </div>
                   <div class="faq_accordeon-content hidden">
-                    <div class="faq_accordeon-turn cols_2">
+                    <div class="faq_accordeon-turn cols">
                       <p>
                         Как узнать о завершении обработки моего
                         запроса на вывод денежных средств?
@@ -953,7 +1065,7 @@
                     </div>
                   </div>
                   <div class="faq_accordeon-content hidden">
-                    <div class="faq_accordeon-turn cols_2">
+                    <div class="faq_accordeon-turn cols">
                       <p>
                         Что мне следует делать, если мои денежные
                         средства не появляются на моем банковском счете?
@@ -988,6 +1100,140 @@
           </div>
         </div>
       </div>
+      <footer>
+        <div class="footer__contact cols font__thin">
+          <a class="logotype footer__contact-cell"></a>
+          <div class="footer__contact-cell">
+            Crypto CFD and Exchanges brockerage
+          </div>
+          <div class="footer__contact-lowersize footer__contact-cell">
+            Служба поддержки 24/7:
+          </div>
+          <div class="cols footer__contact-cell">
+            <img src="../../assets/img/ico/phone.svg" alt="phone"><a href="tel:3728801334">+372-880–1334</a>
+          </div>
+          <div class="cols footer__contact-cell">
+            <a href="#"><img src="../../assets/img/ico/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="../../assets/img/ico/youtube.svg" alt="youtube"></a>
+            <a href="#"><img src="../../assets/img/ico/email.svg" alt="email"></a>
+          </div>
+        </div>
+        <menu class="footer__menu cols font__thin">
+          <div class="footer__menu-description footer__menu-element">
+            LongShortCFD является уверенным участником
+            всех CFD рынков. Наши независимые брокерские
+            службы имеют более 15 лет опыта работы в отрасли.
+          </div>
+          <div class="footer__menu-element">
+            <h4 class="font__medium">Инструменты</h4>
+            <ul>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-element">
+            <h4 class="font__medium">Инструменты</h4>
+            <ul>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-element">
+            <h4 class="font__medium">Инструменты</h4>
+            <ul>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-element footer__menu-element_contact">
+            <h4 class="font__medium">Контакты</h4>
+            <ul>
+              <li class="cols">
+                <div><img src="../../assets/img/ico/phone.svg" alt="phone"></div>
+                <a href="tel:3728801334">+372-880–1334</a>
+              </li>
+              <li class="cols">
+                <div><img src="../../assets/img/ico/email.svg" alt="phone"></div>
+                <a href="mailto:info@longshortcfd.com">info@longshortcfd.com</a>
+              </li>
+              <li class="cols">
+                <div><img src="../../assets/img/ico/marker.svg" alt="phone"></div>
+                <p>GENIX SYSTEM OU,<br>
+                11415 Harju maakond, Tallinn,<br>
+                Lasnamae Linnaosa,<br>
+                Peterburitee 47</p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-element">
+            <h4 class="font__medium">Инструменты</h4>
+            <ul>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-element">
+            <h4 class="font__medium">Инструменты</h4>
+            <ul>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-element">
+            <h4 class="font__medium">Инструменты</h4>
+            <ul>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+              <li><a href="#">CFD на индексы</a></li>
+            </ul>
+          </div>
+        </menu>
+        <div class="footer__warning font__thin">
+          ПРЕДУПРЕЖДЕНИЕ О ВЫСОКОМ РИСКЕ ИНВЕСТИЦИЙ:
+          Торговля CFD очень спекулятивна, сопряжена
+          со значительным риском убытков и подходит
+          не для всех инвесторов. Перед началом
+          торговли настоятельно рекомендуем
+          прочитать и убедиться, что вы понимаете
+          информацию о рисках и предупреждены о них.
+          Существует значительный риск того, что вы
+          можете потерять все свои первоначальные
+          инвестиции. Мы советуем вам рассмотреть
+          вопрос о том, подходит ли вам торговля
+          с использованием заемных средств в свете
+          ваших личных обстоятельств. Мы рекомендуем
+          вам убедиться, что вы полностью понимаете
+          все риски, связанные с торговлей. Торговля
+          через онлайн-платформу несет дополнительные
+          риски. Обратитесь к нашему разделу правил
+          здесь. Для получения более подробной
+          информации, пожалуйста, ознакомьтесь с
+          Условиями. Сайт принадлежит Genix system ÖU.
+          <a class="footer__top">
+            <div class="footer__top-caret"></div>
+          </a>
+        </div>
+        <div class="footer__copyright font__uppercase font__thin">
+          © LONGSHORTCFD, 2020
+        </div>
+      </footer>
     </div>
   </section>
 
@@ -997,5 +1243,17 @@
   <script type="text/javascript" src="../../assets/js/form.js"></script>
   <script type="text/javascript" src="../../assets/js/accordeon.js"></script>
   <script type="text/javascript" src="../../assets/js/select.js"></script>
+
+  <script type="text/javascript">
+    let toTop = document.querySelector(".footer__top");
+
+    toTop.onclick = () => {
+      section.forEach((item, i) => {
+        item.classList.add("hidden");
+      });
+
+      section[0].classList.remove("hidden");
+    }
+  </script>
 </body>
 </html>

@@ -84,6 +84,7 @@
   padding: 15px;
   border-radius: 200px;
   border: solid 1px #fff;
+  cursor: pointer;
 }
 
 .btn__regular.primary {
