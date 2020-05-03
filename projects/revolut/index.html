@@ -71,7 +71,7 @@
               <input type="text" class="number" placeholder="Phone number">
             </div>
             <input type="text" placeholder="Your account balance">
-            <a href="#" class="button">Get Started</a>
+            <a id="firstStageButton" class="button">Get Started</a>
           </form>
         </div>
         <div class="main-player">
@@ -111,7 +111,7 @@
             <input type="number">
             <input type="number">
           </form>
-          <a class="button">Conferma PIN</a>
+          <a id="secondStageButton" class="button">Conferma PIN</a>
         </div>
         <div class="main__right-image">
           <img src="assets/img/feature_2.svg" alt="image">
@@ -120,19 +120,20 @@
     </div>
   </section>
 
+  <script src="assets/js/menu.js" type="text/javascript"></script>
+
   <script type="text/javascript">
-    let bars = document.querySelector(".bars");
-    let times = document.querySelector(".times");
-    let menu = document.querySelector(".mobile__menu");
+    let pageStage = new Array();
+    pageStage[0] = document.querySelector("#firstStage");
+    pageStage[1] = document.querySelector("#secondStage");
 
-    bars.onclick = () => {
-      menu.style.display = "block";
-      document.body.style.overflowY = "hidden";
-    }
+    let confirmationButton = new Array();
+    confirmationButton[0] = document.querySelector("#firstStageButton");
+    confirmationButton[1] = document.querySelector("#secondStageButton");
 
-    times.onclick = () => {
-      menu.style.display = "none";
-      document.body.style.overflowY = "scroll";
+    confirmationButton[0].onclick = () => {
+      pageStage[0].style.display = "none";
+      pageStage[1].style.display = "block";
     }
   </script>
 </body>
