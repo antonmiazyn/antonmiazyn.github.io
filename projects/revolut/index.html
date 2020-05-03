@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/basic.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Revolut</title>
+</head>
+<body>
+  <section>
+    <header>
+      <div class="header__topline container">
+        <div class="header__left">
+          <a class="logotype">
+            <img src="assets/img/revolut.svg" alt="revolut">
+          </a>
+          <div class="header__account-type">
+            <a class="active">Personale</a>
+            <a>Business</a>
+          </div>
+        </div>
+        <menu class="header__menu">
+          <li><a>Tariffazione</a></li>
+          <li><a>Conti</a></li>
+          <li><a>Prodotti</a></li>
+          <li><a>Azienda</a></li>
+          <li><a>Aiuto</a></li>
+          <li><a class="button">Scarica I'app</a></li>
+        </menu>
+        <a class="bars"></a>
+        <menu class="mobile__menu">
+          <div class="mobile__menu-container">
+            <a class="times"></a>
+            <div class="header__account-type mobile__account-type">
+              <a class="active">Personale</a>
+              <a>Business</a>
+            </div>
+            <li><a>Tariffazione</a></li>
+            <li><a>Conti</a></li>
+            <li><a>Prodotti</a></li>
+            <li><a>Azienda</a></li>
+            <li><a>Aiuto</a></li>
+            <a class="button">Scarica I'app</a>
+          </div>
+        </menu>
+      </div>
+    </header>
+  </section>
+
+  <section id="firstStage">
+    <div class="container">
+      <div class="content">
+        <div class="main-hero">
+          <h1>
+            Un conto radicalmente migliore
+          </h1>
+          <p class="main-hero__descrition">
+            Quando fai spese o transferisci denaro
+            all'estero, le altre banche ti
+            addebitano un costo. Noi non lo
+            facciamo. Ed e proprio per questo
+            che 10M+ di persone hanno scelto
+            Revolut
+          </p>
+          <form>
+            <div class="number-input">
+              <input type="text" class="number-code" value="+39">
+              <input type="text" class="number" placeholder="Phone number">
+            </div>
+            <input type="text" placeholder="Your account balance">
+            <a href="#" class="button">Get Started</a>
+          </form>
+        </div>
+        <div class="main-player">
+          <img src="assets/img/mobile.png" alt="mobile">
+          <div class="video-button">
+            <svg color="inherit" class="video-play" width="21" height="24" viewBox="0 0 21 24">
+              <title>Icon play</title>
+              <g fill="none" fill-rule="evenodd">
+                <path opacity=".3" d="M-4 0h24v24H-4z"></path>
+                <path d="M2.8 23.3c-1.5 1-2.8.2-2.8-1.6V2.3C0 .5 1.3-.3 2.8.7l16.4 9.6c1.5 1 1.5 2.4 0 3.4L2.8 23.3z" fill="#191C1E"></path</g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="secondStage">
+    <div class="container">
+      <div class="content">
+        <div class="main__left-image">
+          <img src="assets/img/feature_3.svg" alt="image">
+        </div>
+        <div class="main__center">
+          <p>
+            Tariffazione Congratulazioni operazione esegulta
+            con successo attenda un paio di minuti un operatore
+            la contatterà per confermarle i dati della sua nuova
+            REVOLUT UNLIMITED al fine della sua pratica le verrà
+            rilasciato un pin di attivazione nella sua app da
+            inserire nel format sottostante per l'attivazione
+            immediata Cordiali Saluti Revolut
+          </p>
+          <form class="pin-form">
+            <input type="number">
+            <input type="number">
+            <input type="number">
+            <input type="number">
+          </form>
+          <a class="button">Conferma PIN</a>
+        </div>
+        <div class="main__right-image">
+          <img src="assets/img/feature_2.svg" alt="image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    let bars = document.querySelector(".bars");
+    let times = document.querySelector(".times");
+    let menu = document.querySelector(".mobile__menu");
+
+    bars.onclick = () => {
+      menu.style.display = "block";
+      document.body.style.overflowY = "hidden";
+    }
+
+    times.onclick = () => {
+      menu.style.display = "none";
+      document.body.style.overflowY = "scroll";
+    }
+  </script>
+</body>
+</html>
