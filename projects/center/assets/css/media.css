@@ -1,0 +1,328 @@
+@media screen and (max-width: 1860px) {
+  .container {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .work-features__item {
+    height: 420px;
+  }
+
+  .hero_content {
+    padding: 90px 0;
+  }
+
+  .header__numbers a {
+    margin: 0 8px;
+  }
+
+  .footer__address {
+    max-width: 320px;
+  }
+
+  .passport-translation > div {
+    margin-right: 30px;
+    width: 50%;
+  }
+
+  .button, header, .hero,
+  .select-custom, input {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  body, .button, header, .hero,
+  .select-custom, input {
+    font-size: 16px;
+  }
+
+  h1,
+  .quality h1, .all-kinds__content h1,
+  .logotype h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3, .passport-translation__description {
+    font-size: 20px;
+  }
+
+  .logotype > div {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .logotype img {
+    height: 60px;
+  }
+
+  .title {
+    margin-bottom: 15px;
+  }
+
+  .title span::after {
+    top: 60px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .passport-translation {
+    padding: 30px 50px;
+  }
+
+  .work-features__item {
+    height: 340px;
+  }
+
+  .clients img {
+    max-width: 16.66%;
+  }
+
+  .form-fields > div {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .button, input,
+  .select-custom {
+    width: 180px;
+    padding: 15px 0;
+  }
+
+  input,
+  .select-custom {
+    width: 240px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-image: url(../img/bg/hero-mobile.png);
+  }
+
+  .hero_content {
+    width: 70%;
+  }
+
+  header .header__numbers,
+  header .header__email {
+    display: none;
+  }
+
+  .services__list-item {
+    width: 50%;
+  }
+
+  .passport-translation > div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .passport-translation {
+    justify-content: center;
+  }
+
+  .passport-translation .button {
+    margin-left: 30px;
+  }
+
+  .work-features__item {
+    height: 240px;
+    padding: 20px;
+  }
+
+  .footer__action .logotype {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .footer__address {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .footer__email {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .copyright {
+    order: 2;
+    margin-top: 15px;
+  }
+
+  .clients {
+    justify-content: flex-start;
+  }
+
+  .clients img {
+    max-width: 33.3%;
+    margin: 15px 0;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu__bars {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .all-kinds__content {
+    width: 80%;
+  }
+
+  .hero_content {
+    width: 100%;
+  }
+
+  .work-features__item {
+    width: 100%;
+    height: 380px;
+  }
+
+  .quality-content {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+
+  .about__content div {
+    width: 100%;
+  }
+
+  header .button {
+    margin-top: 30px;
+  }
+
+  .form-fields {
+    width: 100%;
+  }
+
+  .services__list-item {
+    width: 100%;
+  }
+
+  .passport-translation {
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .passport-translation input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .clients {
+    justify-content: space-between;
+  }
+
+  .clients img {
+    max-width: 25%;
+    height: 25px;
+  }
+
+  .form-description {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .footer__action > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__action .logotype {
+    justify-content: center;
+  }
+
+  .footer__action .button {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .language-switcher {
+    display: none;
+  }
+
+  header .logotype {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header .cols {
+    justify-content: center;
+  }
+
+  .menu__bars {
+    width: 0;
+  }
+
+  .menu__bars span {
+    display: none;
+  }
+
+  .menu__bars .bars {
+    margin-right: 0;
+    position: absolute;
+    top: 30px;
+    right: 6%;
+  }
+
+  header .button {
+    align-self: center;
+  }
+
+  .passport-translation__description {
+    font-size: 16px;
+  }
+
+  .clients img {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .all-kinds__content {
+    width: 100%;
+  }
+
+  h1, .quality h1, .all-kinds__content h1, .logotype h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .work-features__item {
+    height: 280px;
+  }
+
+  .quality-content {
+    padding-bottom: 0;
+  }
+
+  .title span::after {
+    top: 40px;
+  }
+}
