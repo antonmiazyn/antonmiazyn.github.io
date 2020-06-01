@@ -1,0 +1,389 @@
+/*adaptation*/
+
+@media screen and (min-width: 1800px) {
+  .progress-status__decorator {
+    max-width: 35%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .progress-status__decorator {
+    max-width: 28%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .hidden {
+    display: block;
+  }
+
+  .header__mobile-menu {
+    right: -1140px;
+    transition: right .3s;
+  }
+
+  .container {
+    padding: 0 10% 0 10%;
+  }
+
+  .header__logotype {
+    max-width: calc(100% - 56px);
+  }
+
+  .header__logotype img {
+    width: 100%;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .hero__content-tagname span {
+    display: none;
+  }
+
+  .progress-bar {
+    margin-top: -113px;
+  }
+
+  .hero__image-decoration {
+    display: none;
+  }
+
+  .progress-bar__content {
+    background-color: #FAFAFA;
+    top: calc(100% + 2px);
+    height: 75px;
+    padding: 0 10% 0 10%;
+  }
+
+  .progress-bar__content div {
+    text-align: center;
+  }
+
+  .progress-bar__content div span {
+    display: block;
+    margin-top: 8px;
+    font-family: "Gotham Pro Bold";
+  }
+
+  .greeting {
+    padding-top: 68px;
+    padding-bottom: 88px;
+  }
+
+  .donation {
+    background: #FFFFFF;
+  }
+
+  .latest-donations {
+    position: relative;
+    left: 10%;
+    width: calc(90%);
+    padding-left: 15%;
+  }
+
+  .latest-donations__table {
+    width: 560px;
+  }
+
+  .color-substrate {
+    display: none;
+  }
+
+  .donation .striped-decorator {
+    width: 100%;
+    left: 0;
+    bottom: -65px;
+  }
+
+  .donation .container {
+    padding: 0;
+  }
+
+  .donation__form {
+    padding: 60px 80px 85px 10%;
+  }
+
+  .donation__form-wrapper {
+    background-color: #FAFAFA;
+    width: calc(20% + 768px);
+  }
+
+  .explore {
+    padding: 165px 10% 105px 10%;
+  }
+
+  .explore .explore__content {
+    width: 100%;
+    margin-top: 42px;
+  }
+
+  .explore__button {
+    top: 0;
+    margin-top: 42px;
+  }
+
+  .support__card {
+    background-image: url(../img/MaskGroup.png);
+    background-position: 50% 40px;
+    background-repeat: no-repeat;
+  }
+
+  .support__image {
+    width: 130px;
+  }
+
+  .support__content h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .support__content h1 span::before {
+    height: 3px;
+    top: calc(100% - 6px);
+    width: calc(100% + 6px);
+    left: -3px;
+  }
+
+  .support__content {
+    background-image: none;
+  }
+
+  .reasons__item {
+    width: 100%;
+  }
+
+  .footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: calc(10% + 70px);
+    padding-right: calc(10% + 70px);
+    align-items: flex-start;
+  }
+
+  .footer div, .footer ul {
+    width: 50%;
+  }
+
+  .footer > div {
+    order: 4;
+    margin-top: 40px;
+  }
+
+  .footer ul:last-child {
+    margin-top: 40px;
+  }
+}
+
+/*==================================================*/
+
+@media screen and (max-width: 980px) {
+  .progress-bar {
+    margin-top: -112px;
+  }
+
+  .progress-status__decorator {
+    display: none;
+  }
+
+  .donation__form {
+    padding: 60px 10% 85px 10%;
+  }
+
+  .donation__form-wrapper {
+    width: 100%;
+  }
+
+  .latest-donations {
+    left: 0;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .footer div {
+    width: 100%;
+  }
+
+  .footer ul:last-child {
+    width: 100%;
+  }
+
+  .support__image {
+    order: 1;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .support__image img {
+    width: 130px;
+  }
+
+  .support__image:last-child {
+    margin-top: 40px;
+  }
+
+  .support__content {
+    order: 0;
+    width: 100%;
+  }
+
+  .support__card {
+    padding-top: 0;
+    padding-bottom: 60px;
+    background-position: 50% calc(100% + 60px);
+  }
+
+  .footer {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .hero {
+    background-image: none;
+    padding: 0;
+  }
+
+  .hero .container {
+    padding: 0;
+  }
+
+  .hero__image {
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/page-header-journal1.png);
+    background-size: cover;
+    background-position: 50% 100%;
+    padding: 80px 10% 0 10%;
+    top: 0;
+  }
+
+  .hero__image img {
+    width: 180px;
+    position: relative;
+    top: 28px;
+  }
+
+  .hero__content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero__content-intro {
+    width: 100%;
+    text-align: center;
+    padding: 40px 10% 20px 10%;
+    z-index: 100;
+    position: static;
+  }
+
+  .hero__content-intro::before {
+    display: none;
+  }
+
+  .hero__content-tagname {
+    margin-top: 0;
+  }
+
+  .hero__mobile-title {
+    width: 100%;
+    padding: 20px 10% 50px 10%;
+    position: relative;
+  }
+
+  .hero__mobile-title::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 305px;
+    background-color: #FAFAFA;
+  }
+
+  .progress-bar {
+    margin-top: -25px;
+  }
+
+  .progress-line {
+    margin: auto;
+    width: 80%;
+  }
+
+  .progress-bar__content {
+    height: 280px;
+    padding: 20px 0 20px 0;
+  }
+
+  .progress-bar__content div {
+    width: 100%;
+  }
+
+  .greeting {
+    padding-top: 280px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  body {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 13px;
+  }
+
+  .container,
+  .hero__image,
+  .hero__mobile-title,
+  .hero__content-intro,
+  .latest-donations,
+  .progress-bar__content,
+  .footer,
+  .donation__form {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .progress-line {
+    width: 90%;
+  }
+
+  .donation__form {
+    text-align: center;
+    width: 100%;
+  }
+
+  .donation__form button.large,
+  .donation__form input.large {
+    width: 100%;
+  }
+
+  .donation__form button.small,
+  .donation__form input.small {
+    width: calc(50% - 15px);
+  }
+
+  .donation__form-action img {
+    display: none;
+  }
+
+  .latest-donations__table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .reasons__illustration {
+    margin: auto;
+  }
+
+  .reasons__item-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 18px;
+  }
+}

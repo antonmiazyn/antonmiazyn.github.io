@@ -1,0 +1,929 @@
+@font-face {
+  font-family: "Gotham Pro Regular";
+  src: url(../font/GothamPro/GothamPro.ttf);
+}
+
+@font-face {
+  font-family: "Gotham Pro Medium";
+  src: url(../font/GothamPro/GothamPro-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Gotham Pro Bold";
+  src: url(../font/GothamPro/GothamPro-Bold.ttf);
+}
+
+/*==================================================*/
+
+/*default styles reset*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: normal;
+  flex-wrap: wrap;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+a, a:hover,
+button, button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+  transition: .1s;
+}
+
+button {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: "Gotham Pro Bold";
+}
+
+ul, nav, menu, li {
+  list-style: none;
+}
+
+input {
+  font-family: "Gotham Pro Regular";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*basic page styles*/
+
+h1 {
+  font-family: "Gotham Pro Bold";
+  font-size: 2.5em;
+}
+
+h2 {
+  font-family: "Gotham Pro Bold";
+  font-size: 1.875em;
+}
+
+h3 {
+  font-family: "Gotham Pro Bold";
+  font-size: 1.5625em;
+}
+
+h4 {
+  font-family: "Gotham Pro Bold";
+  font-size: 1.25em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 28px;
+}
+
+/*custom elements*/
+
+.hidden {
+  display: none;
+}
+
+.bolder {
+  font-family: "Gotham Pro Medium";
+}
+
+button.unactive {
+  background-color: #F87D6C;
+  box-shadow: 0 6px 15px #FF998B;
+  color: #FFFFFF;
+  border: solid 2px #F87D6C;
+}
+
+button.active {
+  background-color: #9D2716;
+  color: #FFFFFF;
+  border: solid 2px #9D2716;
+  box-shadow: none;
+}
+
+button.unactive:hover {
+  background-color: #9D2716;
+  color: #FFFFFF;
+  border: solid 2px #9D2716;
+  box-shadow: none;
+}
+
+.flexible {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  margin: auto;
+  max-width: 1140px;
+  height: 100%;
+  position: relative;
+}
+
+.striped-decorator {
+  width: 100%;
+  height: 130px;
+  background: repeating-linear-gradient(-45deg, #e4e4e4, #e4e4e4 1px, #FAFAFA 1px, #FAFAFA 3px);
+  background: -webkit-repeating-linear-gradient(-45deg, #e4e4e4, #e4e4e4 1px, #FAFAFA 1px, #FAFAFA 3px);
+  background: -moz-repeating-linear-gradient(-45deg, #e4e4e4, #e4e4e4 1px, #FAFAFA 1px, #FAFAFA 3px);
+  background: -o-repeating-linear-gradient(-45deg, #e4e4e4, #e4e4e4 1px, #FAFAFA 1px, #FAFAFA 3px);
+  background: -ms-repeating-linear-gradient(-45deg, #e4e4e4, #e4e4e4 1px, #FAFAFA 1px, #FAFAFA 3px);
+}
+
+/*==================================================*/
+
+body {
+  margin: auto;
+  max-width: 1920px;
+  background-color: #FFFFFF;
+  font-family: "Gotham Pro Regular", sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+/*header section*/
+
+header {
+  margin: auto;
+  height: 90px;
+}
+
+.header__logotype {
+  display: block;
+}
+
+.header__logotype img {
+  width: 264px;
+}
+
+.header__menu li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.header__menu li a {
+  font-family: "Gotham Pro Bold";
+}
+
+.header__menu li a:hover,
+.footer ul li a:hover {
+  color: #F87D6C;
+}
+
+.header__bars {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  position: relative;
+}
+
+.header__bars div {
+  background-color: #000000;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: transform .1s;
+}
+
+.header__bars div:first-child {
+  top: 5px;
+}
+
+.header__bars div:nth-child(2) {
+  top: 12px;
+}
+
+.header__bars div:nth-child(3) {
+  top: 19px;
+}
+
+.bars__to__times div:first-child {
+  top: 12px;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+.bars__to__times div:nth-child(2) {
+  display: none;
+}
+
+.bars__to__times div:nth-child(3) {
+  top: 12px;
+  transform: rotate(-45deg);
+  border-radius: 2px;
+}
+
+/*mobile menu*/
+
+.header__mobile-menu {
+  width: 90%;
+  position: fixed;
+  top: 90px;
+  right: 0;
+  padding: 20px 10% 20px 20px;
+  background-color: #FFFFFF;
+  z-index: 20;
+  height: 100vh;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.mobile__menu-list li {
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.mobile__menu-list li a {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #f87d6c;
+  font-family: "Gotham Pro Bold";
+}
+
+.mobile__menu-list li a:hover {
+  background-color: #e5e5e5;
+}
+
+.mobile_menu-site {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666666;
+  padding-left: 15px;
+}
+
+.mobile_menu-site span {
+  display: block;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: "Gotham Pro Bold";
+}
+
+.header__mobile-menu ul {
+  padding-left: 15px;
+  margin-top: 30px;
+  color: #666666;
+  font-size: 14px;
+}
+
+.header__mobile-menu ul li:nth-child(2) {
+  margin: 10px 0 10px 0;
+  font-family: "Gotham Pro Medium";
+}
+
+.header__mobile-menu ul li:nth-child(3) {
+  text-decoration: underline;
+  font-family: "Gotham Pro Medium";
+}
+
+/*hero section*/
+
+.hero {
+  margin: auto;
+  padding: 124px 0 80px 0;
+  background-image: url(../img/page-header-journal1.png);
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+.hero__aligner {
+  align-items: flex-start;
+}
+
+.hero__image {
+  width: 280px;
+  position: relative;
+  top: 18px;
+  z-index: 2;
+}
+
+.hero__image img {
+  width: 100%;
+}
+
+.hero__image-decoration {
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+}
+
+.hero__image-decoration div {
+  width: 18px;
+  height: 18px;
+}
+
+.hero__image-decoration
+div:nth-child(1),
+.hero__image-decoration
+div:nth-child(4) {
+  background-color: #89888b;
+}
+
+.hero__image-decoration
+div:nth-child(2) {
+  background-color: #59585b;
+}
+
+.hero__image-decoration
+div:nth-child(3) {
+  background-color: #FFFFFF;
+}
+
+.hero__content {
+  width: calc(100% - 280px);
+}
+
+.hero__content-intro {
+  width: 378px;
+  background-color: #232323;
+  color: #fff;
+  text-align: left;
+  font-family: "Gotham Pro Bold";
+  padding: 12px 25px 12px 45px;
+  position: relative;
+}
+
+.hero__content-intro span {
+  font-size: 12px;
+  color: #B7B7B7;
+}
+
+.hero__content-intro::before {
+  content: " ";
+  width: 18px;
+  height: 18px;
+  background-color: #232323;
+  position: absolute;
+  top: -18px;
+  left: -18px;
+}
+
+.hero__mobile-title {
+  padding: 18px 25px 18px 45px;
+  background-color: #F87D6C;
+}
+
+.hero__content-tagname {
+  color: #FFFFFF;
+  margin-top: 25px;
+}
+
+.hero__content-tagname span {
+  display: inline-block;
+  padding: 0 25px 0 45px;
+  background-color: #F87D6C;
+}
+
+.hero__content-tagname span:nth-child(1) {
+  padding: 18px 25px 0 45px;
+}
+
+.hero__content-tagname span:nth-child(2) {
+  padding: 13px 25px 13px 45px;
+}
+
+.hero__content-tagname span:nth-child(3) {
+  padding: 0 25px 18px 45px;
+}
+
+/*progress-bar styles*/
+
+.progress-bar {
+  padding: 0 0 85px 0;
+  margin-top: -131px;
+  background-color: #FFFFFF;
+}
+
+.progress-line {
+  height: 48px;
+  border: solid 2px #ffc473;
+  background-color: #fff;
+  position: relative;
+}
+
+.progress-line > .flexible {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: flex-start;
+}
+
+.progress-status,
+.progress-status__decorator {
+  height: 44px;
+  background: repeating-linear-gradient(-45deg, #ffc473, #ffc473 10px, #ffba5b 10px, #ffba5b 20px);
+  background: -webkit-repeating-linear-gradient(-45deg, #ffc473, #ffc473 10px, #ffba5b 10px, #ffba5b 20px);
+  background: -moz-repeating-linear-gradient(-45deg, #ffc473, #ffc473 10px, #ffba5b 10px, #ffba5b 20px);
+  background: -o-repeating-linear-gradient(-45deg, #ffc473, #ffc473 10px, #ffba5b 10px, #ffba5b 20px);
+  background: -ms-repeating-linear-gradient(-45deg, #ffc473, #ffc473 10px, #ffba5b 10px, #ffba5b 20px);
+  z-index: 1;
+}
+
+.progress-status__decorator {
+  width: 100%;
+  max-width: 25%;
+}
+
+.progress-bar__content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-left: 280px;
+  z-index: 3;
+}
+
+.progress-bar__content div {
+  margin-left: 25px;
+}
+
+/*greeting section*/
+
+.greeting {
+  padding-bottom: 88px;
+}
+
+.greeting h2 {
+  font-size: 2.1875em;
+}
+
+.greeting p {
+  margin-top: 32px;
+}
+
+.greeting__sharing {
+  margin-top: 32px;
+  justify-content: flex-start;
+}
+
+.greeting__sharing div:first-child {
+  width: 138px;
+  color: #F87D6C;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Gotham Pro Medium";
+}
+
+.greeting__sharing div a {
+  display: inline-block;
+  margin-left: 14px;
+}
+
+/*donation section*/
+
+.donation {
+  background: linear-gradient(left, #FAFAFA 50%, #FFFFFF 50%);
+  background: -webkit-linear-gradient(left, #FAFAFA 50%, #FFFFFF 50%);
+  background: -moz-linear-gradient(left, #FAFAFA 50%, #FFFFFF 50%);
+  background: -o-linear-gradient(left, #FAFAFA 50%, #FFFFFF 50%);
+  background: -ms-linear-gradient(left, #FAFAFA 50%, #FFFFFF 50%);
+  position: relative;
+}
+
+.donation__form {
+  width: 768px;
+  background-color: #FAFAFA;
+  padding: 60px 80px 60px 0;
+  z-index: 5;
+  position: relative;
+}
+
+.donation__form h3 {
+  margin-top: 8px;
+}
+
+.donation__form input,
+.donation__form button {
+  margin-top: 25px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.donation__form button.large,
+.donation__form input.large {
+  width: calc(50% - 15px);
+  padding-left: 22px;
+}
+
+.donation__form button.large {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.donation__form button.small,
+.donation__form input.small {
+  width: calc(25% - 24px);
+  text-align: center;
+}
+
+.donation__form input.small {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+.donation__form input,
+.donation__form button.select {
+  border: solid 2px #E5E5E5;
+  padding-left: 22px;
+}
+
+.donation__form input {
+  font-family: "Gotham Pro Bold";
+}
+
+.donation__form input::placeholder {
+  color: #A8A8A8;
+  font-family: "Gotham Pro Regular";
+}
+
+.donation__form input:focus {
+  border: solid 2px #FFBA5B;
+}
+
+.donation__form button.select {
+  background-color: #FFFFFF;
+  text-transform: capitalize;
+  text-align: left;
+  color: #000000;
+  position: relative;
+}
+
+.donation__form button.select .select-arrow {
+  border: solid 6px transparent;
+  border-top: solid 8px #f87d6c;
+  position: absolute;
+  top: calc(50% - 4px);
+  right: 16px;
+}
+
+.donation__form button.select
+.select__dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: -2px;
+  right: -2px;
+  display: none;
+  background-color: #FAFAFA;
+  z-index: 7;
+}
+
+.donation__form button.select
+.select__dropdown div {
+  margin-top: -2px;
+  padding: 10px;
+  padding-left: 22px;
+  background-color: #FAFAFA;
+  border: solid 2px #f87d6c;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.donation__form button.select
+.select__dropdown div:first-child {
+  border-top: none;
+}
+
+.donation__form button.select
+.select__dropdown div:hover {
+  background-color: #f87d6c;
+  color: #FFFFFF;
+}
+
+.donation__form button:active {
+  background-color: #9D2716;
+  color: #FFFFFF;
+  border: solid 2px #9D2716;
+}
+
+.donation__form button.select:active {
+  background-color: #FFFFFF;
+  border: solid 2px #FFBA5B;
+  color: #000000;
+}
+
+.donation__form button.select.active {
+  background-color: #FFFFFF;
+  border: solid 2px #FFBA5B;
+  color: #000000;
+}
+
+.donation__form-choice {
+  margin-top: 35px;
+}
+
+.donation__form-checkbox {
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.donation__form-checkbox input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.donation__form-checkbox label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border: solid 1px #f87d6c;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: solid 5px #f87d6c;
+  display: none;
+}
+
+.donation__form-checkbox input:checked ~
+.checkmark {
+  display: block;
+}
+
+.donation__form-action {
+  margin-top: 35px;
+  justify-content: flex-start;
+}
+
+.donation__form-action button {
+  margin-top: 0;
+  margin-right: 35px;
+}
+
+.donation .striped-decorator {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  left: 50%;
+  bottom: 105px;
+  z-index: 4;
+}
+
+.donation .color-substrate {
+  position: absolute;
+  right: 0;
+  left: 70%;
+  top: -25px;
+  bottom: 105px;
+  z-index: 5;
+  height: 515px;
+  background-color: #ffba5b;
+  box-shadow: 5px 15px 25px #E0E0E0;
+}
+
+.latest-donations {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  left: 728px;
+  padding: 85px 30px 85px 50px;
+  height: 515px;
+  background-color: #ffba5b;
+  z-index: 6;
+}
+
+.latest-donations__table {
+  margin-top: 50px;
+}
+
+.latest-donations__header {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Gotham Pro Medium";
+}
+
+.latest-donations__row {
+  font-family: "Gotham Pro Medium";
+  margin-top: 25px;
+}
+
+.latest-donations__row div:nth-child(2) {
+  font-family: "Gotham Pro Regular";
+}
+
+/*explore more section*/
+
+.explore {
+  padding: 105px 0 105px 0;
+  align-items: flex-start;
+}
+
+.explore div {
+  width: 280px;
+}
+
+.explore .explore__content {
+  width: calc(100% - 322px);
+}
+
+.explore h1 {
+  color: #F87D6C;
+  font-size: 50px;
+}
+
+.explore .explore__content p {
+  margin-top: 28px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.explore .explore__content p:first-child {
+  margin-top: 0;
+}
+
+.explore__button {
+  width: 280px;
+  position: relative;
+  top: -96px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.explore__button:active {
+  background-color: #9D2716;
+  color: #FFFFFF;
+  border: solid 2px #9D2716;
+  box-shadow: none;
+}
+
+/*reasons section*/
+
+.reasons {
+  background-color: #FAFAFA;
+  padding: 90px 0 155px 0;
+}
+
+.reasons h1 {
+  margin: auto;
+  text-align: center;
+}
+
+.reasons__content {
+  margin-top: 10px;
+  padding: 0 60px 0 60px;
+}
+
+.reasons__item {
+  width: calc(50% - 40px);
+  margin-top: 50px;
+}
+
+.reasons__illustration {
+  background-color: #F2F2F2;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.reasons__illustration img {
+  width: 100%;
+}
+
+.reasons__item-content {
+  width: calc(100% - 108px);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.reasons__item-content h4 {
+  margin-bottom: 8px;
+}
+
+/*support section*/
+
+.support__card {
+  padding: 0 40px 0 40px;
+  box-shadow: 0 10px 50px #FBFBFB;
+  position: relative;
+  top: -65px;
+  background-color: #FFFFFF;
+  margin-bottom: -130px;
+}
+
+.support__image {
+  display: block;
+  width: 210px;
+}
+
+.support__image img {
+  width: 100%;
+}
+
+.support__content {
+  background-image: url(../img/MaskGroup.png);
+  background-position: 50% 40px;
+  background-repeat: no-repeat;
+  width: calc(100% - 510px);
+  text-align: center;
+  padding: 125px 0 85px 0;
+}
+
+.support__content h1 {
+  line-height: 50px;
+}
+
+.support__content h1 span {
+  display: inline-block;
+  color: #F87D6C;
+  position: relative;
+  text-shadow: 1px 1px 0 #FFFFFF;
+  z-index: 1;
+}
+
+.support__content h1 span::before {
+  content: "";
+  width: calc(100% + 10px);
+  height: 9px;
+  background-color: #F87D6C;
+  position: absolute;
+  top: calc(100% - 12px);
+  left: -5px;
+  z-index: -1;
+}
+
+/*footer section*/
+
+.footer {
+  padding: 70px 0 70px 0;
+  font-size: 14px;
+}
+
+.footer__logotype {
+  width: 220px;
+  display: block;
+}
+
+.footer__logotype img {
+  width: 100%;
+}
+
+.footer__social {
+  margin-top: 18px;
+  justify-content: flex-start;
+}
+
+.footer__social span {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Gotham Pro Bold";
+  color: #A8A8A8;
+  width: 125px;
+  margin-right: 12px;
+}
+
+.footer__social a {
+  display: inline-block;
+  margin: 4px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #FAFAFA;
+}
+
+.footer__social a img {
+  width: 100%;
+}
+
+.footer ul li {
+  font-family: "Gotham Pro Bold";
+  padding: 9px;
+}
+
+.footer ul:last-child li {
+  font-family: "Gotham Pro Regular";
+}
+
+.footer ul:last-child li:nth-child(2) {
+  font-family: "Gotham Pro Bold";
+}
