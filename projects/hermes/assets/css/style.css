@@ -653,6 +653,88 @@ header.noir .header-content {
   text-decoration: none;
 }
 
+/*------- PRODUCT PAGE -------*/
+
+.product-page-titling {
+  background-position: 50% 50%;
+}
+
+.product-section {
+  padding: 3rem 0;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.product-section.centered {
+  text-align: center;
+}
+
+.product-section.centered .product-description ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-section.centered .product-description ul li {
+  display: inline-block;
+  padding: .5rem 1rem;
+}
+
+.product-section.centered .product-description p {
+  text-indent: 0;
+}
+
+.product-section.dedicated {
+  background-color: #f4f4f4;
+  padding: 4rem 0;
+}
+
+.product-section .product-description {
+  padding: 0 8vw;
+}
+
+.product-section .product-description p {
+  margin-top: 3rem;
+  text-indent: 1.5rem;
+  line-height: 1.6em;
+}
+
+.product-section .product-description h4 {
+  margin-bottom: .85rem;
+}
+
+.product-section .product-description ul {
+  width: 50%;
+}
+
+.product-section .product-description ul li {
+  padding: .25rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.product-section .product-description ul li::before {
+  content: "";
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+  background-color: #e8d173;
+  position: absolute;
+  left: 0;
+  top: calc(50% - .3rem);
+}
+
+.product-section .product-description span {
+  font-weight: 600;
+}
+
+.product-information-image {
+  padding: 2rem 8vw;
+}
+
+.product-information-image img {
+  width: 100%;
+}
+
 /*------- Block: Footer-------*/
 
 footer {
