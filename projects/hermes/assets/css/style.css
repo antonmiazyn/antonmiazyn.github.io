@@ -36,6 +36,11 @@ h1 {
   letter-spacing: 1px;
 }
 
+h1 span {
+  color: #e8d173;
+  text-shadow: 4px 4px 2px #111;
+}
+
 h2 {
   font-size: 1.8rem;
   font-weight: 700;
@@ -44,6 +49,13 @@ h2 {
 h3 {
   font-size: .8rem;
   font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: .8rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -179,6 +191,14 @@ h3 {
   left: calc(50% - 24px);
 }
 
+.main-titling h2 img {
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-right: .5rem;
+  position: relative;
+  top: .25rem;
+}
+
 /*---------------*/
 
 body {
@@ -246,13 +266,21 @@ header.noir .header-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
 }
 
-.main-navigation .nav-product {
+.main-navigation .nav-product,
+.main-navigation .nav-page {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  padding: 1rem;
+  padding: .85rem;
+}
+
+.main-navigation .nav-page {
+  color: #9d9d9d;
+  padding-top: 0;
+  padding-bottom: 1.8rem;
 }
 
 .main-navigation .nav-social-networks {
@@ -283,11 +311,13 @@ header.noir .header-content {
   filter: brightness(1.25);
 }
 
-.main-navigation .nav-product a {
+.main-navigation .nav-product a,
+.main-navigation .nav-page a {
   text-decoration: none;
 }
 
-.main-navigation .nav-product a:hover {
+.main-navigation .nav-product a:hover,
+.main-navigation .nav-page a:hover {
   color: #e8d173;
 }
 
@@ -335,11 +365,6 @@ header.noir .header-content {
 
 .main-banner-content h1 {
   margin-top: 2rem;
-}
-
-.main-banner-content h1 span {
-  color: #e8d173;
-  text-shadow: 4px 4px 2px #111;
 }
 
 .main-banner-content .down-arrow {
@@ -545,6 +570,89 @@ header.noir .header-content {
   filter: brightness(.65);
 }
 
+/*------- INNER PAGES -------*/
+
+.inner-page-titling {
+  height: 18vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: 50% 100%;
+  color: #fff;
+}
+
+.inner-page-titling h1 {
+  padding: 1rem 2rem;
+  background-color: rgba(1, 1, 9, .7);
+}
+
+.inner-page-content {
+  padding-bottom: 5rem;
+}
+
+.inner-page .gallery-slider .gallery-slide {
+  width: 24vw;
+  height: 24vw;
+}
+
+/*------- ABOUT PAGE -------*/
+
+.about-page-titling {
+  background-image: url("../img/bulgarian-port.jpg");
+}
+
+.about-section {
+  padding: 3rem 0;
+  margin-top: 3rem;
+}
+
+.about-section.dedicated {
+  background-color: #f4f4f4;
+  padding: 4rem 0;
+}
+
+.about-description {
+  width: 100%;
+  max-width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6em;
+}
+
+.about-description span {
+  font-weight: 600;
+}
+
+.about-contact-block {
+  padding: 0 8vw;
+}
+
+.about-contact-block-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 4vw;
+}
+
+.about-contact-block .about-contact-block-row:nth-child(2n) {
+  background-color: #ececec;
+}
+
+.about-contact-block-left h4 {
+  margin-bottom: .5rem;
+}
+
+.about-contact-block-left ul li {
+  padding: .25rem 0;
+}
+
+.about-contact-block-left a:hover {
+  text-decoration: none;
+}
+
 /*------- Block: Footer-------*/
 
 footer {
@@ -595,10 +703,21 @@ footer {
 
 .footer-content .footer-social-networks {
   width: 200px;
+  text-align: center;
 }
 
 .footer-content .footer-social-networks a {
   margin: 0 .5rem;
+}
+
+.footer-content .footer-social-networks .footer-about-page {
+  display: block;
+  width: 100%;
+  margin: .5rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .65rem;
+  font-weight: 600;
 }
 
 .footer-content .footer-social-networks a img {
@@ -616,6 +735,7 @@ footer {
   color: #bfbfbf;
   text-align: center;
   position: relative;
+  font-size: .8rem;
 }
 
 .to-top {
