@@ -1,0 +1,282 @@
+@media screen and (max-width: 1268px) {
+  .logotype {
+    min-width: 180px;
+  }
+
+  .main-navigation {
+    width: 52vw;
+    right: -52vw;
+  }
+
+  .products-grid-left,
+  .products-grid-right {
+    width: 100%;
+  }
+
+  .products-grid-cell.lg,
+  .products-grid-cell.sm {
+    height: 38vw;
+  }
+
+  .contact-container .contact-data {
+    width: 100%;
+  }
+
+  .contact-container .contact-data {
+    padding-bottom: 3rem;
+  }
+
+  .contact-container .contact-data .contact-data-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .contact-container .contact-map {
+    width: 60%;
+    margin: auto;
+  }
+
+  .contact-container .contact-map .contact-map-wrapper {
+    height: 38vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 96vw;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content .footer-navigation {
+    margin: 3rem 0;
+  }
+
+  .inner-page-titling {
+    height: 300px;
+  }
+
+  .about-description {
+    max-width: 100%;
+  }
+
+  .about-contact-block {
+    padding: 0;
+  }
+
+  .inner-page .gallery-slider .gallery-slide {
+    width: 48vw;
+    height: 48vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.6rem;
+    line-height: 1.4em;
+  }
+
+  h1 span {
+    line-height: 1.4em;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  .main-titling p {
+    max-width: 100%;
+  }
+
+  .products-grid-inrow {
+    width: 100%;
+  }
+
+  .products-grid-cell.md {
+    width: 100%;
+    height: 38vw;
+  }
+
+  .gallery-slider .gallery-slide {
+    width: 54vw;
+    height: 54vw;
+  }
+
+  .contact-container .contact-map {
+    width: 100%;
+  }
+
+  .contact-container .contact-map .contact-map-wrapper {
+    height: 54vw;
+  }
+
+  .footer-content .footer-navigation {
+    width: 100%;
+  }
+
+  .footer-content .footer-navigation ul {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-navigation {
+    width: 100%;
+    right: -100%;
+  }
+
+  .inner-page-titling h1 {
+    margin-top: 110px;
+  }
+
+  .header-content {
+    height: 110px;
+  }
+
+  header.noir,
+  .inner-page-header {
+    background-color: #fff;
+  }
+
+  .inner-page-header .toggle {
+    filter: brightness(0);
+  }
+
+  header.noir .header-content,
+  .inner-page-header .header-content {
+    height: 110px;
+  }
+
+  .inner-page-titling {
+    height: 100vh
+  }
+
+  .about-contact-block-right {
+    display: none;
+  }
+
+  .product-section .product-description {
+    padding: 0;
+  }
+
+  .product-information-image {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.11rem;
+  }
+
+  .inner-page-titling h1 {
+    margin-top: 60px;
+  }
+
+  .header-content {
+    height: 60px;
+  }
+
+  header.noir .header-content,
+  .inner-page-header .header-content {
+    height: 60px;
+  }
+
+  header .logotype {
+    min-width: 110px;
+  }
+
+  .products-grid-cell .products-grid-title {
+    font-size: 1.4rem;
+  }
+
+  .products-grid-cell.md,
+  .products-grid-cell.sm,
+  .products-grid-cell.lg {
+    height: 54vw;
+  }
+
+  .product-section .product-description {
+    text-align: justify;
+  }
+
+  .product-section.centered {
+    text-align: justify;
+  }
+
+  .product-section.centered .product-description ul {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .product-section .product-description ul {
+    width: 100%;
+  }
+
+  .product-section.centered .product-description ul li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main-gallery {
+    padding: 4rem 0;
+  }
+
+  .gallery-slider .gallery-slide,
+  .inner-page .gallery-slider .gallery-slide {
+    width: 62vw;
+    height: 62vw;
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contact-container .contact-map {
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  h4 {
+    font-size: 10px;
+  }
+
+  .contact-data-row {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .contact-data-row span,
+  .contact-data-row span img {
+    margin-right: 10px;
+  }
+}

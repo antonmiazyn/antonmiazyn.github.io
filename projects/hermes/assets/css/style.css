@@ -39,6 +39,7 @@ h1 {
 h1 span {
   color: #e8d173;
   text-shadow: 4px 4px 2px #111;
+  line-height: .8em;
 }
 
 h2 {
