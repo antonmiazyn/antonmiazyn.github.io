@@ -1,0 +1,12 @@
+.parallax {
+  transform: none;
+  transition: transform .3s;
+}
+
+.p-vertical {
+  transform: translateY(0);
+}
+
+.p-horizontal {
+  transform: translateX(0);
+}
