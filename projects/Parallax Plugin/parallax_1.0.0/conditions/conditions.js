@@ -2,7 +2,6 @@
 /* === Vertical Condition Parallax === */
 
 class Vertical {
-  #result;
 
   constructor(speed, max, y) {
     this.step = 10;
@@ -10,6 +9,7 @@ class Vertical {
     this.max = max;
     this.y = y;
     this.result = 0;
+    this.top = 0;
   }
 
   setSpeed(value) {
@@ -22,6 +22,14 @@ class Vertical {
 
   setY(value) {
     this.y = value;
+  }
+
+  setTop(value){
+    this.top = value;
+  }
+
+  getTop() {
+    return this.top;
   }
 
   setResult(value) {
@@ -46,14 +54,14 @@ let vertical_allowed = true;
 /* === Horizontal Condition Parallax === */
 
 class Horizontal {
-  #result;
 
-  constructor(speed, max, x) {
+  constructor(speed, max, y) {
     this.step = 10;
     this.speed = speed;
     this.max = max;
-    this.x = x;
+    this.y = y;
     this.result = 0;
+    this.top = 0;
   }
 
   setSpeed(value) {
@@ -64,8 +72,16 @@ class Horizontal {
     this.max = value;
   }
 
-  setX(value) {
-    this.x = value;
+  setY(value) {
+    this.y = value;
+  }
+
+  setTop(value) {
+    this.top = value;
+  }
+
+  getTop() {
+    return this.top;
   }
 
   setResult(value) {
