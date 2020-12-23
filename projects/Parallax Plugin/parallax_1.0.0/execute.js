@@ -88,7 +88,11 @@ function setVerticalProperties() {
   vertical_objects.forEach((v_o, i) => {
     if(v_elements) {
       v_o.setSpeed(Number(v_elements[i].getAttribute("speed")));
-      v_o.setMax(Number(v_elements[i].getAttribute("max")));
+      if(Number(v_elements[i].getAttribute("speed")) < 0) {
+        v_o.setMax(- Number(v_elements[i].getAttribute("max")));
+      } else {
+        v_o.setMax(Number(v_elements[i].getAttribute("max")));
+      }
       v_o.setY(Number(position.y));
     }
   });
@@ -119,9 +123,10 @@ window.addEventListener("mousewheel", (e) => {
       if(v_elements) {
         v_elements.forEach((v_e, i) => {
           if(vertical_objects[i].result >= vertical_objects[i].max) {
-            console.log("more")
+            v_e.style.transform = "translateY(" + vertical_objects[i].max + "%)";
+          } else {
+            v_e.style.transform = "translateY(" + vertical_objects[i].moveDown() + "%)";
           }
-          v_e.style.transform = "translateY(" + vertical_objects[i].moveDown() + "%)";
         });
       }
     }
