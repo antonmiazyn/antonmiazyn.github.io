@@ -114,7 +114,7 @@ window.onload = () => {
     let element_speed = element.speed;
     let element_max = element.max;
 
-    horizontal_objects[index] = new Horizontal(element_speed, element_max, position.x);
+    horizontal_objects[index] = new Horizontal(element_speed, element_max, position.y);
   }
 
   function setHorizontalProperties() {
@@ -133,6 +133,35 @@ window.onload = () => {
           h_o.setMax(Number(h_elements[i].getAttribute("max")));
         }
         h_o.setY(Number(position.y));
+      }
+    });
+  }
+
+  //=======================
+
+  let mousemove_objects = [];
+
+  function createMousemoveObject(element, index) {
+    let element_speed = element.speed;
+    let element_max_x = element.max_x;
+    let element_max_y = element.max_y;
+
+    mousemove_objects[index] = new Mousemove(element_speed, element_max_x, element_max_x, position.y);
+  }
+
+  function setMousemoveProperties() {
+    m_elements.forEach((m_e, i) => {
+      createMousemoveObject(m_e, i);
+
+      mousemove_objects[i].setTop(getElementTopOffset(m_e));
+    });
+
+    mousemove_objects.forEach((m_o, i) => {
+      if(m_elements) {
+        m_o.setSpeed(Number(m_elements[i].getAttribute("speed")));
+        m_o.setXMax(Number(m_elements[i].getAttribute("max_x")));
+        m_o.setYMax(Number(m_elements[i].getAttribute("max_y")));
+        m_o.setY(Number(position.y));
       }
     });
   }
@@ -264,5 +293,22 @@ window.onload = () => {
 
   window.onscroll = () => {
     setPagePositions(position);
+  }
+
+  document.onmousemove = (e) => {
+    let mouseXPosition = e.clientX;
+    let mouseYPosition = e.clientY;
+
+    if(mouseXPosition > window.innerWidth / 2 && mouseYPosition > window.innerHeight / 2) {
+      console.log("bottom right")
+    } else if(mouseXPosition < window.innerWidth / 2 && mouseYPosition > window.innerHeight / 2) {
+      console.log("bottom left")
+    } else if(mouseXPosition > window.innerWidth / 2 && mouseYPosition < window.innerHeight / 2) {
+      console.log("top right")
+    } else if(mouseXPosition < window.innerWidth / 2 && mouseYPosition < window.innerHeight / 2) {
+      console.log("top left")
+    } else {
+      console.log("somth else")
+    }
   }
 }

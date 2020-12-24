@@ -102,3 +102,56 @@ class Horizontal {
 }
 
 let horizontal_allowed = true;
+
+/* === Mousemove Condition Parallax === */
+
+class Mousemove {
+
+  constructor(speed, max_x, max_y, y) {
+    this.step = 10;
+    this.speed = speed;
+    this.max_x = max_x;
+    this.max_y = max_y;
+    this.y = y;
+    this.result = [0, 0];
+    this.top = 0;
+  }
+
+  setSpeed(value) {
+    this.speed = value;
+  }
+
+  setXMax(value) {
+    this.max_x = value;
+  }
+
+  setYMax(value) {
+    this.max_y = value;
+  }
+
+  setY(value) {
+    this.y = value;
+  }
+
+  setTop(value) {
+    this.top = value;
+  }
+
+  getTop() {
+    return this.top;
+  }
+
+  setResult(array) {
+    this.result = array;
+  }
+
+  /*-------- Execution ---------*/
+
+  move() {
+    this.result = [1, 1];
+    return this.result;
+  }
+
+}
+
+let mousemove_allowed = true;
