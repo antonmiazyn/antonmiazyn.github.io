@@ -107,11 +107,9 @@ let horizontal_allowed = true;
 
 class Mousemove {
 
-  constructor(speed, max_x, max_y, y) {
+  constructor(speed, y) {
     this.step = 10;
     this.speed = speed;
-    this.max_x = max_x;
-    this.max_y = max_y;
     this.y = y;
     this.result = [0, 0];
     this.top = 0;
@@ -119,14 +117,6 @@ class Mousemove {
 
   setSpeed(value) {
     this.speed = value;
-  }
-
-  setXMax(value) {
-    this.max_x = value;
-  }
-
-  setYMax(value) {
-    this.max_y = value;
   }
 
   setY(value) {
@@ -147,9 +137,8 @@ class Mousemove {
 
   /*-------- Execution ---------*/
 
-  move() {
-    this.result = [1, 1];
-    return this.result;
+  move() { //getSpeed()
+    return this.speed;
   }
 
 }

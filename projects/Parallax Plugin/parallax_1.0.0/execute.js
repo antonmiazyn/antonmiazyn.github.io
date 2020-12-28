@@ -146,7 +146,7 @@ window.onload = () => {
     let element_max_x = element.max_x;
     let element_max_y = element.max_y;
 
-    mousemove_objects[index] = new Mousemove(element_speed, element_max_x, element_max_x, position.y);
+    mousemove_objects[index] = new Mousemove(element_speed, position.y);
   }
 
   function setMousemoveProperties() {
@@ -158,9 +158,11 @@ window.onload = () => {
 
     mousemove_objects.forEach((m_o, i) => {
       if(m_elements) {
-        m_o.setSpeed(Number(m_elements[i].getAttribute("speed")));
-        m_o.setXMax(Number(m_elements[i].getAttribute("max_x")));
-        m_o.setYMax(Number(m_elements[i].getAttribute("max_y")));
+        if(Number(m_elements[i].getAttribute("speed")) >= 0) {
+          m_o.setSpeed(Number(m_elements[i].getAttribute("speed")));
+        } else {
+          m_o.setSpeed(-Number(m_elements[i].getAttribute("speed")));
+        }
         m_o.setY(Number(position.y));
       }
     });
@@ -170,15 +172,19 @@ window.onload = () => {
 
   let position = new Static(0, 0);
 
-    setPagePositions(position);
+  setPagePositions(position);
 
-    if(vertical) {
+  if(vertical) {
       setVerticalProperties();
-    }
+  }
 
-    if(horizontal) {
-      setHorizontalProperties();
-    }
+  if(horizontal) {
+    setHorizontalProperties();
+  }
+
+  if(mousemove) {
+    setMousemoveProperties();
+  }
 
   window.addEventListener("mousewheel", (e) => {
     e = e || window.event;
@@ -299,16 +305,34 @@ window.onload = () => {
     let mouseXPosition = e.clientX;
     let mouseYPosition = e.clientY;
 
-    if(mouseXPosition > window.innerWidth / 2 && mouseYPosition > window.innerHeight / 2) {
-      console.log("bottom right")
-    } else if(mouseXPosition < window.innerWidth / 2 && mouseYPosition > window.innerHeight / 2) {
-      console.log("bottom left")
-    } else if(mouseXPosition > window.innerWidth / 2 && mouseYPosition < window.innerHeight / 2) {
-      console.log("top right")
-    } else if(mouseXPosition < window.innerWidth / 2 && mouseYPosition < window.innerHeight / 2) {
-      console.log("top left")
-    } else {
-      console.log("somth else")
-    }
+    m_elements.forEach((m_e, i) => {
+      if(mouseXPosition > window.innerWidth / 2 && mouseYPosition > window.innerHeight / 2) {
+        if(Number(m_e.getAttribute("speed")) >= 0) {
+          m_e.style.transform = "translate3d(-" + 10 * mousemove_objects[i].move()  + "%, -" + 10 * mousemove_objects[i].move() + "%, 0)";
+        } else {
+          m_e.style.transform = "translate3d(" + 10 * mousemove_objects[i].move()  + "%, " + 10 * mousemove_objects[i].move() + "%, 0)";
+        }
+      } else if(mouseXPosition < window.innerWidth / 2 && mouseYPosition > window.innerHeight / 2) {
+        if(Number(m_e.getAttribute("speed")) >= 0) {
+          m_e.style.transform = "translate3d(" + 10 * mousemove_objects[i].move()  + "%, -" + 10 * mousemove_objects[i].move() + "%, 0)";
+        } else {
+          m_e.style.transform = "translate3d(-" + 10 * mousemove_objects[i].move()  + "%, " + 10 * mousemove_objects[i].move() + "%, 0)";
+        }
+      } else if(mouseXPosition > window.innerWidth / 2 && mouseYPosition < window.innerHeight / 2) {
+        if(Number(m_e.getAttribute("speed")) >= 0) {
+          m_e.style.transform = "translate3d(-" + 10 * mousemove_objects[i].move()  + "%, " + 10 * mousemove_objects[i].move() + "%, 0)";
+        } else {
+          m_e.style.transform = "translate3d(" + 10 * mousemove_objects[i].move()  + "%, -" + 10 * mousemove_objects[i].move() + "%, 0)";
+        }
+      } else if(mouseXPosition < window.innerWidth / 2 && mouseYPosition < window.innerHeight / 2) {
+        if(Number(m_e.getAttribute("speed")) >= 0) {
+          m_e.style.transform = "translate3d(" + 10 * mousemove_objects[i].move()  + "%, " + 10 * mousemove_objects[i].move() + "%, 0)";
+        } else {
+          m_e.style.transform = "translate3d(-" + 10 * mousemove_objects[i].move()  + "%, -" + 10 * mousemove_objects[i].move() + "%, 0)";
+        }
+      } else {
+        m_e.style.transform = "translate3d(0, 0, 0)";
+      }
+    });
   }
 }
