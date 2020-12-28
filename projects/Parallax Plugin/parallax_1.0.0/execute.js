@@ -198,20 +198,24 @@ window.onload = () => {
       if(vertical) {
         if(v_elements) {
           v_elements.forEach((v_e, i) => {
-            if(vertical_objects[i].getTop() - v_e.offsetHeight <= position.y + window.innerHeight / 1.5 && vertical_objects[i].getTop() + window.innerHeight + v_e.offsetHeight + vertical_objects[i].max + vertical_objects[i].speed >= position.y) {
-              if(Number(v_elements[i].getAttribute("speed")) > 0) {
-                if(vertical_objects[i].result >= vertical_objects[i].max - vertical_objects[i].speed) {
-                  v_e.style.transform = "translateY(" + vertical_objects[i].max + "%)";
-                  vertical_objects[i].setResult(vertical_objects[i].max);
+            if(document.documentElement.offsetHeight - window.innerHeight - document.documentElement.scrollTop == 0) {
+              return false;
+            } else {
+              if(vertical_objects[i].getTop() - v_e.offsetHeight <= position.y + window.innerHeight / 1.5 && vertical_objects[i].getTop() + window.innerHeight + v_e.offsetHeight + vertical_objects[i].max + vertical_objects[i].speed >= position.y) {
+                if(Number(v_elements[i].getAttribute("speed")) > 0) {
+                  if(vertical_objects[i].result >= vertical_objects[i].max - vertical_objects[i].speed) {
+                    v_e.style.transform = "translateY(" + vertical_objects[i].max + "%)";
+                    vertical_objects[i].setResult(vertical_objects[i].max);
+                  } else {
+                    v_e.style.transform = "translateY(" + vertical_objects[i].moveDown() + "%)";
+                  }
                 } else {
-                  v_e.style.transform = "translateY(" + vertical_objects[i].moveDown() + "%)";
-                }
-              } else {
-                if(vertical_objects[i].result <= vertical_objects[i].max) {
-                  v_e.style.transform = "translateY(" + vertical_objects[i].max + "%)";
-                  vertical_objects[i].setResult(vertical_objects[i].max);
-                } else {
-                  v_e.style.transform = "translateY(" + vertical_objects[i].moveDown() + "%)";
+                  if(vertical_objects[i].result <= vertical_objects[i].max) {
+                    v_e.style.transform = "translateY(" + vertical_objects[i].max + "%)";
+                    vertical_objects[i].setResult(vertical_objects[i].max);
+                  } else {
+                    v_e.style.transform = "translateY(" + vertical_objects[i].moveDown() + "%)";
+                  }
                 }
               }
             }
@@ -222,20 +226,24 @@ window.onload = () => {
       if(vertical) {
         if(v_elements) {
           v_elements.forEach((v_e, i) => {
-            if(vertical_objects[i].getTop() - v_e.offsetHeight <= position.y + window.innerHeight / 1.5 && vertical_objects[i].getTop() + window.innerHeight + v_e.offsetHeight + vertical_objects[i].max + vertical_objects[i].speed >= position.y) {
-              if(Number(v_elements[i].getAttribute("speed")) > 0) {
-                if(vertical_objects[i].result <= vertical_objects[i].speed) {
-                  v_e.style.transform = "translateY(0)";
-                  vertical_objects[i].setResult(0);
+            if(document.documentElement.scrollTop == 0) {
+              return false;
+            } else {
+              if(vertical_objects[i].getTop() - v_e.offsetHeight <= position.y + window.innerHeight / 1.5 && vertical_objects[i].getTop() + window.innerHeight + v_e.offsetHeight + vertical_objects[i].max + vertical_objects[i].speed >= position.y) {
+                if(Number(v_elements[i].getAttribute("speed")) > 0) {
+                  if(vertical_objects[i].result <= vertical_objects[i].speed) {
+                    v_e.style.transform = "translateY(0)";
+                    vertical_objects[i].setResult(0);
+                  } else {
+                    v_e.style.transform = "translateY(" + vertical_objects[i].moveUp() + "%)";
+                  }
                 } else {
-                  v_e.style.transform = "translateY(" + vertical_objects[i].moveUp() + "%)";
-                }
-              } else {
-                if(vertical_objects[i].result >= vertical_objects[i].speed) {
-                  v_e.style.transform = "translateY(0)";
-                  vertical_objects[i].setResult(0);
-                } else {
-                  v_e.style.transform = "translateY(" + vertical_objects[i].moveUp() + "%)";
+                  if(vertical_objects[i].result >= vertical_objects[i].speed) {
+                    v_e.style.transform = "translateY(0)";
+                    vertical_objects[i].setResult(0);
+                  } else {
+                    v_e.style.transform = "translateY(" + vertical_objects[i].moveUp() + "%)";
+                  }
                 }
               }
             }
