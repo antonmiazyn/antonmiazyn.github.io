@@ -44,12 +44,12 @@ class Vertical extends Condition {
   /*-------- Execution ---------*/
 
   moveDown() {
-    this.result += 0.01 * this.step * this.speed;
+    this.result += 0.1 * this.step * this.speed;
     return this.result;
   }
 
   moveUp() {
-    this.result -= 0.01 * this.step * this.speed;
+    this.result -= 0.1 * this.step * this.speed;
     return this.result;
   }
 }
@@ -63,12 +63,12 @@ class Horizontal extends Condition {
   /*-------- Execution ---------*/
 
   moveRight() {
-    this.result += 0.01 * this.step * this.speed;
+    this.result += 0.1 * this.step * this.speed;
     return this.result;
   }
 
   moveLeft() {
-    this.result -= 0.01 * this.step * this.speed;
+    this.result -= 0.1 * this.step * this.speed;
     return this.result;
   }
 }
