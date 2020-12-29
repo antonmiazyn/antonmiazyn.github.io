@@ -1,7 +1,6 @@
+/* === Common Class === */
 
-/* === Vertical Condition Parallax === */
-
-class Vertical {
+class Condition {
 
   constructor(speed, max, y) {
     this.step = 10;
@@ -36,6 +35,12 @@ class Vertical {
     this.result = value;
   }
 
+}
+
+/* === Vertical Condition Parallax === */
+
+class Vertical extends Condition {
+
   /*-------- Execution ---------*/
 
   moveDown() {
@@ -53,40 +58,7 @@ let vertical_allowed = true;
 
 /* === Horizontal Condition Parallax === */
 
-class Horizontal {
-
-  constructor(speed, max, y) {
-    this.step = 10;
-    this.speed = speed;
-    this.max = max;
-    this.y = y;
-    this.result = 0;
-    this.top = 0;
-  }
-
-  setSpeed(value) {
-    this.speed = value;
-  }
-
-  setMax(value) {
-    this.max = value;
-  }
-
-  setY(value) {
-    this.y = value;
-  }
-
-  setTop(value) {
-    this.top = value;
-  }
-
-  getTop() {
-    return this.top;
-  }
-
-  setResult(value) {
-    this.result = value;
-  }
+class Horizontal extends Condition {
 
   /*-------- Execution ---------*/
 
@@ -105,35 +77,7 @@ let horizontal_allowed = true;
 
 /* === Mousemove Condition Parallax === */
 
-class Mousemove {
-
-  constructor(speed, y) {
-    this.step = 10;
-    this.speed = speed;
-    this.y = y;
-    this.result = [0, 0];
-    this.top = 0;
-  }
-
-  setSpeed(value) {
-    this.speed = value;
-  }
-
-  setY(value) {
-    this.y = value;
-  }
-
-  setTop(value) {
-    this.top = value;
-  }
-
-  getTop() {
-    return this.top;
-  }
-
-  setResult(array) {
-    this.result = array;
-  }
+class Mousemove extends Condition {
 
   /*-------- Execution ---------*/
 
