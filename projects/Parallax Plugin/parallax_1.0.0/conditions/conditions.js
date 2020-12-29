@@ -39,12 +39,12 @@ class Vertical {
   /*-------- Execution ---------*/
 
   moveDown() {
-    this.result += 0.01 * this.step * this.speed * 10;
+    this.result += 0.008 * this.step * this.speed;
     return this.result;
   }
 
   moveUp() {
-    this.result -= 0.01 * this.step * this.speed * 10;
+    this.result -= 0.008 * this.step * this.speed;
     return this.result;
   }
 }
@@ -91,12 +91,12 @@ class Horizontal {
   /*-------- Execution ---------*/
 
   moveRight() {
-    this.result += 0.01 * this.step * this.speed * 10;
+    this.result += 0.008 * this.step * this.speed;
     return this.result;
   }
 
   moveLeft() {
-    this.result -= 0.01 * this.step * this.speed * 10;
+    this.result -= 0.008 * this.step * this.speed;
     return this.result;
   }
 }
