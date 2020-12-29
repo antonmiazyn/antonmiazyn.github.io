@@ -91,12 +91,12 @@ class Horizontal {
   /*-------- Execution ---------*/
 
   moveRight() {
-    this.result += 0.008 * this.step * this.speed;
+    this.result += 0.01 * this.step * this.speed;
     return this.result;
   }
 
   moveLeft() {
-    this.result -= 0.008 * this.step * this.speed;
+    this.result -= 0.01 * this.step * this.speed;
     return this.result;
   }
 }
