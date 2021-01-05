@@ -1,16 +1,5 @@
 /*
-  This is the version 3.1.0
-
-  In the version 3.2.0 some functionality will be changed:
-    1) Conditions classes already don't need a top property
-    2) Loops for setting the initial css top property of the elements become useles
-    3) Setting the top propery is useles
-    4) .parallax css class already doesn't need a postition and top properties
-
-  It's should be more complentary for the different elements positions as
-  absolute, fixed, static, etc. Developer is able to set the element position
-  preferences by himself. Element's parallax translating is now depends only
-  from the page vertical scroll offset
+  This is the version 3.2.0
 */
 
 // Class Vertical available
@@ -68,20 +57,12 @@ window.onload = () => {
     object.setPageYPos(getPageYOffset());
   }
 
-  //Getting the element top offset
-  function getElementTop(element) {
-    let elementOffset = element.getBoundingClientRect();
-    let elementTopOffset = elementOffset.top;
-
-    return elementTopOffset;
-  }
-
   //=======================
 
   let vertical_objects = [];
 
   function createVerticalObject(element, index) {
-    vertical_objects[index] = new Vertical(0, 0, position.y, getElementTop(element), 0);
+    vertical_objects[index] = new Vertical(0, 0, position.y, 0);
   }
 
   function setVerticalProperties() {
@@ -91,22 +72,6 @@ window.onload = () => {
 
     vertical_objects.forEach((v_o, i) => {
       if(v_elements) {
-        //Counting how deep element has been placed and setting the relative css top property
-        for(let j = 0; j <= Math.floor(vertical_objects[vertical_objects.length - 1].top / window.innerHeight); j++) {
-          switch (Math.floor(v_o.top / window.innerHeight)) {
-            case j:
-              if(v_elements[i].getAttribute("weight") > 0) {
-                v_elements[i].style.top = -(j * Math.floor(v_elements[i].offsetHeight * 0.3)) + "px";
-              } else {
-                v_elements[i].style.top = j * Math.floor(v_elements[i].offsetHeight * 0.3) + "px";
-              }
-
-              break;
-            default:
-              break;
-          }
-        }
-
         if(Number(v_elements[i].getAttribute("weight")) != 0) {
           v_o.setWeight(Number(v_elements[i].getAttribute("weight")));
         } else {
@@ -114,7 +79,6 @@ window.onload = () => {
         }
 
         v_o.setY(Number(position.y));
-        v_o.setTop(getElementTop(v_elements[i]));
         v_o.setStart(v_o.verticalMove());
       }
     });
@@ -125,7 +89,7 @@ window.onload = () => {
   let horizontal_objects = [];
 
   function createHorizontalObject(element, index) {
-    horizontal_objects[index] = new Horizontal(0, 0, position.y, getElementTop(element), 0);
+    horizontal_objects[index] = new Horizontal(0, 0, position.y, 0);
   }
 
   function setHorizontalProperties() {
@@ -135,22 +99,6 @@ window.onload = () => {
 
     horizontal_objects.forEach((h_o, i) => {
       if(h_elements) {
-        //Counting how deep element has been placed and setting the relative css left property
-        for(let j = 0; j <= Math.floor(horizontal_objects[horizontal_objects.length - 1].top / window.innerHeight); j++) {
-          switch (Math.floor(h_o.top / window.innerHeight)) {
-            case j:
-              if(h_elements[i].getAttribute("weight") > 0) {
-                h_elements[i].style.left = -(j * Math.floor(h_elements[i].offsetWidth * 0.3)) + "px";
-              } else {
-                h_elements[i].style.left = j * Math.floor(h_elements[i].offsetWidth * 0.3) + "px";
-              }
-
-              break;
-            default:
-              break;
-          }
-        }
-
         if(Number(h_elements[i].getAttribute("weight")) != 0) {
           h_o.setWeight(Number(h_elements[i].getAttribute("weight")));
         } else {
@@ -158,7 +106,6 @@ window.onload = () => {
         }
 
         h_o.setY(Number(position.y));
-        h_o.setTop(getElementTop(h_elements[i]));
         h_o.setStart(h_o.horizontalMove());
       }
     });
@@ -171,7 +118,7 @@ window.onload = () => {
   function createMousemoveObject(element, index) {
     let element_speed = element.speed;
 
-    mousemove_objects[index] = new Mousemove(0, element_speed, position.y, 0, 0);
+    mousemove_objects[index] = new Mousemove(0, element_speed, position.y, 0);
   }
 
   function setMousemoveProperties() {
