@@ -9,7 +9,7 @@ window.onload = () => {
 
     let setting = f_c.getAttribute('data-setting');
     let speed = f_c.getAttribute('data-speed') * 100;
-    let duration = f_c.getAttribute('data-duration')duration;
+    let duration = f_c.getAttribute('data-duration') * 1000;
 
     setStart(flashing_images);
 
@@ -17,9 +17,7 @@ window.onload = () => {
 
     setSetting(flashing_images, setting);
 
-    switching(flashing_images, speed);
-
-    getChoice(flashing_images, speed, duration)
+    getChoice(flashing_images, speed, duration);
   });
 
   /* == Set Start == */
@@ -61,44 +59,53 @@ window.onload = () => {
 
   /* == Switching == */
 
-  function switching(elements, speed) {
-    let index = 0;
+  function switching(elements, speed, pause) {
+    if(!pause) {
+      let index = 0;
 
-    let rand_numbers_array = [];
-    function getRandomNumber(min, max) {
-      let number = Math.floor(min + Math.random() * (max - min))
-      if (rand_numbers_array.includes(number)) {
-        return getRandomNumber(min, max)
-      } else {
-        if(rand_numbers_array.length > 2) { // prevent stack overflow
-          rand_numbers_array.splice(0, 1);
-          rand_numbers_array.push(number)
+      let rand_numbers_array = [];
+      function getRandomNumber(min, max) {
+        let number = Math.floor(min + Math.random() * (max - min))
+        if (rand_numbers_array.includes(number)) {
+          return getRandomNumber(min, max)
         } else {
-          rand_numbers_array.push(number)
+          if(rand_numbers_array.length > 2) { // prevent stack overflow
+            rand_numbers_array.splice(0, 1);
+            rand_numbers_array.push(number)
+          } else {
+            rand_numbers_array.push(number)
+          }
+          return number
         }
-        return number
       }
+
+      setInterval(() => {
+        index = getRandomNumber(0, elements.length - 1);
+
+        elements.forEach((el) => {
+          el.classList.remove('shown');
+          el.classList.add('hidden');
+        });
+
+        elements[index].classList.remove('hidden');
+        elements[index].classList.add('shown');
+      }, speed);
+    } else {
+      return;
     }
-
-    setInterval(() => {
-      index = getRandomNumber(0, elements.length - 1);
-
-      elements.forEach((el) => {
-        el.classList.remove('shown');
-        el.classList.add('hidden');
-      });
-
-      elements[index].classList.remove('hidden');
-      elements[index].classList.add('shown');
-    }, speed);
   }
 
   /* == Stop on Choice == */
 
   function getChoice(elements, speed, duration) {
+    let pause = false;
+
     for(let i = 0; i < elements.length; i++) {
       setTimeout(() => {
-        console.log("working")
+        //pause = !pause;
+        switching(elements, speed, pause);
+
+        console.log(pause)
       }, i * duration, i)
     }
   }
