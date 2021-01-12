@@ -59,6 +59,7 @@ window.onload = () => {
 
   /* == Switching == */
 
+  let intervalFlag;
   function switching(elements, speed, pause) {
     if(!pause) {
       let index = 0;
@@ -79,7 +80,7 @@ window.onload = () => {
         }
       }
 
-      setInterval(() => {
+      intervalFlag = setInterval(() => {
         index = getRandomNumber(0, elements.length - 1);
 
         elements.forEach((el) => {
@@ -91,7 +92,7 @@ window.onload = () => {
         elements[index].classList.add('shown');
       }, speed);
     } else {
-      return;
+      clearInterval(intervalFlag)
     }
   }
 
@@ -99,13 +100,36 @@ window.onload = () => {
 
   function getChoice(elements, speed, duration) {
     let pause = false;
+    let loopLimit = 9000; // ~15 minutes
 
-    for(let i = 0; i < elements.length; i++) {
+    let j = 0;
+    let lap = 1;
+    for(let i = 0; i < loopLimit; i++) {
       setTimeout(() => {
-        //pause = !pause;
         switching(elements, speed, pause);
+        if(pause) {
+          elements.forEach((el) => {
+            el.classList.remove('shown');
+            el.classList.add('hidden');
+          });
 
-        console.log(pause)
+          elements[i - j].classList.remove('hidden');
+          elements[i - j].classList.add('shown');
+        } else {
+          j++;
+        }
+
+        if(i > 0 && i == (elements.length * 2 - 1) * lap) {
+          if(lap < 1) {
+            j = lap * (elements.length * 2);
+          } else {
+            j = lap * (elements.length * 2) - (lap - 1);
+          }
+          lap++;
+        }
+
+        pause = !pause;
+
       }, i * duration, i)
     }
   }
