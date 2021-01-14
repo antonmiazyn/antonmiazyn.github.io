@@ -41,44 +41,46 @@ window.onload = () => {
         duration = default_duration;
       }
 
-      /*------------------------------*/
+      if(flashing_images && flashing_images.length != 0) {
+        /*------------------------------*/
 
-      let default_index_array = [];
-      fillDefaultIndexArray(default_index_array, flashing_images.length);
+        let default_index_array = [];
+        fillDefaultIndexArray(default_index_array, flashing_images.length);
 
-      let random_index_array = [];
-      fillRandomIndexArray(random_index_array, flashing_images.length);
+        let random_index_array = [];
+        fillRandomIndexArray(random_index_array, flashing_images.length);
 
-      let absolute_index_array = []; //start position of the absolutly random condition
-      fillRandomIndexArray(absolute_index_array, flashing_images.length)
+        let absolute_index_array = []; //start position of the absolutly random condition
+        fillRandomIndexArray(absolute_index_array, flashing_images.length)
 
-      /*------------------------------*/
+        /*------------------------------*/
 
-      setStart(flashing_images);
+        setStart(flashing_images);
 
-      let animation_index = [];
-      let animation_data = [];
-      setAnimation(flashing_images, animation_index, animation_data);
+        let animation_index = [];
+        let animation_data = [];
+        setAnimation(flashing_images, animation_index, animation_data);
 
-      //action start
+        //action start
 
-      setSetting(flashing_images, setting, default_setting);
+        setSetting(flashing_images, setting, default_setting);
 
-      switch (order_value) {
-        case 'orderly':
-          order_setted = default_index_array;
-          break;
-        case 'random':
-          order_setted = random_index_array;
-          break;
-        case 'absolute':
-          order_setted = absolute_index_array;
-          break;
-        default:
-          order_setted = default_index_array;
+        switch (order_value) {
+          case 'orderly':
+            order_setted = default_index_array;
+            break;
+          case 'random':
+            order_setted = random_index_array;
+            break;
+          case 'absolute':
+            order_setted = absolute_index_array;
+            break;
+          default:
+            order_setted = default_index_array;
+        }
+
+        getChoice(flashing_images, order_value, order_setted, speed, animation_index, animation_data, duration);
       }
-
-      getChoice(flashing_images, order_value, order_setted, speed, animation_index, animation_data, duration);
     });
   }
 
@@ -102,9 +104,34 @@ window.onload = () => {
       if(sprite) {
         let src = sprite.getAttribute("data-src");
         let amoung = sprite.getAttribute("data-amoung");
-        let data_object = {
-          src: src,
-          amoung: amoung
+
+        let data_object = {}
+
+        if(amoung && src && amoung != '' && src != '') {
+          data_object = {
+            src: src,
+            amoung: amoung
+          }
+        } else if((!amoung || amoung == '') && src && src != '') {
+          data_object = {
+            src: src,
+            amoung: 8
+          }
+        } else if((!amoung || amoung == '') && (!src || src == '')) {
+          data_object = {
+            src: 'sprites-circles.png',
+            amoung: 8
+          }
+        } else if(amoung && (!src || src == '') && amoung != '') {
+          data_object = {
+            src: 'sprites-circles.png',
+            amoung: amoung
+          }
+        } else {
+          data_object = {
+            src: 'sprites-circles.png',
+            amoung: 8
+          }
         }
 
         index_list.push(i);
@@ -116,22 +143,42 @@ window.onload = () => {
   /* == Animation Execution == */
 
   let animationFlag;
-  function animateElement(anim_index, anim_data, elements, elem_index, duration, pause) {
+  function animateElement(anim_index, anim_data, elements, elem_index, duration) {
     let sprite = elements[elem_index].querySelector('.flashing-animation');
-    let step = 0;
 
-    let anim_index_value = anim_index.indexOf(elem_index);
+    if(sprite) {
+      let step = 0;
 
-    sprite.style.backgroundImage = 'url(' + anim_data[anim_index_value].src + ')';
+      let anim_index_value = anim_index.indexOf(elem_index);
 
-    let height = elements[elem_index].offsetWidth;
-    sprite.style.height = height + 'px';
-    let shift = sprite.offsetHeight;
+      sprite.style.backgroundImage = 'url(' + anim_data[anim_index_value].src + ')';
 
-    animationFlag = setInterval(() => {
-      step -= shift;
-      sprite.style.backgroundPosition = step + 'px 0';
-    }, duration / anim_data[anim_index_value].amoung);
+      let height = elements[elem_index].offsetWidth;
+      sprite.style.height = height + 'px';
+      let shift = sprite.offsetHeight;
+
+      animationFlag = setInterval(() => {
+        step -= shift;
+        sprite.style.backgroundPosition = step + 'px 0';
+      }, duration / anim_data[anim_index_value].amoung);
+    }
+  }
+
+  /* == Reset Animation == */
+
+  function resetAnimation(elements, flag) {
+    clearInterval(flag);
+
+    elements.forEach((el) => {
+      let sprite = el.querySelector('.flashing-animation');
+      if(sprite) {
+        sprite.style.backgroundImage = 'none';
+        sprite.style.backgroundPosition = '0 0';
+
+        let height = el.offsetWidth;
+        sprite.style.height = height + 'px';
+      }
+    });
   }
 
   /* == Set Setting == */
@@ -228,6 +275,8 @@ window.onload = () => {
 
             elements[i - j].classList.remove('hidden');
             elements[i - j].classList.add('shown');
+
+            animateElement(anim_index, anim_data, elements, order_array[i - j], duration);
           } else if(order_type == 'random') {
             elements.forEach((el) => {
               el.classList.remove('shown');
@@ -236,6 +285,8 @@ window.onload = () => {
 
             elements[order_array[i - j]].classList.remove('hidden');
             elements[order_array[i - j]].classList.add('shown');
+
+            animateElement(anim_index, anim_data, elements, order_array[i - j], duration);
           } else if(order_type == 'absolute') {
             elements.forEach((el) => {
               el.classList.remove('shown');
@@ -245,7 +296,7 @@ window.onload = () => {
             elements[order_array[i - j]].classList.remove('hidden');
             elements[order_array[i - j]].classList.add('shown');
 
-            animateElement(anim_index, anim_data, elements, order_array[i - j], duration, pause);
+            animateElement(anim_index, anim_data, elements, order_array[i - j], duration);
           } else {
             elements.forEach((el) => {
               el.classList.remove('shown');
@@ -254,18 +305,11 @@ window.onload = () => {
 
             elements[i - j].classList.remove('hidden');
             elements[i - j].classList.add('shown');
+
+            animateElement(anim_index, anim_data, elements, order_array[i - j], duration);
           }
         } else {
-          clearInterval(animationFlag);
-          elements.forEach((el) => {
-            let sprite = el.querySelector('.flashing-animation');
-            sprite.style.backgroundImage = 'none';
-            sprite.style.backgroundPosition = '0 0';
-
-            let height = el.offsetWidth;
-            sprite.style.height = height + 'px';
-          });
-
+          resetAnimation(elements, animationFlag);
           j++;
         }
 
