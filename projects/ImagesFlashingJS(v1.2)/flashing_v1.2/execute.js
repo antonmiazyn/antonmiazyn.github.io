@@ -1,90 +1,91 @@
 window.onload = () => {
 
-  /* == Define Flashing Elements == */
+  /*      =============================================      Define Flashing Elements      =============================================      */
 
-  let flashing_container = document.querySelectorAll('.flashing');
+  const flashingContainer = document.querySelectorAll('.flashing');
+  const isFlashingContainer = flashingContainer && flashingContainer.length > 0;
 
-  if(flashing_container && flashing_container.length > 0) {
-    const default_speed = 150;
-    const default_duration = 2000;
-    const default_order = 'orderly';
-    const default_setting = 'color';
+  /* ----- utilites list ----- */
 
-    flashing_container.forEach((f_c) => {
-      let flashing_images = f_c.querySelectorAll('.flashing-image');
+  const utilites = {
+    setStart: setStart,
+    setTheme: setTheme,
+    setAnimation: setAnimation,
 
-      let flashing_speed_atr = f_c.getAttribute('data-speed');
-      let speed;
+    fillDefaultIndexArray: fillDefaultIndexArray,
+    fillRandomIndexArray: fillRandomIndexArray,
 
-      let flashing_duration_atr = f_c.getAttribute('data-duration');
-      let duration;
+    startAnimation: animateElement,
+    resetAnimation: resetAnimation,
 
-      let order = f_c.getAttribute('data-order');
-      let order_value, order_setted;
-      if(order && order != '' && (order == 'orderly' || order == 'random' || order == 'absolute')) {
-        order_value = order;
-      } else {
-        order_value = default_order;
-      }
+    startSwitching: switching,
+    startExecution: startPluginExecution
+  }
 
-      let setting = f_c.getAttribute('data-setting');
+  /* -----   -----------------   ----- */
 
-      if(flashing_speed_atr && flashing_speed_atr != '' && flashing_speed_atr > 0) {
-        speed = flashing_speed_atr * 100;
-      } else {
-        speed = default_speed;
-      }
+  if(isFlashingContainer) {
 
-      if(flashing_duration_atr && flashing_duration_atr != '' && flashing_duration_atr >= 1) {
-        duration = flashing_duration_atr * 1000;
-      } else {
-        duration = default_duration;
-      }
+    /* ----- default settings ----- */
 
-      if(flashing_images && flashing_images.length != 0) {
-        /*------------------------------*/
+    const defaultSettings = {
+      speed: 150,
+      duration: 2000,
+      order: 'orderly',
+      theme: 'color'
+    }
 
-        let default_index_array = [];
-        fillDefaultIndexArray(default_index_array, flashing_images.length);
+    /* -----   -----------------   ----- */
 
-        let random_index_array = [];
-        fillRandomIndexArray(random_index_array, flashing_images.length);
+    flashingContainer.forEach((f_c) => {
+      const flashingElements = f_c.querySelectorAll('.flashing-image');
+      const isElementsExist = flashingElements && flashingElements.length != 0;
 
-        let absolute_index_array = []; //start position of the absolutly random condition
-        fillRandomIndexArray(absolute_index_array, flashing_images.length)
+      /* ----- define speed ----- */
+        const speedAttribute = f_c.getAttribute('data-speed');
+        const isSpeedSetted = speedAttribute && speedAttribute > 0;
+        const speed = isSpeedSetted ? speedAttribute * 100 : defaultSettings.speed;
 
-        /*------------------------------*/
+      /* ----- define duration ----- */
+        const durationAttribute = f_c.getAttribute('data-duration');
+        const isDurationSetted = durationAttribute && durationAttribute >= 1;
+        const duration = isDurationSetted ? durationAttribute * 1000 : defaultSettings.duration;
 
-        setStart(flashing_images);
+      /* ----- define order ----- */
+        const orderAttribute = f_c.getAttribute('data-order');
+        const isOrderSetted = orderAttribute && (orderAttribute === 'orderly' || orderAttribute === 'random' || orderAttribute === 'absolute');
+        const orderValue = isOrderSetted ? orderAttribute : defaultSettings.order;
 
-        let animation_index = [];
-        let animation_data = [];
-        setAnimation(flashing_images, animation_index, animation_data);
+        const isOrderly = orderValue === 'orderly';
+        const isRandom = (orderValue === 'random' || orderValue === 'absolute');
+        const orderType = {
+          orderly: utilites.fillDefaultIndexArray(flashingElements.length),
+          random: utilites.fillRandomIndexArray(flashingElements.length)
+        };
 
-        //action start
+        const currentOrder = isOrderly ? orderType.orderly : isRandom ? orderType.random : orderType.orderly;
 
-        setSetting(flashing_images, setting, default_setting);
+      /* ----- define theme ----- */
+        const theme = f_c.getAttribute('data-theme');
 
-        switch (order_value) {
-          case 'orderly':
-            order_setted = default_index_array;
-            break;
-          case 'random':
-            order_setted = random_index_array;
-            break;
-          case 'absolute':
-            order_setted = absolute_index_array;
-            break;
-          default:
-            order_setted = default_index_array;
+      /* ----- execution start ----- */
+        if(isElementsExist) {
+          utilites.setStart(flashingElements);
+          utilites.setTheme(flashingElements, theme, defaultSettings.theme);
+
+          const animationIndex = utilites.setAnimation(flashingElements).index;
+          const animationData = utilites.setAnimation(flashingElements).data;
+
+          utilites.startExecution(flashingElements, orderValue, currentOrder, speed, animationIndex, animationData, duration); //the very start of the execution
         }
-
-        getChoice(flashing_images, order_value, order_setted, speed, animation_index, animation_data, duration);
-      }
     });
   }
 
-  /* == Set Start == */
+
+
+  /*      =============================================      Plugin Funtions      =============================================      */
+
+  /* ----- Set Start ----- */
 
   function setStart(elements) {
     elements.forEach((el) => {
@@ -95,96 +96,10 @@ window.onload = () => {
     elements[0].classList.add('shown');
   }
 
-  /* == Set Animation == */
+  /* ----- Set Theme ----- */
 
-  function setAnimation(elements, index_list, data_list) {
-    elements.forEach((el, i) => {
-      let sprite = el.querySelector('.flashing-animation');
-
-      if(sprite) {
-        let src = sprite.getAttribute("data-src");
-        let amoung = sprite.getAttribute("data-amoung");
-
-        let data_object = {}
-
-        if(amoung && src && amoung != '' && src != '') {
-          data_object = {
-            src: src,
-            amoung: amoung
-          }
-        } else if((!amoung || amoung == '') && src && src != '') {
-          data_object = {
-            src: src,
-            amoung: 8
-          }
-        } else if((!amoung || amoung == '') && (!src || src == '')) {
-          data_object = {
-            src: 'sprites-circles.png',
-            amoung: 8
-          }
-        } else if(amoung && (!src || src == '') && amoung != '') {
-          data_object = {
-            src: 'sprites-circles.png',
-            amoung: amoung
-          }
-        } else {
-          data_object = {
-            src: 'sprites-circles.png',
-            amoung: 8
-          }
-        }
-
-        index_list.push(i);
-        data_list.push(data_object)
-      }
-    });
-  }
-
-  /* == Animation Execution == */
-
-  let animationFlag;
-  function animateElement(anim_index, anim_data, elements, elem_index, duration) {
-    let sprite = elements[elem_index].querySelector('.flashing-animation');
-
-    if(sprite) {
-      let step = 0;
-
-      let anim_index_value = anim_index.indexOf(elem_index);
-
-      sprite.style.backgroundImage = 'url(' + anim_data[anim_index_value].src + ')';
-
-      let height = elements[elem_index].offsetWidth;
-      sprite.style.height = height + 'px';
-      let shift = sprite.offsetHeight;
-
-      animationFlag = setInterval(() => {
-        step -= shift;
-        sprite.style.backgroundPosition = step + 'px 0';
-      }, duration / anim_data[anim_index_value].amoung);
-    }
-  }
-
-  /* == Reset Animation == */
-
-  function resetAnimation(elements, flag) {
-    clearInterval(flag);
-
-    elements.forEach((el) => {
-      let sprite = el.querySelector('.flashing-animation');
-      if(sprite) {
-        sprite.style.backgroundImage = 'none';
-        sprite.style.backgroundPosition = '0 0';
-
-        let height = el.offsetWidth;
-        sprite.style.height = height + 'px';
-      }
-    });
-  }
-
-  /* == Set Setting == */
-
-  function setSetting(elements, setting, def) {
-    switch (setting) {
+  function setTheme(elements, theme, def) {
+    switch (theme) {
       case 'greyscale':
         elements.forEach((el) => {
           el.classList.add('greyscale')
@@ -207,39 +122,127 @@ window.onload = () => {
     }
   }
 
-  /* == Default Index Array == */
+  /* ----- Set Animation ----- */
 
-  function fillDefaultIndexArray(array, length) {
-    for(let i = 0; i < length; i++) {
-      array.push(i);
+  function setAnimation(elements) {
+    const animationData = {
+      index: [],
+      data: []
+    };
+
+    elements.forEach((el, i) => {
+      const sprite = el.querySelector('.flashing-animation');
+
+      if(sprite) {
+        const src = sprite.getAttribute("data-src");
+        const amount = sprite.getAttribute("data-amount");
+
+        const data_object = {
+          src: 'sprites-circles.png',
+          amount: 8
+        };
+
+        const isAllFilled = amount && src;
+        const isAmountFilled = amount && !src;
+        const isSrcFilled = !amount && src;
+
+        if(isAllFilled) {
+          data_object.src = src;
+          data_object.amount = amount;
+        } else if(isSrcFilled) {
+          data_object.src = src;
+        } else if(isAmountFilled) {
+          data_object.amount = amount;
+        }
+
+        animationData.index.push(i);
+        animationData.data.push(data_object)
+      }
+    });
+
+    return animationData;
+  }
+
+  /* ----- Animation Execution ----- */
+
+  let animationFlag;
+  function animateElement(animationIndex, animationData, elements, elementIndex, duration) {
+    const sprite = elements[elementIndex].querySelector('.flashing-animation');
+
+    if(sprite) {
+      let step = 0;
+
+      const animationIndexValue = animationIndex.indexOf(elementIndex);
+
+      sprite.style.backgroundImage = 'url(' + animationData[animationIndexValue].src + ')';
+
+      const height = elements[elementIndex].offsetWidth;
+      sprite.style.height = height + 'px';
+      const shift = sprite.offsetHeight;
+
+      animationFlag = setInterval(() => {
+        step -= shift;
+        sprite.style.backgroundPosition = step + 'px 0';
+      }, duration / animationData[animationIndexValue].amount);
     }
   }
 
-  /* == Random Index Array == */
+  /* ----- Reset Animation ----- */
 
-  function fillRandomIndexArray(array, length) {
+  function resetAnimation(elements, flag) {
+    clearInterval(flag);
+
+    elements.forEach((el) => {
+      const sprite = el.querySelector('.flashing-animation');
+      if(sprite) {
+        sprite.style.backgroundImage = 'none';
+        sprite.style.backgroundPosition = '0 0';
+
+        const height = el.offsetWidth;
+        sprite.style.height = height + 'px';
+      }
+    });
+  }
+
+  /* ----- Fill Default Index Array ----- */
+
+  function fillDefaultIndexArray(length) {
+    const array = [];
+    for(let i = 0; i < length; i++) {
+      array.push(i);
+    }
+
+    return array;
+  }
+
+  /* ----- Fill Random Index Array ----- */
+
+  function fillRandomIndexArray(length) {
+    const array = [];
     for(let i = 0; i < 10 * length; i++) {
-      let number = Math.floor(Math.random() * length)
+      const number = Math.floor(Math.random() * length)
       if(!array.includes(number)) {
         array.push(number);
       }
     }
+
+    return array;
   }
 
-  /* == Switching == */
+  /* ----- Start Switching ----- */
 
   let intervalFlag;
   function switching(elements, order, speed, pause) {
     if(!pause) {
 
-      let index = order;
-      let index_start = 0;
+      const index = order;
+      let currentIndex = 0;
 
       intervalFlag = setInterval(() => {
-        if(index_start == elements.length - 1) {
-          index_start = 0;
+        if(currentIndex === elements.length - 1) {
+          currentIndex = 0;
         } else {
-          index_start++;
+          currentIndex++;
         }
 
         elements.forEach((el) => {
@@ -247,89 +250,50 @@ window.onload = () => {
           el.classList.add('hidden');
         });
 
-        elements[index[index_start]].classList.remove('hidden');
-        elements[index[index_start]].classList.add('shown');
+        elements[index[currentIndex]].classList.remove('hidden');
+        elements[index[currentIndex]].classList.add('shown');
       }, speed);
     } else {
       clearInterval(intervalFlag)
     }
   }
 
-  /* == Stop on Choice == */
 
-  function getChoice(elements, order_type, order_array, speed, anim_index, anim_data, duration) {
+
+  /*      =============================================      Plugin Execution      =============================================      */
+
+  function startPluginExecution(elements, orderType, orderArray, speed, animationIndex, animationData, duration) {
     let pause = false;
-    let loopLimit = 9000; // ~15 minutes
+    let i = 0;
 
-    let j = 0;
-    let lap = 1;
-    for(let i = 0; i < loopLimit; i++) {
-      setTimeout(() => {
-        switching(elements, order_array, speed, pause);
-        if(pause) {
-          if(order_type == 'orderly') {
-            elements.forEach((el) => {
-              el.classList.remove('shown');
-              el.classList.add('hidden');
-            });
+    const infiniteAnimation = setInterval(() => {
+      utilites.startSwitching(elements, orderArray, speed, pause);
 
-            elements[i - j].classList.remove('hidden');
-            elements[i - j].classList.add('shown');
+      if(pause) {
+        elements.forEach((el) => {
+          el.classList.remove('shown');
+          el.classList.add('hidden');
+        });
 
-            animateElement(anim_index, anim_data, elements, order_array[i - j], duration);
-          } else if(order_type == 'random') {
-            elements.forEach((el) => {
-              el.classList.remove('shown');
-              el.classList.add('hidden');
-            });
+        elements[orderArray[i]].classList.remove('hidden');
+        elements[orderArray[i]].classList.add('shown');
 
-            elements[order_array[i - j]].classList.remove('hidden');
-            elements[order_array[i - j]].classList.add('shown');
+        utilites.startAnimation(animationIndex, animationData, elements, orderArray[i], duration);
 
-            animateElement(anim_index, anim_data, elements, order_array[i - j], duration);
-          } else if(order_type == 'absolute') {
-            elements.forEach((el) => {
-              el.classList.remove('shown');
-              el.classList.add('hidden');
-            });
-
-            elements[order_array[i - j]].classList.remove('hidden');
-            elements[order_array[i - j]].classList.add('shown');
-
-            animateElement(anim_index, anim_data, elements, order_array[i - j], duration);
-          } else {
-            elements.forEach((el) => {
-              el.classList.remove('shown');
-              el.classList.add('hidden');
-            });
-
-            elements[i - j].classList.remove('hidden');
-            elements[i - j].classList.add('shown');
-
-            animateElement(anim_index, anim_data, elements, order_array[i - j], duration);
-          }
+        if(i < elements.length - 1) {
+          i++
         } else {
-          resetAnimation(elements, animationFlag);
-          j++;
-        }
+          i = 0;
 
-        if(i > 0 && i == (elements.length * 2 - 1) * lap) {
-          if(lap < 1) {
-            j = lap * (elements.length * 2);
-          } else {
-            j = lap * (elements.length * 2) - (lap - 1);
-          }
-          lap++;
-
-          if(order_type == 'absolute') {
-            order_array = [];
-            fillRandomIndexArray(order_array, elements.length)
+          if(orderType === 'absolute') {
+            orderArray = utilites.fillRandomIndexArray(elements.length)
           }
         }
+      } else {
+        utilites.resetAnimation(elements, animationFlag);
+      }
 
-        pause = !pause;
-
-      }, i * duration, i)
-    }
+      pause = !pause;
+    }, duration)
   }
 }
