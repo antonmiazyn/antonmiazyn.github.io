@@ -1,0 +1,335 @@
+.sign-up__wrapper .v-application {
+  font-family: 'Suisse', sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.6em;
+  font-weight: 400 !important;
+  color: #021B28;
+}
+
+.sign-up__wrapper .v-application--wrap {
+  min-height: 0;
+}
+
+.sign-up__footer_link,
+.sign-up__footer_link.v-btn.v-btn--disabled.v-btn--has-bg {
+  width: fit-content;
+  display: block;
+  padding: 1rem 1.5rem !important;
+  border-radius: 100px;
+  background-color: #F58220 !important;
+  border: solid 1px #F58220;
+  font-size: 1rem !important;
+  line-height: 1em !important;
+  font-weight: 600;
+  height: auto !important;
+  color: #fff !important;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: normal;
+  transition: all 0.3s !important;
+}
+
+.sign-up__footer_link.v-btn.v-btn--disabled.v-btn--has-bg {
+  opacity: 0.32 !important;
+}
+
+.sign-up__footer_link:hover,
+.sign-up__footer_link:focus {
+  border: solid 1px #2AACE2 !important;
+  background-color: #2AACE2 !important;
+  color: #fff !important;
+}
+
+.sign-up__footer_link__secondary {
+  background-color: #fff !important;
+  color: #F58220 !important;
+}
+
+.sign-up__title {
+  font-size: 1.75rem;
+  line-height: 0.86em;
+  font-weight: 600;
+}
+
+.sign-up__form_navigation {
+  list-style: none;
+}
+
+.sign-up__form_navigation__item {
+  width: 50%;
+  padding: 0.625rem;
+  border-bottom: 1px solid #F0F5FA;
+  color: #aaa;
+  transition: border 0.3s;
+}
+
+.sign-up__form_navigation__item h2 {
+  font-size: 1rem;
+  line-height: 1.5em;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.sign-up__form_navigation__item.active {
+  border-bottom: 1px solid #F58220;
+  color: #021B28
+}
+
+.sign-up__form .form-fieldgroup,
+.sign-up__form .form-fieldgroup > .field-wrapper .field-birthday__wrapper {
+  gap: 2rem;
+}
+
+.sign-up__form .form-fieldgroup.invisible {
+  display: none !important;
+}
+
+.sign-up__form .form-fieldgroup > .field-wrapper {
+  width: 100%;
+}
+
+.sign-up__form .form-fieldgroup > .field-wrapper label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.67em;
+}
+
+.sign-up__form .form-fieldgroup > .field-wrapper input {
+  color: #021B28;
+  max-height: none;
+  font-size: 0.9375rem;
+  line-height: 1.6em;
+  padding: 0.875rem 0;
+}
+
+.sign-up__form .form-fieldgroup > .field-wrapper .v-select__selection {
+  color: #021B28;
+  font-size: 0.9375rem;
+  line-height: 1.6em;
+}
+
+.sign-up__form .form-fieldgroup > .field-wrapper .v-text-field .v-input__append-inner {
+  margin-top: 0.75rem;
+}
+
+.sign-up__form .form-fieldgroup > .field-wrapper .v-text-field .v-input__append-inner .v-icon.v-icon {
+  color: #021B28;
+}
+
+.sign-up__form .form-fieldgroup > .field-wrapper .v-text-field > .v-input__control > .v-input__slot:before {
+  border-color: #F0F5FA;
+}
+
+.sign-up__form .form-fieldgroup > .field-wrapper input::placeholder {
+  color: #aaa;
+}
+
+.sign-up__form .hidden-field {
+  display: none !important;
+}
+
+.sign-up__form .form-fieldgroup.appeal-fieldgroup > .field-wrapper:not(:first-child) {
+  width: calc(28.487% - 1.5rem);
+}
+
+.sign-up__form .form-fieldgroup.appeal-fieldgroup > .field-wrapper:first-child {
+  width: calc(14.539% - 1.5rem);
+}
+
+.sign-up__form .form-fieldgroup.birthday-fieldgroup > .field-wrapper:first-child {
+  width: calc(24.204% - 1rem);
+}
+
+.sign-up__form .form-fieldgroup.birthday-fieldgroup > .field-wrapper:last-child {
+  width: calc(75.796% - 1rem);
+}
+
+.sign-up__form .form-fieldgroup.taxpayer-fieldgroup > .field-wrapper:first-child {
+  width: calc(79.356% - 1rem);
+}
+
+.sign-up__form .form-fieldgroup.taxpayer-fieldgroup > .field-wrapper:last-child {
+  width: calc(20.644% - 1rem);
+}
+
+.sign-up__form_connections {
+  background-color: #F0F5FA;
+}
+
+.sign-up__form_connections label {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+.sign-up__form_connections ul li {
+  padding: 3px 0;
+  font-size: 0.9375rem;
+  line-height: 1.6em;
+}
+
+.sign-up__form .v-input--radio-group__input {
+  flex-direction: row;
+}
+
+.sign-up__form .v-input--radio-group__input > div {
+  margin-right: 2rem;
+  margin-bottom: 0 !important;
+}
+
+.sign-up__form .v-radio .v-label {
+  color: #021B28;
+  font-size: 0.9375rem;
+  line-height: 1.6em;
+  font-weight: 400;
+}
+
+.sign-up__form_terms {
+  margin-bottom: -4.5rem;
+}
+
+.sign-up__form_terms label,
+.sign-up__form_terms a {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5em;
+  color: #021B28 !important;
+}
+
+.sign-up__form_terms a {
+  border-bottom: solid 2px #021B28;
+  transition: border 0.3s;
+  margin-bottom: 3px;
+}
+
+.sign-up__form_terms a:hover,
+.sign-up__form_terms a:focus {
+  border-bottom: solid 2px transparent;
+}
+
+.sign-up__form_terms .mdi-checkbox-blank-outline::before {
+  color: #021B28;
+  margin-bottom: 2px;
+}
+
+.sign-up__form .mdi-radiobox-blank::before {
+  color: #021B28;
+}
+
+.sign-up__wrapper .v-menu__content {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+}
+
+.sign-up__wrapper .v-menu__content {
+  border-radius: 0;
+}
+
+.sign-up__wrapper .v-application .primary--text {
+  color: #F58220 !important;
+  caret-color: #F58220 !important;
+}
+
+.sign_up__result {
+  min-height: 27rem;
+}
+
+.sign_up__result h2 {
+  font-size: 1.75rem;
+  line-height: 1em;
+  font-weight: 600;
+}
+
+.sign_up__result p {
+  font-size: 1.128rem;
+  font-weight: 400;
+  color: #aaa;
+  max-width: 70%;
+}
+
+@media screen and (max-width: 991px) {
+  .sign-up__form .form-fieldgroup.appeal-fieldgroup,
+  .sign-up__form .form-fieldgroup.birthday-fieldgroup {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .sign-up__form .form-fieldgroup.appeal-fieldgroup > .field-wrapper:first-child,
+  .sign-up__form .form-fieldgroup.appeal-fieldgroup > .field-wrapper:not(:first-child),
+  .sign-up__form .form-fieldgroup.taxpayer-fieldgroup > .field-wrapper:first-child,
+  .sign-up__form .form-fieldgroup.taxpayer-fieldgroup > .field-wrapper:last-child {
+    width: calc(50% - 1rem);
+  }
+
+  .sign-up__form .form-fieldgroup.birthday-fieldgroup > .field-wrapper:first-child,
+  .sign-up__form .form-fieldgroup.birthday-fieldgroup > .field-wrapper:last-child {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sign-up__form .form-fieldgroup {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .sign-up__form .form-fieldgroup > .field-wrapper,
+  .sign-up__form .form-fieldgroup > .field-wrapper .field-birthday__wrapper > * {
+    width: 100% !important;
+  }
+
+  .sign-up__title {
+    font-size: 1.5rem;
+  }
+
+  .sign-up__form_navigation__item h2 {
+    font-size: 0.875rem;
+  }
+
+  .sign-up__form_connections ul li {
+    font-size: 0.75rem;
+  }
+
+  .sign-up__form_connections ul {
+    padding-left: 1rem !important;
+  }
+
+  .sign-up__form_terms {
+    margin-bottom: 0;
+  }
+
+  .sign_up__result h2 {
+    font-size: 1.5rem;
+  }
+
+  .sign-up__footer {
+    flex-wrap: wrap !important;
+  }
+
+  .sign-up__footer_link,
+  .sign-up__footer_link.v-btn.v-btn--disabled.v-btn--has-bg {
+    width: 100%;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  .sign-up__footer_link__secondary {
+    margin-bottom: 1rem !important;
+  }
+
+  .sign_up__result p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .sign_up__result {
+    min-height: 0;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .sign-up__form_navigation__item h2 {
+    font-size: 0.75rem;
+  }
+}

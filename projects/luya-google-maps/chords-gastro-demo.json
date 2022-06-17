@@ -1,0 +1,155 @@
+[
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "tibits Basel Steinen",
+      "Strasse und Hausnummer": "Stänzlergasse 4",
+      "Pstlz": "4051",
+      "Ort": "Basel",
+      "X-Koordinaten": "47.5526293",
+      "Y-Koordinaten": "7.588913986"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "tibits Basel Gundeli",
+      "Strasse und Hausnummer": "Meret Oppenheim-Platz 1",
+      "Pstlz": "4053",
+      "Ort": "Basel",
+      "X-Koordinaten": "47.54606058",
+      "Y-Koordinaten": "7.587411746"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "tibits Bern Bahnhof",
+      "Strasse und Hausnummer": "Bahnhofplatz 10",
+      "Pstlz": "3011",
+      "Ort": "Bern",
+      "X-Koordinaten": "46.94868336",
+      "Y-Koordinaten": "7.440256853"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "tibits Bern Gurtengasse",
+      "Strasse und Hausnummer": "Gurtengasse 3",
+      "Pstlz": "3011",
+      "Ort": "Bern",
+      "X-Koordinaten": "46.94704805",
+      "Y-Koordinaten": "7.441968131"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "tibits Lausanne",
+      "Strasse und Hausnummer": "Place de la Gare 11",
+      "Pstlz": "1003",
+      "Ort": "Lausanne",
+      "X-Koordinaten": "46.51723412",
+      "Y-Koordinaten": "6.627899939"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "tibits Luzern",
+      "Strasse und Hausnummer": "Zentralstrasse",
+      "Pstlz": "6003",
+      "Ort": "Luzern",
+      "X-Koordinaten": "47.05008518",
+      "Y-Koordinaten": "8.309974438"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "tibits St.Gallen",
+      "Strasse und Hausnummer": "Bahnhofplatz 1A",
+      "Pstlz": "9000",
+      "Ort": "St.Gallen",
+      "X-Koordinaten": "47.42289997",
+      "Y-Koordinaten": "9.371164425"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "tibits Winterthur",
+      "Strasse und Hausnummer": "Oberer Graben 48 ",
+      "Pstlz": "8400",
+      "Ort": "Winterthur",
+      "X-Koordinaten": "47.50007021",
+      "Y-Koordinaten": "8.731218353"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "tibits Zürich Seefeld",
+      "Strasse und Hausnummer": "Seefeldstrasse 2",
+      "Pstlz": "8008",
+      "Ort": "Zürich",
+      "X-Koordinaten": "47.3649948",
+      "Y-Koordinaten": "8.547957696"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "tibits Bistro",
+      "Strasse und Hausnummer": "Falkenstrasse 12",
+      "Pstlz": "8008",
+      "Ort": "Zürich",
+      "X-Koordinaten": "47.36469357",
+      "Y-Koordinaten": "8.547615961"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "tibits Oerlikon",
+      "Strasse und Hausnummer": "Tramstrasse 2",
+      "Pstlz": "8050",
+      "Ort": "Zürich",
+      "X-Koordinaten": "47.40916049",
+      "Y-Koordinaten": "8.546697095"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "LILY’S ORIGINAL ZÜRICH",
+      "Strasse und Hausnummer": "Langstrasse 197",
+      "Pstlz": "8005",
+      "Ort": "Zürich",
+      "X-Koordinaten": "47.38254476",
+      "Y-Koordinaten": "8.529664022"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "LILY’S FACTORY ZÜRICH",
+      "Strasse und Hausnummer": "Sihlfeldstrasse 58",
+      "Pstlz": "8003",
+      "Ort": "Zürich",
+      "X-Koordinaten": "47.37543793",
+      "Y-Koordinaten": "8.516861863"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "LILY’S MAXIM BASEL",
+      "Strasse und Hausnummer": "Rebgasse 1",
+      "Pstlz": "4058",
+      "Ort": "Basel",
+      "X-Koordinaten": "47.56122011",
+      "Y-Koordinaten": "7.594022966"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "Café du Bonheur",
+      "Strasse und Hausnummer": "Zypressenstrasse 115",
+      "Pstlz": "8004",
+      "Ort": "Zürich",
+      "X-Koordinaten": "47.37992547",
+      "Y-Koordinaten": "8.516313469"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "Restaurant Le Beizli",
+      "Strasse und Hausnummer": "Könizstrasse 161",
+      "Pstlz": "3097",
+      "Ort": "Köniz",
+      "X-Koordinaten": "46.93556867",
+      "Y-Koordinaten": "7.416785103"
+  },
+  {
+      "Enterprise": "Gastronomie",
+      "Name": "Café Kornsilo",
+      "Strasse und Hausnummer": "Seefeldstrasse 231",
+      "Pstlz": "8008",
+      "Ort": "Zürich",
+      "X-Koordinaten": "47.35170823",
+      "Y-Koordinaten": "8.560911828"
+  }
+]
