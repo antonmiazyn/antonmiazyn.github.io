@@ -182,7 +182,7 @@ window.addEventListener('DOMContentLoaded', () => {
           isMobile: false,
 
           center: {},
-          zoom: 6,
+          zoom: 7,
           markers: {
             einzelhandel: [],
             gastronomie: []
@@ -364,7 +364,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }
 
             this.detectCenter(centerChords.xArr, centerChords.yArr)
-            this.zoom = 6
+            this.zoom = 7
             this.searchTyping()
 
             resolve()
@@ -475,7 +475,7 @@ window.addEventListener('DOMContentLoaded', () => {
             scrollWrapper.scrollTop = 0
 
             this.detectCenter(centerChords.xArr, centerChords.yArr)
-            this.zoom = 6
+            this.zoom = 7
 
             resolve()
           }).then(() => {
