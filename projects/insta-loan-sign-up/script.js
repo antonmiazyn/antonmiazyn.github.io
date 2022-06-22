@@ -474,7 +474,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 </p>
                 <p v-if="!globalStatus.isOk" class="mb-6 mb-md-8">Please, try again</p>
               </div>
-              <a href="/" v-if="globalStatus.isOk" class="sign-up__footer_link">Back to Home</a>
+              <a href="https://instaloan.massyfinance.com" v-if="globalStatus.isOk" class="sign-up__footer_link">Back to Home</a>
               <a v-if="!globalStatus.isOk" @click="setStep(1)" class="sign-up__footer_link">Try Again</a>
             </div>
           </div>
