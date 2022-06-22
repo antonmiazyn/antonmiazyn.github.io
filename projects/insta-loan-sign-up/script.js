@@ -162,12 +162,16 @@ window.addEventListener('DOMContentLoaded', () => {
                         v-model="homephoneno"
                         name="cb_homephoneno"
                         id="cb_homephoneno"
+                        class="hidden-field"
+                      />
+                      <v-text-field
+                        v-model="notPureHomenumber"
                         color="#021B28"
                         :rules="rules.phonenumber"
                         placeholder="(868)-XXX-XXXX"
                         class="ma-0 pa-0"
-                        @focus="checkPhonePattern('homephoneno')"
-                        @keydown="$event => setPhonePattern('homephoneno', $event)"
+                        @focus="checkPhonePattern('notPureHomenumber')"
+                        @keydown="$event => setPhonePattern('notPureHomenumber', $event)"
                       />
                     </div>
                     <div class="field-wrapper">
@@ -176,12 +180,16 @@ window.addEventListener('DOMContentLoaded', () => {
                         v-model="mobile"
                         name="cb_mobile"
                         id="cb_mobile"
+                        class="hidden-field"
+                      />
+                      <v-text-field
+                        v-model="notPureMobileNumber"
                         color="#021B28"
                         :rules="rules.phonenumber"
                         placeholder="(868)-XXX-XXXX"
                         class="ma-0 pa-0"
-                        @focus="checkPhonePattern('mobile')"
-                        @keydown="$event => setPhonePattern('mobile', $event)"
+                        @focus="checkPhonePattern('notPureMobileNumber')"
+                        @keydown="$event => setPhonePattern('notPureMobileNumber', $event)"
                       />
                     </div>
                   </div>
@@ -517,6 +525,9 @@ window.addEventListener('DOMContentLoaded', () => {
               items: ['Facebook', 'Instagram', 'Google', 'Website', 'Radio', 'Newspaper', 'Friend', 'Invitation', 'Online news', 'Magazine', 'TV', 'LinkedIn', 'Twitter', 'Comparison website', 'Google Organic', 'Google Paid', 'Bing Organic', 'Bing Paid', 'Yahoo', 'Promotech', 'Barbados Fertility Centre', 'ACE H&B Hardware', 'Gajah Home', 'Automotive Art', 'Innogen', 'Brancker\'s', 'Trowel Plastics', 'Ballyclare Dental', 'Armstrong Health Care Inc.', 'Coast to Coast Cooling', 'Victoria Mutual', 'Royale Computers and Accessories', 'Other', 'Don\'t know']
             }
           },
+          
+          notPureHomenumber: '',
+          notPureMobileNumber: '',
 
           firstname: '',
           appeal: 'Mr',
@@ -540,7 +551,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
           rules: {
             middlename: [
-              v => /^[a-zA-Z, ]+$/.test(v) || 'Field must contain only letters'
+              v => (/^[a-zA-Z, ]+$/.test(v) || v === '') || 'Field must contain only letters'
             ],
             firstname: [
               v => !!v || 'Enter first name',
@@ -611,7 +622,19 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       },
 
-      watch: {},
+      watch: {
+        notPureHomenumber (value) {
+          const pure = value.replace('-', '').replace('(', '').replace(')', '').replace('-', '')
+
+          this.homephoneno = pure
+        },
+
+        notPureMobileNumber (value) {
+          const pure = value.replace('-', '').replace('(', '').replace(')', '').replace('-', '')
+
+          this.mobile = pure
+        }
+      },
 
       created () {
         try {
@@ -636,8 +659,8 @@ window.addEventListener('DOMContentLoaded', () => {
           this.birthdayParts[key] = value
 
           if (this.birthdayParts.year && this.birthdayParts.month && this.birthdayParts.day) {
-            const month = this.birthdayParts.month < 10 ? '0' + this.birthdayParts.month : this.birthdayParts.month
-            const day = this.birthdayParts.day < 10 ? '0' + this.birthdayParts.day : this.birthdayParts.day
+            const month = this.birthdayParts.month < 10 && this.birthdayParts.month.length === 1 ? '0' + this.birthdayParts.month : this.birthdayParts.month
+            const day = this.birthdayParts.day < 10 && this.birthdayParts.day.length === 1 ? '0' + this.birthdayParts.day : this.birthdayParts.day
 
             this.birthday = `${this.birthdayParts.year}-${month}-${day}`
           }
