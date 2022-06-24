@@ -29,8 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
                   <input type="hidden" name="id" value="0" />
                   <input type="hidden" name="gid" value="0" />
                   <input type="hidden" name="emailpass" value="0" />
-                  <input type="hidden" name="cbsecuritym3" value="cbm_79d17317_1b4c9bde_fb6916f00b241815497fc3f3c7d028b9" />
-                  <input type="hidden" name="cbrasitway" value="cbrv1_c2c1132fe5627bc6653d8507a20e9b3d_h9I01C8FBNRAgePT" />
+                  <input type="hidden" name="cbsecuritym3" value="cbm_55015051_10ec1953_cb029ba04487cf136a3007af527d18c7" />
+                  <input type="hidden" name="cbrasitway" value="cbrv1_f5ec072c7c5a6c3380ec0c70af8fcf02_mQbjJiJi3V7iHokW" />
                   <div class="d-flex justify-space-between form-fieldgroup appeal-fieldgroup">
                     <div class="field-wrapper">
                       <label for="cb_title" class="mb-1">Title</label>
@@ -245,7 +245,7 @@ window.addEventListener('DOMContentLoaded', () => {
                       <v-text-field
                         name="cb_trn"
                         id="cb_trn"
-                        value="123456789"
+                        value="11111"
                         class="hidden-field"
                       />
                     </div>
@@ -383,13 +383,6 @@ window.addEventListener('DOMContentLoaded', () => {
                         id="does_referral"
                         value="0"
                         hidden
-                        class="hidden-field"
-                      />
-                      <v-text-field
-                        name="Vmmember"
-                        id="Vmmember"
-                        hidden
-                        value=""
                         class="hidden-field"
                       />
                       <v-text-field
@@ -570,7 +563,8 @@ window.addEventListener('DOMContentLoaded', () => {
               v => /^[a-zA-Z, ]+$/.test(v) || 'Field must contain only letters'
             ],
             username: [
-              v => !!v && !!v.trim() || 'Enter username'
+              v => !!v && !!v.trim() || 'Enter username',
+              v => !!v && v.length > 2 && v.length < 11 || 'Username should consist of 3-10 characters'
             ],
             textfield: [
               v => !!v && !!v.trim() || 'This field is required',
@@ -611,7 +605,7 @@ window.addEventListener('DOMContentLoaded', () => {
             ],
             password: [
               v => !!v && !!v.trim() || 'This field is required',
-              v => !!v && v.length > 7 || 'Password should contain at least 8 characters'
+              v => !!v && v.length > 5 || 'Password should contain at least 6 characters'
             ],
             passwordConfirm: [
               v => !!v && !!v.trim() || 'This field is required',
@@ -632,13 +626,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
       watch: {
         notPureHomenumber (value) {
-          const pure = value.replace('-', '').replace('(', '').replace(')', '').replace('-', '')
+          const pure = value.replace('-', ' ').replace('-', ' ')
 
           this.homephoneno = pure
         },
 
         notPureMobileNumber (value) {
-          const pure = value.replace('-', '').replace('(', '').replace(')', '').replace('-', '')
+          const pure = value.replace('-', ' ').replace('-', ' ')
 
           this.mobile = pure
         }
