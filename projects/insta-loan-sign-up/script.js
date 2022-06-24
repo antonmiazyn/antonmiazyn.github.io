@@ -430,9 +430,9 @@ window.addEventListener('DOMContentLoaded', () => {
                       class="ma-0 pa-0 hidden-field"
                     />
                   </div>
+                  <input type="hidden" name="profiletype" value="person" />
+                  <input type="hidden" name="cb_profiletype" value="person" />
                 </v-form>
-                <input type="hidden" name="profiletype" value="person" />
-                <input type="hidden" name="cb_profiletype" value="person" />
               </div>
             </div>
             <footer class="pt-3 d-flex align-center justify-center justify-md-end sign-up__footer">
@@ -504,6 +504,14 @@ window.addEventListener('DOMContentLoaded', () => {
                 {
                   label: 'TT$',
                   value: 'TTD'
+                },
+                {
+                  label: 'BBD',
+                  value: 'BBD'
+                },
+                {
+                  label: 'JMD',
+                  value: 'JMD'
                 }
               ]
             },
@@ -554,28 +562,28 @@ window.addEventListener('DOMContentLoaded', () => {
               v => (/^[a-zA-Z, ]+$/.test(v) || v === '') || 'Field must contain only letters'
             ],
             firstname: [
-              v => !!v || 'Enter first name',
+              v => !!v && !!v.trim() || 'Enter first name',
               v => /^[a-zA-Z, ]+$/.test(v) || 'Field must contain only letters'
             ],
             lastname: [
-              v => !!v || 'Enter last name',
+              v => !!v && !!v.trim() || 'Enter last name',
               v => /^[a-zA-Z, ]+$/.test(v) || 'Field must contain only letters'
             ],
             username: [
-              v => !!v || 'Enter username'
+              v => !!v && !!v.trim() || 'Enter username'
             ],
             textfield: [
-              v => !!v || 'This field is required',
-              v => /^[a-zA-Z]+$/.test(v) || 'Field must contain only letters'
+              v => !!v && !!v.trim() || 'This field is required',
+              v => /^[a-zA-Z, ]+$/.test(v) || 'Field must contain only letters'
             ],
             address: [
-              v => !!v || 'This field is required'
+              v => !!v && !!v.trim() || 'This field is required'
             ],
             select: [
               v => !!v || 'This field is required'
             ],
             number: [
-              v => !!v || 'This field is required',
+              v => !!v && !!v.trim() || 'This field is required',
               v => /^[0-9]+$/.test(v) || 'Field must contain only digits'
             ],
             phonenumber: [
@@ -584,38 +592,38 @@ window.addEventListener('DOMContentLoaded', () => {
               v => !!v && v.length === 14 || 'Field must contain 10 digits'
             ],
             month: [
-              v => !!v || 'This field is required',
+              v => !!v && !!v.trim() || 'This field is required',
               v => /^[0-9]+$/.test(v) || 'Field must contain only digits',
               v => !!v && v.length < 3 || 'Field must contain 1-2 digits',
               v => !!v && v > 0 && v < 13 || 'Not correct month'
             ],
             day: [
-              v => !!v || 'This field is required',
+              v => !!v && !!v.trim() || 'This field is required',
               v => /^[0-9]+$/.test(v) || 'Field must contain only digits',
               v => !!v && v.length < 3 || 'Field must contain 1-2 digits',
               v => !!v && v > 0 && v < 32 || 'Not correct day'
             ],
             year: [
-              v => !!v || 'This field is required',
+              v => !!v && !!v.trim() || 'This field is required',
               v => /^[0-9]+$/.test(v) || 'Field must contain only digits',
               v => !!v && v.length === 4 || 'Field must contain 4 digits',
               v => !!v && v > 1932 && v < new Date().getFullYear() - 18 || 'Not correct year'
             ],
             password: [
-              v => !!v || 'This field is required',
+              v => !!v && !!v.trim() || 'This field is required',
               v => !!v && v.length > 7 || 'Password should contain at least 8 characters'
             ],
             passwordConfirm: [
-              v => !!v || 'This field is required',
+              v => !!v && !!v.trim() || 'This field is required',
               v => !!v && v === this.password || 'Password should match'
             ],
             email: [
-              v => !!v || 'This field is required',
+              v => !!v && !!v.trim() || 'This field is required',
               v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
               v => v.length <= 254 || 'Too long E-mail'
             ],
             emailConfirm: [
-              v => !!v || 'This field is required',
+              v => !!v && !!v.trim() || 'This field is required',
               v => !!v && v === this.email || 'Email should match'
             ]
           }
