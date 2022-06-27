@@ -684,7 +684,7 @@ window.addEventListener('DOMContentLoaded', () => {
             if (this[field].length <= 6) {
               event.preventDefault()
             }
-          } else {
+          } else if (event.key !== 'Tab') {
             event.preventDefault()
           }
         },
@@ -717,16 +717,16 @@ window.addEventListener('DOMContentLoaded', () => {
               fetch('https://www.carilend.com/index.php?option=com_comprofiler&view=saveregisters&Itemid=4192', {
                 method: 'POST',
                 body: formData,
-              }).then(res => {
-                console.log(res)
-                console.log('--------------------')
-                console.log(res.json())
-                console.log('--------------------')
-                console.log(res.text())
+              }).then(response => {  
+                return response.text()
+              }).then(html => {
+                const parser = new DOMParser()
+	              const doc = parser.parseFromString(html, 'text/html')
 
-                if (res.status === 200) {
+                if (doc) {
                   this.globalStatus.isOk = true
                   this.globalStatus.message = 'Successfully registered!'
+
                   this.setStep(3)
                 } else {
                   this.globalStatus.isOk = false
