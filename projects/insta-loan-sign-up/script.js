@@ -718,6 +718,12 @@ window.addEventListener('DOMContentLoaded', () => {
                 method: 'POST',
                 body: formData,
               }).then(res => {
+                console.log(res)
+                console.log('--------------------')
+                console.log(res.json())
+                console.log('--------------------')
+                console.log(res.text())
+
                 if (res.status === 200) {
                   this.globalStatus.isOk = true
                   this.globalStatus.message = 'Successfully registered!'
