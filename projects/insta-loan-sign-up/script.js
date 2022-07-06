@@ -523,7 +523,7 @@ window.addEventListener('DOMContentLoaded', () => {
               items: ['Owner', 'Tenant', 'Living with Parents', 'Living with Partner', 'Other']
             },
             howhearaboutus: {
-              items: ['Facebook', 'Instagram', 'Google', 'Website', 'Radio', 'Newspaper', 'Friend', 'Invitation', 'Online news', 'Magazine', 'TV', 'LinkedIn', 'Twitter', 'Comparison website', 'Google Organic', 'Google Paid', 'Bing Organic', 'Bing Paid', 'Yahoo', 'Promotech', 'Barbados Fertility Centre', 'ACE H&B Hardware', 'Gajah Home', 'Automotive Art', 'Innogen', 'Brancker\'s', 'Trowel Plastics', 'Ballyclare Dental', 'Armstrong Health Care Inc.', 'Coast to Coast Cooling', 'Victoria Mutual', 'Royale Computers and Accessories', 'Other', 'Don\'t know']
+              items: ['Facebook', 'Instagram', 'Google', 'Comparison website', 'Radio', 'Newspaper', 'Friend', 'Invitation', 'Online news', 'Magazine', 'TV', 'LinkedIn', 'Twitter', 'Google Organic', 'Google Paid', 'Bing Organic', 'Bing Paid', 'Yahoo', 'Promotech', 'Barbados Fertility Centre', 'ACE H&B Hardware', 'Gajah Home', 'Automotive Art', 'Innogen', 'Brancker\'s', 'Trowel Plastics', 'Ballyclare Dental', 'Armstrong Health Care Inc.', 'Coast to Coast Cooling', 'Victoria Mutual', 'Royale Computers and Accessories', 'Other', 'Don\'t know']
             }
           },
           
@@ -533,7 +533,7 @@ window.addEventListener('DOMContentLoaded', () => {
           firstname: '',
           appeal: 'Mr',
           currency: 'TTD',
-          country: 'Trinidad',
+          country: 'Trinidad And Tobago',
           homephoneno: '',
           mobile: '',
           isusresident: '0',
