@@ -497,14 +497,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 {
                   label: 'TT$',
                   value: 'TTD'
-                },
-                {
-                  label: 'BBD',
-                  value: 'BBD'
-                },
-                {
-                  label: 'JMD',
-                  value: 'JMD'
                 }
               ]
             },
