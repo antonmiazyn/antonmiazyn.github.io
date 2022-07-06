@@ -511,8 +511,8 @@ window.addEventListener('DOMContentLoaded', () => {
             country: {
               items: [
                 {
-                  label: 'Trinidad and Tobago',
-                  value: 'Trinidad'
+                  label: 'Trinidad And Tobago',
+                  value: 'Trinidad And Tobago'
                 }
               ]
             },
@@ -542,7 +542,7 @@ window.addEventListener('DOMContentLoaded', () => {
           passwordConfirm: '',
           email: '',
           emailConfirm: '',
-          nationality: 'Trinidad and Tobago',
+          nationality: 'Trinidad And Tobago',
           birthdayParts: {
             year: '',
             month: '',
