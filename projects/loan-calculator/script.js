@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
                   {{ '$' + result }}
                 </h4>
               </div>
-              <a href="https://instaloan.carilend.com" class="loan-calculator__footer_link">
+              <a href="http://instaloan.carilend.com" class="loan-calculator__footer_link">
                 Next step
               </a>
             </div>
