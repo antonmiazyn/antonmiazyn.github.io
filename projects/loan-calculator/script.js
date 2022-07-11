@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
       data () {
         return {
           massy: {
-            annualRate: 0.14
+            annualRate: 0.15
           },
 
           loan: {
