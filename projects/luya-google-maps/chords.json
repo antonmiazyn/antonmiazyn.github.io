@@ -1511,5 +1511,68 @@
     "Ort": "Zürich",
     "X-Koordinaten": "47.35170823",
     "Y-Koordinaten": "8.560911828"
+  },
+  {
+    "Enterprise": "Einzelhandel",
+    "Name": "Coop Adligenswil",
+    "Strasse und Hausnummer": "Im Zentrum 3",
+    "Pstlz": "6043",
+    "Ort": "Adligenswil",
+    "X-Koordinaten": "47.07166053963929",
+    "Y-Koordinaten": "8.36484640662617"
+  },
+  {
+    "Enterprise": "Einzelhandel",
+    "Name": "Coop Hinwil Hiwi-Märt",
+    "Strasse und Hausnummer": "Gossauerstrasse 14",
+    "Pstlz": "8340",
+    "Ort": "Hinwil",
+    "X-Koordinaten": "47.298810189790096",
+    "Y-Koordinaten": "8.838153579992415"
+  },
+  {
+    "Enterprise": "Einzelhandel",
+    "Name": "Coop Basel Europe",
+    "Strasse und Hausnummer": "Clarastrasse 41",
+    "Pstlz": "4058",
+    "Ort": "Basel",
+    "X-Koordinaten": "47.56285180114681",
+    "Y-Koordinaten": "7.59702699846687"
+  },
+  {
+    "Enterprise": "Einzelhandel",
+    "Name": "Coop Richterswil Obermatt",
+    "Strasse und Hausnummer": "Obermattstrasse 7",
+    "Pstlz": "8805",
+    "Ort": "Richterswil",
+    "X-Koordinaten": "47.20367632942346",
+    "Y-Koordinaten": "8.683690479399617"
+  },
+  {
+    "Enterprise": "Einzelhandel",
+    "Name": "Coop Steinhausen",
+    "Strasse und Hausnummer": "Bahnhofstrasse 7",
+    "Pstlz": "6312",
+    "Ort": "Steinhausen",
+    "X-Koordinaten": "47.19643439999868",
+    "Y-Koordinaten": "8.483054599999294"
+  },
+  {
+    "Enterprise": "Einzelhandel",
+    "Name": "Coop Bern Postparc",
+    "Strasse und Hausnummer": "Schanzenstrasse 4",
+    "Pstlz": "3008",
+    "Ort": "Bern",
+    "X-Koordinaten": "46.94899509409373",
+    "Y-Koordinaten": "7.43760906845348"
+  },
+  {
+    "Enterprise": "Einzelhandel",
+    "Name": "Coop Bern Neuengasse Karma",
+    "Strasse und Hausnummer": "Bahnhofpl. 11",
+    "Pstlz": "3011",
+    "Ort": "Bern",
+    "X-Koordinaten": "46.94877893890265",
+    "Y-Koordinaten": "7.4408536512590455"
   }
 ]
