@@ -32,15 +32,22 @@
   transition: width 1s, transform 1s;
 }
 
+@keyframes wrapper {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .hero--background-wrapper {
   display: none;
-  opacity: 0;
-  transition: opacity 1s;
 }
 
 .hero--background-wrapper.visible {
   display: block;
-  opacity: 1;
+  animation: wrapper 1s forwards;
 }
 
 /* ____________________________ */
