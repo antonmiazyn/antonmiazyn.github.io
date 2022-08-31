@@ -11,16 +11,17 @@
   <section class="hero">
     <div class="hero--background">
       <img src="./img/sky.png" alt class="hero--background-img img-1">
-      <img src="./img/background.png" alt class="hero--background-img img-2">
-      <img src="./img/mount-1.png" alt class="hero--background-img img-3">
-      <img src="./img/mount-2.png" alt class="hero--background-img img-4">
-      <img src="./img/mount-3.png" alt class="hero--background-img img-5">
-      <img src="./img/road.png" alt class="hero--background-img img-6">
-      <img src="./img/mount-4.png" alt class="hero--background-img img-7">
-      <img src="./img/hills.png" alt class="hero--background-img img-8">
-      <img src="./img/palms-left.png" alt class="hero--background-img img-9">
-      <img src="./img/palms-right.png" alt class="hero--background-img img-10">
-      <div class="hero--background-preloader"></div>
+      <div class="hero--background-wrapper">
+        <img src="./img/background.png" alt class="hero--background-img img-2">
+        <img src="./img/mount-1.png" alt class="hero--background-img img-3">
+        <img src="./img/mount-2.png" alt class="hero--background-img img-4">
+        <img src="./img/mount-3.png" alt class="hero--background-img img-5">
+        <img src="./img/road.png" alt class="hero--background-img img-6">
+        <img src="./img/mount-4.png" alt class="hero--background-img img-7">
+        <img src="./img/hills.png" alt class="hero--background-img img-8">
+        <img src="./img/palms-left.png" alt class="hero--background-img img-9">
+        <img src="./img/palms-right.png" alt class="hero--background-img img-10">
+      </div>
     </div>
   </section>
 
@@ -42,20 +43,25 @@
         const background = document.querySelector('.hero--background')
         if (!background) return
 
-        const preloader = document.querySelector('.hero--background-preloader')
-        if (!preloader) return
+        const sky = background.querySelector('.hero--background-img.img-1')
+        if (!sky) return
 
-        const images = background.querySelectorAll('.hero--background-img')
+        const wrapper = background.querySelector('.hero--background-wrapper')
+        if (!wrapper) return
+
+        const images = wrapper.querySelectorAll('.hero--background-img')
         if (!images || !images.length) return
 
-        if (imagesLoaded([...images])) {
-          window.requestAnimationFrame(() => {
-            preloader.classList.add('hidden')
+        if (imagesLoaded([sky])) {
+          if (imagesLoaded([...images])) {
+            wrapper.classList.add('visible')
 
-            setTimeout(() => {
-              background.classList.add('animate')
-            }, 1000)
-          })
+            window.requestAnimationFrame(() => {
+              setTimeout(() => {
+                background.classList.add('animate')
+              }, 1200)
+            })
+          }
         }
       })
     })

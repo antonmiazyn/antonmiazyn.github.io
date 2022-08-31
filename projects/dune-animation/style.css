@@ -29,24 +29,21 @@
   position: absolute;
   height: auto;
   top: 0;
-  will-change: transform;
   transition: width 1s, transform 1s;
 }
 
-.hero--background-preloader {
-  background-color: #fff0df;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.hero--background-wrapper {
+  opacity: 0;
+  transition: opacity 1s;
 }
 
-.hero--background-preloader.hidden {
-  display: none !important;
+.hero--background-wrapper.visible {
+  opacity: 1;
 }
 
-
+.hero--background-img:not(.img-1) {
+  opacity: 1;
+}
 
 /* ____________________________ */
 
