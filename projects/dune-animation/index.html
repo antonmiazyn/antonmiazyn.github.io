@@ -51,7 +51,10 @@
         if (imagesLoaded([...images])) {
           window.requestAnimationFrame(() => {
             preloader.classList.add('hidden')
-            background.classList.add('animate')
+
+            setTimeout(() => {
+              background.classList.add('animate')
+            }, 1000)
           })
         }
       })
