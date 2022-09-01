@@ -9,18 +9,35 @@
 </head>
 <body>
   <section class="hero">
-    <div class="hero--background">
-      <img src="./img/sky.png" alt class="hero--background-img img-1">
+    <div class="hero--background desktop">
+      <img src="./img-desktop/sky.webp" alt class="hero--background-img img-1">
       <div class="hero--background-wrapper">
-        <img src="./img/background.png" alt class="hero--background-img img-2">
-        <img src="./img/mount-1.png" alt class="hero--background-img img-3">
-        <img src="./img/mount-2.png" alt class="hero--background-img img-4">
-        <img src="./img/mount-3.png" alt class="hero--background-img img-5">
-        <img src="./img/road.png" alt class="hero--background-img img-6">
-        <img src="./img/mount-4.png" alt class="hero--background-img img-7">
-        <img src="./img/hills.png" alt class="hero--background-img img-8">
-        <img src="./img/palms-left.png" alt class="hero--background-img img-9">
-        <img src="./img/palms-right.png" alt class="hero--background-img img-10">
+        <img src="./img-desktop/background.webp" alt class="hero--background-img img-2">
+        <img src="./img-desktop/mount-1.webp" alt class="hero--background-img img-3">
+        <img src="./img-desktop/mount-2.webp" alt class="hero--background-img img-4">
+        <img src="./img-desktop/mount-3.webp" alt class="hero--background-img img-5">
+        <img src="./img-desktop/road.webp" alt class="hero--background-img img-6">
+        <img src="./img-desktop/mount-4.webp" alt class="hero--background-img img-7">
+        <img src="./img-desktop/hills.webp" alt class="hero--background-img img-8">
+        <img src="./img-desktop/palms-left.webp" alt class="hero--background-img img-9">
+        <img src="./img-desktop/palms-right.webp" alt class="hero--background-img img-10">
+      </div>
+    </div>
+    <div class="hero--background mobile">
+      <img src="./img-mobile/sky.webp" alt class="hero--background-img img-m-1">
+      <div class="hero--background-wrapper">
+        <img src="./img-mobile/background.webp" alt class="hero--background-img img-m-2">
+        <img src="./img-mobile/mount-1.webp" alt class="hero--background-img img-m-3">
+        <img src="./img-mobile/mount-2.webp" alt class="hero--background-img img-m-4">
+        <img src="./img-mobile/road.webp" alt class="hero--background-img img-m-5">
+        <img src="./img-mobile/mount-3.webp" alt class="hero--background-img img-m-6">
+        <img src="./img-mobile/hills.webp" alt class="hero--background-img img-m-7">
+        <img src="./img-mobile/palm-left.webp" alt class="hero--background-img img-m-8">
+        <img src="./img-mobile/palm-right.webp" alt class="hero--background-img img-m-9">
+        <img src="./img-mobile/plants-1.webp" alt class="hero--background-img img-m-10">
+        <img src="./img-mobile/palm.webp" alt class="hero--background-img img-m-11">
+        <img src="./img-mobile/plants-2.webp" alt class="hero--background-img img-m-12">
+        <img src="./img-mobile/tree.webp" alt class="hero--background-img img-m-13">
       </div>
     </div>
   </section>
@@ -38,32 +55,52 @@
       if (counter === images.length) return true
     }
 
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        const background = document.querySelector('.hero--background')
+    const checkIsMobile = () => {
+      if (window.innerWidth <= 512) return true
+    }
+
+    const startAnimation = (bg, ini) => {
+      const wrapper = bg.querySelector('.hero--background-wrapper')
+      if (!wrapper) return
+
+      const images = wrapper.querySelectorAll('.hero--background-img')
+      if (!images || !images.length) return
+
+      if (imagesLoaded([ini])) {
+        if (imagesLoaded([...images])) {
+          wrapper.classList.add('visible')
+
+          window.requestAnimationFrame(() => {
+            setTimeout(() => {
+              bg.classList.add('animate')
+            }, 1200)
+          })
+        }
+      }
+    }
+
+    const animate = () => {
+      if (!checkIsMobile()) {
+        const background = document.querySelector('.hero--background.desktop')
         if (!background) return
 
         const sky = background.querySelector('.hero--background-img.img-1')
         if (!sky) return
 
-        const wrapper = background.querySelector('.hero--background-wrapper')
-        if (!wrapper) return
+        startAnimation(background, sky)
+      } else {
+        const background = document.querySelector('.hero--background.mobile')
+        if (!background) return
 
-        const images = wrapper.querySelectorAll('.hero--background-img')
-        if (!images || !images.length) return
+        const sky = background.querySelector('.hero--background-img.img-m-1')
+        if (!sky) return
 
-        if (imagesLoaded([sky])) {
-          if (imagesLoaded([...images])) {
-            wrapper.classList.add('visible')
+        startAnimation(background, sky)
+      }
+    }
 
-            window.requestAnimationFrame(() => {
-              setTimeout(() => {
-                background.classList.add('animate')
-              }, 1200)
-            })
-          }
-        }
-      })
+    ['load', 'resize', 'orientationchange'].forEach(event => {
+      window.addEventListener(event, () => animate())
     })
   </script>
 </body>
