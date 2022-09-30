@@ -304,6 +304,7 @@
 }
 
 .app_form_step .app_form_control .advantage_button {
+    min-width: 245px;
     font-weight: 400 !important;
 }
 
@@ -840,10 +841,6 @@ input {
 
     .app_form_mobile_navigation ul li:first-child {
         margin-bottom: 8px;
-    }
-
-    .app_form_content {
-        padding-top: 0;
     }
 }
 
