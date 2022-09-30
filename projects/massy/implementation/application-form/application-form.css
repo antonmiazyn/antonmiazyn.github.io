@@ -615,12 +615,26 @@ input::-webkit-outer-spin-button,
     -o-transition: border 0.3s;
     transition: border 0.3s;
     border: 1px solid rgba(29, 29, 29, 0.1);
+    border-radius: 10px;
+}
+
+.app_form_fieldset
+.v-text-field--outlined.v-input--is-dirty .v-input__control > .v-input__slot
+fieldset {
+    border: solid 1px #1d1d1d;
 }
 
 .app_form_fieldset
 .v-text-field--outlined.v-input--is-focused .v-input__control > .v-input__slot
 fieldset {
-    border: 1px solid #1d1d1d;
+    border: 1px solid #F7B733;
+}
+
+.app_form_fieldset
+.v-text-field--outlined.v-input--is-focused
+.v-input__control > .v-input__slot {
+    outline: 3px solid rgba(247, 183, 51, 0.48);
+    border-radius: 10px;
 }
 
 .app_form_fieldset
