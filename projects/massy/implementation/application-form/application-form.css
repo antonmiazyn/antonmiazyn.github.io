@@ -43,6 +43,7 @@
     line-height: 38px;
     font-weight: 700;
     margin-bottom: 8px;
+    margin-top: 0;
 }
 
 .app_form_content
@@ -51,6 +52,7 @@
     line-height: 25px;
     max-width: 50%;
     color: rgba(29, 29, 29, 0.8);
+    margin-bottom: 0;
 }
 
 .app_form_content
@@ -387,10 +389,6 @@
     margin-bottom: 0;
 }
 
-.app_form_radio {
-    margin-bottom: 16px;
-}
-
 .app_form_fieldset label {
     display: block;
     font-size: 14px;
@@ -636,6 +634,7 @@ fieldset {
 .v-text-field.v-text-field--enclosed.error--text
 .v-text-field__details {
     margin: 0;
+    margin-bottom: 0 !important;
     padding: 8px 0;
 }
 
@@ -802,10 +801,6 @@ input {
 
     .app_form_fieldset .v-text-field.v-text-field--enclosed.error--text .v-messages {
         font-size: 10px !important;
-    }
-
-    .app_form_fieldset .v-text-field.v-text-field--enclosed .v-text-field__details {
-        margin-bottom: 4px;
     }
 
     .app_form_fieldset .app_form_input-short > div.app_form_date-field svg {
