@@ -50,12 +50,14 @@
     font-size: 16px;
     line-height: 25px;
     max-width: 50%;
+    color: rgba(29, 29, 29, 0.8);
 }
 
 .app_form_content
 .app_form_header p span {
     font-family: 'F37ginger', 'Roobert', 'Roboto', sans-serif;
     font-weight: 400 !important;
+    color: #1d1d1d;
 }
 
 /*-------Headline--------*/
@@ -420,7 +422,7 @@
 .v-radio .v-label {
     font-family: 'Roobert', 'Roboto', sans-serif !important;
     font-weight: 400 !important;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     color: #1d1d1d;
 }
@@ -645,6 +647,8 @@ fieldset {
 .v-text-field--outlined
 .v-input__control > .v-input__slot
 input {
+    font-size: 16px;
+    line-height: 24px;
     color: #1d1d1d;
     -webkit-transition: color 0.3s;
     -o-transition: color 0.3s;
