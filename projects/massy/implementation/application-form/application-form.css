@@ -606,6 +606,7 @@ input::-webkit-outer-spin-button,
     line-height: 18px !important;
     min-height: 48px !important;
     padding-top: 1px !important;
+    border-radius: 10px !important;
 }
 
 .app_form_fieldset
@@ -855,6 +856,10 @@ input {
 
     .app_form_mobile_navigation ul li:first-child {
         margin-bottom: 8px;
+    }
+
+    .app_form_step {
+        min-height: 240px;
     }
 }
 
