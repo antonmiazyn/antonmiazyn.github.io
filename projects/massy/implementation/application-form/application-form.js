@@ -53,7 +53,7 @@ window.addEventListener('load', () => {
                                                 :class="[{ active: formData.step === index }, { clickable: formData.step > index && !success }]"
                                                 @click="(formData.step > index) && !success ? setStep(index) : () => { return }"
                                             >
-                                                {{ nav }}
+                                                {{ nav.trim() }}
                                                 <span class="app_form_nav-arrow" v-if="index !== navigation.length - 1">
                                                     <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M1 9L5 5L1 1" stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
