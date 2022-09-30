@@ -294,6 +294,10 @@
     transition: all 0.3s;
 }
 
+.app_form_step .app_form_control .advantage_button {
+    font-weight: 400 !important;
+}
+
 .app_form_step
 .app_form_control .v-btn::before {
     display: none;
