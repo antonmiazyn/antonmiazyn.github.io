@@ -82,7 +82,7 @@ window.addEventListener('load', () => {
                     Massy Finance rate and competitor rates as of November 15, 2021. Rates subject 
                     to change before fixed deposit is opened and funded.`,
                     button: {
-                        url: '/fixed-deposit-application',
+                        url: typeof FORM_URL !== 'undefined' ? FORM_URL : '/fixed-deposit-application',
                         text: 'Go to next step'
                     },
                     aprCurrency: ['TTD', 'USD'],
