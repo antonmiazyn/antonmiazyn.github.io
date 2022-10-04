@@ -261,13 +261,21 @@ input {
 .dep_chart
 .dep_chart_legend {
     margin-top: 25px;
-    padding: 0 70px;
+    padding: 0 16.15%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+}
+
+@media screen and (min-width: 1920px) {
+    .dep_calculator
+    .dep_chart
+    .dep_chart_legend {
+        padding: 0 12.15%;
+    }
 }
 
 .dep_calculator
