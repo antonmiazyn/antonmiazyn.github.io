@@ -295,3 +295,11 @@
     padding: 18px !important;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .loan-calculator__calculator_wrapper
+  .loan-calculator-app,
+  .loan-calculator__footer {
+    padding: 16px;
+  }
+}
