@@ -217,6 +217,8 @@
     color: #fff !important;
     background-color: #1d1d1d !important;
     border: solid 2px #1d1d1d !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
 }
 
 .loan-calculator__footer_link:hover,
