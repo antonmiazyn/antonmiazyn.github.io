@@ -226,8 +226,7 @@
     color: #fff !important;
     background-color: #1d1d1d !important;
     border: solid 2px #1d1d1d !important;
-    padding-left: 40px !important;
-    padding-right: 40px !important;
+    padding: 18px 40px !important;
     width: auto !important;
 }
 
@@ -279,5 +278,9 @@
   .loan-calculator-app,
   .loan-calculator__footer {
     padding: 24px;
+  }
+
+  .loan-calculator__footer_link {
+    padding: 18px !important;
   }
 }
