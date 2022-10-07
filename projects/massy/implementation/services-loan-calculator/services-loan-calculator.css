@@ -70,7 +70,7 @@
 }
 
 .loan-calculator__field.loan-calculator__field--empty fieldset {
-  color: rgba(29, 29, 29, 0.1) !important;
+  color: rgba(29, 29, 29, 0.12) !important;
 }
 
 .loan-calculator__field.v-input--is-focused fieldset {
@@ -95,7 +95,7 @@
 
 .loan-calculator__field input::placeholder,
 .loan-calculator__field .v-text-field__prefix {
-  color: rgba(29, 29, 29, 0.2);
+  color: #96939a;
   font-weight: 400;
   font-family: 'SF-UI', sans-serif;
 }
@@ -115,7 +115,7 @@
 
 .loan-calculator__field input::placeholder,
 .loan-calculator__field--empty .v-text-field__prefix {
-  color: rgba(29, 29, 29, 0.2) !important;
+  color: #96939a !important;
 }
 
 .loan-calculator__interface {
