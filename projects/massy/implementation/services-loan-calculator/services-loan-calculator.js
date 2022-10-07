@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
       <v-app>
         <div class="pa-8 loan-calculator-app">
           <div class="loan-calculator__interface">
-            <h3 class="mt-0 mb-8 loan-calculator__title">
+            <h3 class="mt-0 loan-calculator__title">
               Calculate your monthly payment
             </h3>
             <v-form v-model="valid" @submit.prevent>
@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', () => {
           </div>
           <div class="pa-4 pa-sm-8 d-flex align-center justify-space-between loan-calculator__footer">
             <div class="loan-calculator__footer_result">
-              <label class="mb-4 loan-calculator__label">
+              <label class="loan-calculator__label">
                 Monthly payment
               </label>
               <h4 class="loan-calculator__footer_value">
