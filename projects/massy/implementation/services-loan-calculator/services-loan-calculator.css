@@ -126,7 +126,7 @@
   padding-bottom: 2px;
 }
 
-.loan-calculator__interface .loan-calculator__fieldgroup:last-child {
+.loan-calculator__interface .loan-calculator__slider {
   width: calc(100% - 10px);
   margin: auto;
 }
