@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 TT$<span class="loan-calculator__footer_value--amount">{{ result }}</span>
               </h4>
             </div>
-            <a href="/apply-now" class="button_color advantage_button loan-calculator__footer_link">
+            <a :href="window.location.href + '/apply-now'" class="button_color advantage_button loan-calculator__footer_link">
               <div class="button_color_wrapp">
                 <div class="text-block-4">
                   Go to next step
