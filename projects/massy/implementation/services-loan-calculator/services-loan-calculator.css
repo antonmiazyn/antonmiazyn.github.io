@@ -229,5 +229,12 @@
 }
 
 .loan-calculator__footer_link .icon-arrow {
+  -webkit-filter: invert(100%) sepia(0%) saturate(5622%) hue-rotate(131deg) brightness(129%) contrast(107%) !important;
+  filter: invert(100%) sepia(0%) saturate(5622%) hue-rotate(131deg) brightness(129%) contrast(107%) !important;
+}
+
+.loan-calculator__footer_link:hover .icon-arrow,
+.loan-calculator__footer_link:focus .icon-arrow {
+  -webkit-filter: none !important;
   filter: none !important;
 }
