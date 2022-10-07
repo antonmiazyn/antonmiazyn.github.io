@@ -1,5 +1,5 @@
 .loan-calculator__calculator_wrapper .v-application {
-  font-family: 'SF UI Text', sans-serif !important;
+  font-family: 'SF-UI', sans-serif !important;
   font-size: 1rem;
   line-height: 1.6em;
   font-weight: 400 !important;
@@ -88,7 +88,7 @@
 .loan-calculator__field .v-text-field__prefix {
   color: rgba(29, 29, 29, 0.2);
   font-weight: 400;
-  font-family: 'SF UI Text', sans-serif;
+  font-family: 'SF-UI', sans-serif;
 }
 
 .loan-calculator__field > .v-input__control > .v-input__slot:before {
@@ -100,7 +100,7 @@
   line-height: 1;
   padding-right: 0 !important;
   font-weight: 400;
-  font-family: 'SF UI Text', sans-serif;
+  font-family: 'SF-UI', sans-serif;
   color: #1d1d1d;
 }
 
