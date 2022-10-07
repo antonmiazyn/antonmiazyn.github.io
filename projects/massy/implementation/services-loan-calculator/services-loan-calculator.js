@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
     vuetify : new Vuetify(),
     template: `
       <v-app>
-        <div class="pa-8 loan-calculator-app">
+        <div class="loan-calculator-app">
           <div class="loan-calculator__interface">
             <h3 class="mt-0 loan-calculator__title">
               Calculate your monthly payment
@@ -56,7 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
               </div>
             </v-form>
           </div>
-          <div class="pa-4 pa-sm-8 d-flex align-center justify-space-between loan-calculator__footer">
+          <div class="d-flex align-center justify-space-between loan-calculator__footer">
             <div class="loan-calculator__footer_result">
               <label class="loan-calculator__label">
                 Monthly payment

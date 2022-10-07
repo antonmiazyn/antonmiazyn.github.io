@@ -13,6 +13,11 @@
   min-height: 0;
 }
 
+.loan-calculator__calculator_wrapper
+.loan-calculator-app {
+  padding: 32px;
+}
+
 .loan-calculator__title {
   font-size: 32px;
   line-height: 1.31;
@@ -127,6 +132,7 @@
 }
 
 .loan-calculator__footer {
+  padding: 32px;
   background-color: #F7F7F7;
   background-image: url(https://uploads-ssl.webflow.com/6303359ee8dad04794bf3f98/63401f224bbe0891e56206ef_footer.png);
   background-position: center center;
@@ -265,5 +271,13 @@
   .loan-calculator__footer_result
   .loan-calculator__label {
     margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .loan-calculator__calculator_wrapper
+  .loan-calculator-app,
+  .loan-calculator__footer {
+    padding: 24px;
   }
 }
