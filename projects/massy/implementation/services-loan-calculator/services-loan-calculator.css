@@ -214,14 +214,14 @@
 }
 
 .loan-calculator__footer_link {
-    color: #fff;
-    background-color: #1d1d1d;
-    border: solid 2px #1d1d1d;
+    color: #fff !important;
+    background-color: #1d1d1d !important;
+    border: solid 2px #1d1d1d !important;
 }
 
 .loan-calculator__footer_link:hover,
 .loan-calculator__footer_link:focus {
-    color: #1d1d1d;
-    background-color: #f7b733;
-    border: solid 2px #f7b733;
+    color: #1d1d1d !important;
+    background-color: #f7b733 !important;
+    border: solid 2px #f7b733 !important;
 }
