@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
             <a :href="baseUrl + '/apply-now'" class="button_color advantage_button loan-calculator__footer_link">
               <div class="button_color_wrapp">
                 <div class="text-block-4">
-                  Go to next step
+                  Open deposit
                 </div>
                 <img src="https://uploads-ssl.webflow.com/619515938931d07a78a397a5/6196541566d8196045b68982_arrow.svg" loading="lazy" alt="arrow" class="icon-arrow">
               </div>
