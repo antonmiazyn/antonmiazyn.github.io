@@ -153,24 +153,6 @@
   line-height: 1.19;
 }
 
-.loan-calculator__footer_link {
-  display: block;
-  padding: 1rem 1.5rem;
-  border-radius: 100px;
-  background-color: #F58220;
-  font-size: 1rem;
-  line-height: 1em;
-  font-weight: 600;
-  color: #fff !important;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.loan-calculator__footer_link:hover,
-.loan-calculator__footer_link:focus {
-  background-color: #2AACE2;
-}
-
 .loan-calculator-app .loan-calculator__slider,
 .loan-calculator-app .loan-calculator__slider .v-slider--horizontal {
   margin: 0;

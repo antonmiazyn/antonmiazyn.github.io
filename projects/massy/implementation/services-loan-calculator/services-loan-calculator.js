@@ -63,8 +63,11 @@ window.addEventListener('DOMContentLoaded', () => {
                 TT$<span class="loan-calculator__footer_value--amount">{{ result }}</span>
               </h4>
             </div>
-            <a href="http://instaloan.carilend.com" class="loan-calculator__footer_link">
-              Next step
+            <a href="/apply-now" class="button_color advantage_button">
+                <div class="button_color_wrapp">
+                    <div class="text-block-4">{{ Go to next step }}</div>
+                    <img src="https://uploads-ssl.webflow.com/619515938931d07a78a397a5/6196541566d8196045b68982_arrow.svg" loading="lazy" alt="arrow" class="icon-arrow">
+                </div>
             </a>
           </div>
         </div>
