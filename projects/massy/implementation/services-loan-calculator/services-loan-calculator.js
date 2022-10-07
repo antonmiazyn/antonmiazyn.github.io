@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
         <div class="pa-8 loan-calculator-app">
           <div class="loan-calculator__interface">
             <h3 class="mt-0 mb-8 loan-calculator__title">
-              Calculate your monthly payment here
+              Calculate your monthly payment
             </h3>
             <v-form v-model="valid" @submit.prevent>
               <div class="loan-calculator__fieldgroup">
