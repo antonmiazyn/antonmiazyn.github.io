@@ -225,3 +225,7 @@
     background-color: #f7b733 !important;
     border: solid 2px #f7b733 !important;
 }
+
+.loan-calculator__footer_link .icon-arrow {
+  filter: none !important;
+}
