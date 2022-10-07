@@ -65,7 +65,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 TT$<span class="loan-calculator__footer_value--amount">{{ result }}</span>
               </h4>
             </div>
-            <a :href="BASE_URL + '/apply-now'" class="button_color advantage_button loan-calculator__footer_link">
+            <a :href="baseUrl + '/apply-now'" class="button_color advantage_button loan-calculator__footer_link">
               <div class="button_color_wrapp">
                 <div class="text-block-4">
                   Go to next step
@@ -81,6 +81,7 @@ window.addEventListener('DOMContentLoaded', () => {
     data () {
       return {
         massy: { annualRate: (typeof ANNUAL_RATE !== 'undefined') ? ANNUAL_RATE : 0.15 },
+        baseUrl: (typeof BASE_URL !== 'undefined') ? BASE_URL : '',
 
         loan: {
           deposit: '',
