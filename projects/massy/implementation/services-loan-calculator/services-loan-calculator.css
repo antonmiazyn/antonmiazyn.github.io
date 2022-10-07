@@ -141,6 +141,7 @@
 }
 
 .loan-calculator__footer_value {
+  margin: 0 !important;
   font-size: 18px;
   line-height: 1.22;
   font-weight: 400;
