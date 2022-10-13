@@ -45,6 +45,7 @@
 .v-select__selection--comma {
     font-size: 16px;
     line-height: 24px;
+    margin: 0 !important;
 }
 
 .v-menu__content {
@@ -54,8 +55,21 @@
     padding-top: 8px !important;
 }
 
+.v-menu__content .v-list-item__title {
+    color: rgba(29, 29, 29, 0.56);
+}
+
+.v-menu__content .v-list-item--link:before {
+    background-color: transparent !important;
+}
+
 .app_form_select .v-input {
     z-index: 2 !important;
+}
+
+.app_form_select {
+    position: relative;
+    z-index: 9;
 }
 
 .app_form_content {
@@ -731,7 +745,7 @@ input {
 
 .app_form_fieldset
 .v-text-field--enclosed .v-input__append-inner {
-    margin-top: 15px;
+    margin-top: 12px;
 }
 
 .app_form_container
