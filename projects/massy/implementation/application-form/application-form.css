@@ -63,6 +63,10 @@
     background-color: transparent !important;
 }
 
+.v-menu__content .v-list-item--link .v-ripple__container {
+    display: none !important;
+}
+
 .app_form_select .v-input {
     z-index: 2 !important;
 }
