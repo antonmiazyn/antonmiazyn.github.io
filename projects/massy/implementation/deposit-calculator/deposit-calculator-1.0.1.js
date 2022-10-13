@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-  if (document.querySelector('#DepositCalc-1-0-1')) {
+  if (document.querySelector('#DepositCalc')) {
       /* --- Chart pattern upload --- */
 
       const pattern = new Image()
@@ -416,7 +416,7 @@ window.addEventListener('load', () => {
                       this.initialDeposit = bitten
                   }
               }
-          }).$mount('#DepositCalc-1-0-1')
+          }).$mount('#DepositCalc')
 
           /* --- Vuetify stylization --- */
 
