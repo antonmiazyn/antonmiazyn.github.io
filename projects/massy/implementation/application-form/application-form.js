@@ -117,7 +117,7 @@ window.addEventListener('load', () => {
                                 <v-btn
                                     :disabled="!formData.validation[0]"
                                     depressed
-                                    color="#F7B733"
+                                    color="#1d1d1d"
                                     class="button_color advantage_button"
                                     @click="setStep(1)"
                                 >
@@ -256,7 +256,7 @@ window.addEventListener('load', () => {
                                 <v-btn
                                     :disabled="!formData.validation[1]"
                                     depressed
-                                    color="#F7B733"
+                                    color="#1d1d1d"
                                     class="button_color advantage_button"
                                     @click="setStep(2)"
                                 >
@@ -377,7 +377,7 @@ window.addEventListener('load', () => {
                                 <v-btn
                                     :disabled="!isIDValid"
                                     depressed
-                                    color="#F7B733"
+                                    color="#1d1d1d"
                                     class="button_color advantage_button"
                                     @click="setStep(3)"
                                 >
@@ -463,7 +463,7 @@ window.addEventListener('load', () => {
                                         (this.formData.bankSelection ? !formData.forms[3].fieldsets[3].value : false)
                                     "
                                     depressed
-                                    color="#F7B733"
+                                    color="#1d1d1d"
                                     class="button_color advantage_button"
                                     @click="submitForms()"
                                 >
