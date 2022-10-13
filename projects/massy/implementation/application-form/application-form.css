@@ -11,13 +11,23 @@
 
 .app_form_container
 .v-application a {
-    color: #1d1d1d;
+    color: #fff;
+}
+
+.app_form_container
+.v-application a.app_form_go_home {
+    background-color: #1d1d1d;
+}
+
+.app_form_container
+.v-application a.app_form_go_home:hover {
+    background-color: #F7B733;
 }
 
 .app_form_container
 .v-application a.app_form_go_home:hover .button_color_wrapp
 .text-block-4 {
-    color: #fff;
+    color: #1d1d1d;
 }
 
 .app_form_container .v-application--wrap {
