@@ -53,6 +53,7 @@
     border-radius: 0 0 10px 10px !important;
     transform: translateY(-8px) !important;
     padding-top: 8px !important;
+    z-index: 10 !important;
 }
 
 .v-menu__content .v-list-item__title {
@@ -82,7 +83,7 @@
 
 .app_form_select {
     position: relative;
-    z-index: 10;
+    z-index: 11;
 }
 
 .app_form_content {
