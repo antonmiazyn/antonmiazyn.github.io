@@ -430,7 +430,7 @@ window.addEventListener('load', () => {
                                             :menu-props="{ top: false, offsetY: true }"
                                         ></v-select>
                                     </div>
-                                    <div v-if="fieldset.type === 'select-depended' && formData.bankSelection" class="app_form_select">
+                                    <div v-if="fieldset.type === 'select-depended' && formData.bankSelection" class="app_form_select" style="z-index: 9;">
                                         <label>{{fieldset.label}}</label>
                                         <v-select
                                             v-model="fieldset.value"
