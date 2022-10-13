@@ -145,7 +145,7 @@ window.addEventListener('load', () => {
                                         type="text"
                                         required
                                         id="initialDeposit"
-                                        :class="[{ 'fill-initiated' : fillInit }]"
+                                        :class="[{ 'fill-initiated' : fillInit }, 'dep_calc__field', { 'dep_calc__field--empty': initialDeposit.length === 0 }]"
                                         @input="cleanString"
                                     ></v-text-field>
                                 </v-form>
