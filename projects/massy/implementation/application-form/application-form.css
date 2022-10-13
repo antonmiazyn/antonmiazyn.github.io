@@ -57,6 +57,15 @@
 
 .v-menu__content .v-list-item__title {
     color: rgba(29, 29, 29, 0.56);
+    transition: color 0.3s;
+}
+
+.v-menu__content .v-list-item:hover .v-list-item__title {
+    color: #1d1d1d;
+}
+
+.v-menu__content .v-list-item.v-list-item--active .v-list-item__title {
+    color: #F7B733;
 }
 
 .v-menu__content .v-list-item--link:before {
