@@ -505,7 +505,7 @@ window.addEventListener('load', () => {
                     currency: ['TT$', '$'],
                     formButtons: ['Next step', 'Submit', 'Go home'],
                     switcherVariants: ['You', 'Co-applicant'],
-                    siteUrl: 'https://deposits.massyfinance.com/',
+                    siteUrl: 'https://massy-finance.webflow.io/fixed-deposits',
                     maxYears: 5,
 
                     success: false,
