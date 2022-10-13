@@ -357,6 +357,13 @@
 }
 
 .app_form_step
+.app_form_control .v-btn
+.v-btn__content {
+    -webkit-filter: invert(1) brightness(3);
+            filter: invert(1) brightness(3);
+}
+
+.app_form_step
 .app_form_control .v-btn:hover
 .v-btn__content {
     -webkit-filter: invert(0) brightness(1);
