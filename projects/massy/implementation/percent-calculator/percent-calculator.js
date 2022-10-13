@@ -83,7 +83,7 @@ window.addEventListener('load', () => {
                     to change before fixed deposit is opened and funded.`,
                     button: {
                         url: typeof FORM_URL !== 'undefined' ? FORM_URL : '/fixed-deposit-application',
-                        text: 'Go to next step'
+                        text: typeof BUTTON_TEXT !== 'undefined' ? BUTTON_TEXT : 'Go to next step'
                     },
                     aprCurrency: ['TTD', 'USD'],
                     aprMaxYears: 5,
