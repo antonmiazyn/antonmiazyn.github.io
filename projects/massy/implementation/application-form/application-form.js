@@ -440,7 +440,7 @@ window.addEventListener('load', () => {
                                             item-color="#F7B733"
                                             append-icon="mdi-chevron-down"
                                             placeholder="— Select bank —"
-                                            :menu-props="{ top: false, offsetY: true }"
+                                            :menu-props="{ top: false, offsetY: true, contentClass: 'bank-selection' }"
                                         ></v-select>
                                     </div>
                                 </div>
