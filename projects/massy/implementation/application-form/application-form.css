@@ -50,6 +50,12 @@
 .v-menu__content {
     box-shadow: 0px 4px 20px rgb(192 192 192 / 18%) !important;
     border-radius: 0 0 10px 10px !important;
+    transform: translateY(-8px) !important;
+    padding-top: 8px !important;
+}
+
+.app_form_select .v-input {
+    z-index: 2 !important;
 }
 
 .app_form_content {
