@@ -426,6 +426,8 @@ window.addEventListener('load', () => {
                                             color="#F7B733"
                                             item-color="#F7B733"
                                             append-icon="mdi-chevron-down"
+                                            placeholder="— Select year —"
+                                            :menu-props="{ top: false, offsetY: true }"
                                         ></v-select>
                                     </div>
                                     <div v-if="fieldset.type === 'select-depended' && formData.bankSelection" class="app_form_select">
@@ -437,6 +439,7 @@ window.addEventListener('load', () => {
                                             color="#F7B733"
                                             item-color="#F7B733"
                                             append-icon="mdi-chevron-down"
+                                            placeholder="— Select bank —"
                                         ></v-select>
                                     </div>
                                 </div>
@@ -968,10 +971,6 @@ window.addEventListener('load', () => {
                                         type: 'select',
                                         options: [
                                             {
-                                                text: '— Select year —',
-                                                value: ''
-                                            },
-                                            {
                                                 text: '1 year',
                                                 value: 1
                                             },
@@ -1012,10 +1011,6 @@ window.addEventListener('load', () => {
                                     {
                                         type: 'select-depended',
                                         options: [
-                                            {
-                                                text: '— Select bank —',
-                                                value: ''
-                                            },
                                             {
                                                 text: 'RBC Bank',
                                                 value: 'RBC Bank'
