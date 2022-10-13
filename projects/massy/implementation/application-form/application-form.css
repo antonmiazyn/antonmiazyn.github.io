@@ -25,6 +25,12 @@
 }
 
 .app_form_container
+.v-application a.app_form_go_home .button_color_wrapp
+.text-block-4 {
+    transition: color 0.3s;
+}
+
+.app_form_container
 .v-application a.app_form_go_home:hover .button_color_wrapp
 .text-block-4 {
     color: #1d1d1d;
@@ -351,10 +357,10 @@
 }
 
 .app_form_step
-.app_form_control .v-btn
+.app_form_control .v-btn:hover
 .v-btn__content {
-    -webkit-filter: invert(1) brightness(3);
-            filter: invert(1) brightness(3);
+    -webkit-filter: invert(0) brightness(1);
+            filter: invert(0) brightness(1);
 }
 
 .app_form_step
