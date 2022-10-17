@@ -118,6 +118,7 @@ window.addEventListener('load', () => {
       ]
 
       const startDeposit = ''
+      const defaultDeposit = 5000
       const startdepPeriod = 0 // means n + 1
 
       /* --- execution start --- */
@@ -240,7 +241,7 @@ window.addEventListener('load', () => {
               mounted () {
                   this.getResult(
                       'massy',
-                      this.initialDeposit.toString().split('.').join('').split(',').join('').split(' ').join(''), 
+                      defaultDeposit.toString().split('.').join('').split(',').join('').split(' ').join(''), 
                       this.DepCalcData.massy.rate,
                       this.depPeriod
                   )
@@ -248,7 +249,7 @@ window.addEventListener('load', () => {
                   this.DepCalcData.competitors.forEach(comp => {
                       this.getResult(
                           comp.name,
-                          this.initialDeposit.toString().split('.').join('').split(',').join('').split(' ').join(''), 
+                          defaultDeposit.toString().split('.').join('').split(',').join('').split(' ').join(''), 
                           comp.rate,
                           this.depPeriod
                       )
@@ -547,19 +548,19 @@ window.addEventListener('load', () => {
           function setStartValues (n = 1) {
               // pre calculation
 
-              const massyA = Math.round(startDeposit * Math.pow((1 + (massy.rate[0].value / 100) / n), n * (startdepPeriod + 1)))
-              const massyI = massyA - startDeposit
+              const massyA = Math.round(defaultDeposit * Math.pow((1 + (massy.rate[0].value / 100) / n), n * (startdepPeriod + 1)))
+              const massyI = massyA - defaultDeposit
               const compA = [0]
               const totalInterest = [massyI]
               competitors.forEach(comp => {
-                  const res = Math.round(startDeposit * Math.pow((1 + (comp.rate[0].value / 100) / n), n * (startdepPeriod + 1)))
-                  compA.push(startDeposit)
-                  totalInterest.push(res - startDeposit)
+                  const res = Math.round(defaultDeposit * Math.pow((1 + (comp.rate[0].value / 100) / n), n * (startdepPeriod + 1)))
+                  compA.push(defaultDeposit)
+                  totalInterest.push(res - defaultDeposit)
               })
 
               // setup
 
-              DepositsChart.data.datasets[0].data = [startDeposit, 0, 0, 0]
+              DepositsChart.data.datasets[0].data = [defaultDeposit, 0, 0, 0]
               DepositsChart.data.datasets[1].data = compA
               DepositsChart.data.datasets[2].data = totalInterest
               DepositsChart.update()
