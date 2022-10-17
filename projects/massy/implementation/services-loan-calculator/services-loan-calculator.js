@@ -86,8 +86,8 @@ window.addEventListener('DOMContentLoaded', () => {
         loan: {
           deposit: '',
           period: 0,
-          maxYears: 5,
-          labels: ['1y', '2y', '3y', '4y', '5y']
+          maxYears: (typeof MAX_YEARS !== 'undefined') ? MAX_YEARS : 5,
+          labels: []
         },
 
         valid: true,
@@ -120,6 +120,13 @@ window.addEventListener('DOMContentLoaded', () => {
           value
         )
       }
+    },
+
+    created () {
+      const labels = []
+      for (let i = 1; i <= this.loan.maxYears; i++) { labels.push(`${i}y`) }
+
+      this.loan.labels = labels
     },
 
     mounted () {
