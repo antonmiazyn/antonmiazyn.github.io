@@ -1211,12 +1211,18 @@ window.addEventListener('load', () => {
                             }
 
                             if (
-                                (this.formData.forms[2].self.fieldsets[0].inputs[0].value) &&
-                                (this.formData.forms[2].self.fieldsets[1].inputs[0].value) ||
-                                (this.formData.forms[2].self.fieldsets[0].inputs[0].value) &&
-                                (this.formData.forms[2].self.fieldsets[2].inputs[0].value) ||
-                                (this.formData.forms[2].self.fieldsets[1].inputs[0].value) &&
-                                (this.formData.forms[2].self.fieldsets[2].inputs[0].value)
+                                (
+                                    (this.formData.forms[2].self.fieldsets[0].inputs[0].value && this.formData.forms[2].self.fieldsets[0].inputs[1].value.dateFormatted) &&
+                                    (this.formData.forms[2].self.fieldsets[1].inputs[0].value && this.formData.forms[2].self.fieldsets[1].inputs[1].value.dateFormatted)
+                                ) ||
+                                (
+                                    (this.formData.forms[2].self.fieldsets[0].inputs[0].value && this.formData.forms[2].self.fieldsets[0].inputs[1].value.dateFormatted) &&
+                                    (this.formData.forms[2].self.fieldsets[2].inputs[0].value && this.formData.forms[2].self.fieldsets[2].inputs[1].value.dateFormatted)
+                                ) ||
+                                (
+                                    (this.formData.forms[2].self.fieldsets[1].inputs[0].value && this.formData.forms[2].self.fieldsets[1].inputs[1].value.dateFormatted) &&
+                                    (this.formData.forms[2].self.fieldsets[2].inputs[0].value && this.formData.forms[2].self.fieldsets[2].inputs[1].value.dateFormatted)
+                                )
                             ) {
                                 this.formData.isIDInvalid.f = false
                             } else {
@@ -1224,12 +1230,18 @@ window.addEventListener('load', () => {
                             }
 
                             if (
-                                (this.formData.forms[2].applicant.fieldsets[0].inputs[0].value) &&
-                                (this.formData.forms[2].applicant.fieldsets[1].inputs[0].value) ||
-                                (this.formData.forms[2].applicant.fieldsets[0].inputs[0].value) &&
-                                (this.formData.forms[2].applicant.fieldsets[2].inputs[0].value) ||
-                                (this.formData.forms[2].applicant.fieldsets[1].inputs[0].value) &&
-                                (this.formData.forms[2].applicant.fieldsets[2].inputs[0].value)
+                                (
+                                    (this.formData.forms[2].applicant.fieldsets[0].inputs[0].value && this.formData.forms[2].applicant.fieldsets[0].inputs[1].value.dateFormatted) &&
+                                    (this.formData.forms[2].applicant.fieldsets[1].inputs[0].value && this.formData.forms[2].applicant.fieldsets[1].inputs[1].value.dateFormatted)
+                                ) ||
+                                (
+                                    (this.formData.forms[2].applicant.fieldsets[0].inputs[0].value && this.formData.forms[2].applicant.fieldsets[0].inputs[1].value.dateFormatted) &&
+                                    (this.formData.forms[2].applicant.fieldsets[2].inputs[0].value && this.formData.forms[2].applicant.fieldsets[2].inputs[1].value.dateFormatted)
+                                ) ||
+                                (
+                                    (this.formData.forms[2].applicant.fieldsets[1].inputs[0].value && this.formData.forms[2].applicant.fieldsets[1].inputs[1].value.dateFormatted) &&
+                                    (this.formData.forms[2].applicant.fieldsets[2].inputs[0].value && this.formData.forms[2].applicant.fieldsets[2].inputs[1].value.dateFormatted)
+                                )
                             ) {
                                 this.formData.isIDInvalid.s = false
                             } else {
@@ -1247,12 +1259,18 @@ window.addEventListener('load', () => {
                             this.isSwitcher[1] = false
 
                             if (
-                                (this.formData.forms[2].self.fieldsets[0].inputs[0].value) &&
-                                (this.formData.forms[2].self.fieldsets[1].inputs[0].value) ||
-                                (this.formData.forms[2].self.fieldsets[0].inputs[0].value) &&
-                                (this.formData.forms[2].self.fieldsets[2].inputs[0].value) ||
-                                (this.formData.forms[2].self.fieldsets[1].inputs[0].value) &&
-                                (this.formData.forms[2].self.fieldsets[2].inputs[0].value)
+                                (
+                                    (this.formData.forms[2].self.fieldsets[0].inputs[0].value && this.formData.forms[2].self.fieldsets[0].inputs[1].value.dateFormatted) &&
+                                    (this.formData.forms[2].self.fieldsets[1].inputs[0].value && this.formData.forms[2].self.fieldsets[1].inputs[1].value.dateFormatted)
+                                ) ||
+                                (
+                                    (this.formData.forms[2].self.fieldsets[0].inputs[0].value && this.formData.forms[2].self.fieldsets[0].inputs[1].value.dateFormatted) &&
+                                    (this.formData.forms[2].self.fieldsets[2].inputs[0].value && this.formData.forms[2].self.fieldsets[2].inputs[1].value.dateFormatted)
+                                ) ||
+                                (
+                                    (this.formData.forms[2].self.fieldsets[1].inputs[0].value && this.formData.forms[2].self.fieldsets[1].inputs[1].value.dateFormatted) &&
+                                    (this.formData.forms[2].self.fieldsets[2].inputs[0].value && this.formData.forms[2].self.fieldsets[2].inputs[1].value.dateFormatted)
+                                )
                             ) {
                                 this.formData.isIDInvalid.f = false
                                 this.isIDValid = true
