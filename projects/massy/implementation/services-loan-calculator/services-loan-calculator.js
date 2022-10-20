@@ -23,8 +23,8 @@ window.addEventListener('DOMContentLoaded', () => {
                   id="deposit"
                   :rules="depositRules"
                   color="#F58220"
-                  prefix="TT$"
-                  placeholder="5,000 – TT$50,000"
+                  prefix="$"
+                  placeholder="5,000"
                   required
                   outlined
                   :class="[
@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 Monthly payment
               </label>
               <h4 class="loan-calculator__footer_value">
-                TT$<span class="loan-calculator__footer_value--amount">{{ result }}</span>
+                $<span class="loan-calculator__footer_value--amount">{{ result }}</span>
               </h4>
             </div>
             <a :href="baseUrl + '/apply-now'" class="button_color advantage_button loan-calculator__footer_link">
@@ -93,8 +93,7 @@ window.addEventListener('DOMContentLoaded', () => {
         valid: true,
         depositRules: [
           v => !!v || 'Please, fill in the field',
-          v => (v.toString().split('.').join('').split(',').join('').split(' ').join('') >= 5000) || 'Deposit can\'t be less than $5,000',
-          v => (v.toString().split('.').join('').split(',').join('').split(' ').join('') <= 50000) || 'Deposit can\'t be more than $50,000'
+          v => (v.toString().split('.').join('').split(',').join('').split(' ').join('') >= 5000) || 'Deposit can\'t be less than $5,000'
         ],
 
         periods: 12,
