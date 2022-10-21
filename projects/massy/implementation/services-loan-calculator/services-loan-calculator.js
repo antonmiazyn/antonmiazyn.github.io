@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 Monthly payment
               </label>
               <h4 class="loan-calculator__footer_value">
-                $<span class="loan-calculator__footer_value--amount">{{ result }}</span>
+                TT$<span class="loan-calculator__footer_value--amount">{{ result }}</span>
               </h4>
             </div>
             <a :href="baseUrl + '/apply-now'" class="button_color advantage_button loan-calculator__footer_link">
@@ -139,10 +139,10 @@ window.addEventListener('DOMContentLoaded', () => {
     methods: {
       getResult (amount, rate, t) {
         const a = +amount || 5000
-        const r = +(rate / 12).toFixed(4) // Monthly Rate
-        const n = +((t + 1) * 12).toFixed(4) // Loan Periods Amount
+        const r = +(rate / 12) // Monthly Rate
+        const n = +((t + 1) * 12) // Loan Periods Amount
 
-        this.result = (a * ((r * Math.pow((1 + r), n)) / (Math.pow((1 + r), n) - 1))).toFixed(2)
+        this.result = this.bitNumber(Math.round((a * ((r * Math.pow((1 + r), n)) / (Math.pow((1 + r), n) - 1)))))
       },
 
       bitNumber (num) {
