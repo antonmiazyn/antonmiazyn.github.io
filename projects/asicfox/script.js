@@ -2,16 +2,24 @@
 
 const landingSlider = new Swiper('.landing--content-slider', {
   direction: 'vertical',
-  slidesPerView: 1,
+  slidesPerView: 'auto',
+  freeMode: true,
   speed: 1000,
   mousewheel: true,
-  allowTouchMove: false,
+  allowTouchMove: true,
   pagination: {
     el: '.landing--content-slider__pagination',
     clickable: true
   },
   navigation: {
     nextEl: '.landing--content-slider__next'
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 1,
+      freeMode: false,
+      allowTouchMove: false
+    }
   }
 })
 
