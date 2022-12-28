@@ -130,6 +130,10 @@ body.page-template-landing,
   color: white;
 }
 
+.landing--section {
+  overflow: hidden;
+}
+
 .landing--section > .landing--wrapper {
   height: 100%;
 }
