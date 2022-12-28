@@ -967,8 +967,7 @@ body.page-template-landing,
     position: static;
     height: auto;
     width: 100%;
-    max-width: none;
-    min-width: 376px;
+    max-width: 100%;
   }
 }
 
