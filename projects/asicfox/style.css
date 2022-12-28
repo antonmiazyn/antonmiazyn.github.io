@@ -316,6 +316,9 @@ body.page-template-landing,
     padding-top: 35px;
     padding-bottom: 35px;
     height: auto;
+    background-color: rgba(21, 21, 21, 0.1);
+    backdrop-filter: blur(7px);
+    border-bottom: solid 1px rgba(21, 21, 21, 0.05);
   }
 }
 
@@ -346,6 +349,7 @@ body.page-template-landing,
 }
 
 .landing--logotype > img {
+  display: block;
   width: auto !important;
   height: 38px !important;
 }
