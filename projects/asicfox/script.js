@@ -154,16 +154,19 @@ function getDHMS (ms) {
 
 // Animation: Snow
 
-var Snowflake = (function() {
+const Snowflake = (function() {
 
 	var flakes;
 	var flakesTotal = 20;
-	var wind = 0;
 	var mouseX;
 	var mouseY;
 
   if (window.innerWidth > 1199) {
     flakesTotal = 120
+  } else if (window.innerWidth <= 1199 && window.innerWidth > 575) {
+    flakesTotal = 20
+  } else {
+    flakesTotal = 6
   }
 
 	function Snowflake(size, x, y, vx, vy) {
@@ -172,7 +175,6 @@ var Snowflake = (function() {
 		this.y = y;
 		this.vx = vx;
 		this.vy = vy;
-		this.hit = false;
 		this.melt = false;
 		this.div = document.createElement('div');
 		this.div.classList.add('landing--snowflake');
@@ -184,7 +186,7 @@ var Snowflake = (function() {
 		if (this.hit) {
 			if (Math.random() > 0.995) this.melt = true;
 		} else {
-			this.x += this.vx + Math.min(Math.max(wind, -10), 10);
+			this.x += this.vx;
 			this.y += this.vy;
 		}
 
@@ -227,7 +229,7 @@ var Snowflake = (function() {
 	Snowflake.init = function(container) {
 		flakes = [];
 
-		for (var i = flakesTotal; i--; ) {
+		for (var i = flakesTotal; i--;) {
 			var size = (Math.random() + 0.2) * 12 + 1;
 			var flake = new Snowflake(
 				size,
@@ -247,8 +249,6 @@ var Snowflake = (function() {
 
 }());
 
-window.onload = function() {
-  setTimeout(function() {
-  	Snowflake.init(document.getElementById('landing--snow'));
-  }, 500);
-}
+window.addEventListener('load', () => {
+  Snowflake.init(document.getElementById('landing--snow'))
+})
