@@ -51,47 +51,52 @@ window.addEventListener('load', () => {
 
 // Animation: Fade-up
 
-window.addEventListener('load', () => {
-  const INITIAL_DELAY = 600 // ms
-  const STEP_DELAY = 300 // ms
+window.addEventListener('load', landingFadeUp)
+window.addEventListener('resize', landingFadeUp)
 
-  const sections = document.querySelectorAll('.landing--section')
-  if (!sections || !sections.length) return
+function landingFadeUp () {
+  if (window.innerWidth > 991) {
+    const INITIAL_DELAY = 600 // ms
+    const STEP_DELAY = 300 // ms
 
-  // animate first slide on load
+    const sections = document.querySelectorAll('.landing--section')
+    if (!sections || !sections.length) return
 
-  const elements = sections[0].querySelectorAll('.landing--animated')
-  if (elements && elements.length) {
-    setTimeout(() => {
-      for (let i = 0; i < elements.length; i++) {
-        setTimeout(() => elements[i].classList.add('fade-up'), i * STEP_DELAY)
-      }
-    }, INITIAL_DELAY)
-  }
+    // animate first slide on load
 
-  landingSlider.on('slideChange', () => {
-    const active = landingSlider.activeIndex;
+    const elements = sections[0].querySelectorAll('.landing--animated')
+    if (elements && elements.length) {
+      setTimeout(() => {
+        for (let i = 0; i < elements.length; i++) {
+          setTimeout(() => elements[i].classList.add('fade-up'), i * STEP_DELAY)
+        }
+      }, INITIAL_DELAY)
+    }
 
-    [...sections].forEach(section => {
-      const elements = section.querySelectorAll('.landing--animated')
-      if (elements && elements.length) {
-        [...elements].forEach(element => element.classList.remove('fade-up'))
+    landingSlider.on('slideChange', () => {
+      const active = landingSlider.activeIndex;
+
+      [...sections].forEach(section => {
+        const elements = section.querySelectorAll('.landing--animated')
+        if (elements && elements.length) {
+          [...elements].forEach(element => element.classList.remove('fade-up'))
+        }
+      })
+
+      const current = [...sections].filter(section => section.dataset.landingSection == active)[0]
+      if (current) {
+        const elements = current.querySelectorAll('.landing--animated')
+        if (elements && elements.length) {
+          setTimeout(() => {
+            for (let i = 0; i < elements.length; i++) {
+              setTimeout(() => elements[i].classList.add('fade-up'), i * STEP_DELAY)
+            }
+          }, INITIAL_DELAY)
+        }
       }
     })
-
-    const current = [...sections].filter(section => section.dataset.landingSection == active)[0]
-    if (current) {
-      const elements = current.querySelectorAll('.landing--animated')
-      if (elements && elements.length) {
-        setTimeout(() => {
-          for (let i = 0; i < elements.length; i++) {
-            setTimeout(() => elements[i].classList.add('fade-up'), i * STEP_DELAY)
-          }
-        }, INITIAL_DELAY)
-      }
-    }
-  })
-})
+  }
+}
 
 // timer
 
@@ -114,13 +119,26 @@ window.addEventListener('load', () => {
     const currentDate = new Date()
     const dateDiff = targetDate - currentDate
 
-    const resultDate = getDHMS(dateDiff)
-    // numbers_days.textContent = resultDate.days
-    // numbers_hours.textContent = resultDate.hours
-    // numbers_minutes.textContent = resultDate.minutes
-    // numbers_seconds.textContent = resultDate.seconds
+    requestAnimationFrame(
+      () => getResultDate(
+        numbers_days,
+        numbers_hours,
+        numbers_minutes,
+        numbers_seconds,
+        dateDiff
+      )
+    )
   }, 1000)
 })
+
+function getResultDate (d, h, m, s, diff) {
+  const resultDate = getDHMS(diff)
+
+  d.innerHTML = resultDate.days
+  h.innerHTML = resultDate.hours
+  m.innerHTML = resultDate.minutes
+  s.innerHTML = resultDate.seconds
+}
 
 function getDHMS (ms) {
   const days = Math.floor(ms / (24 * 60 * 60 * 1000))
@@ -139,7 +157,7 @@ function getDHMS (ms) {
 var Snowflake = (function() {
 
 	var flakes;
-	var flakesTotal = 40;
+	var flakesTotal = 20;
 	var wind = 0;
 	var mouseX;
 	var mouseY;
