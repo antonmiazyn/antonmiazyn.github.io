@@ -95,32 +95,32 @@ window.addEventListener('load', () => {
 
 // timer
 
-window.addEventListener('load', () => {
-  const FINISH_DATE = 'January, 7, 2023'
-  const targetDate = new Date(FINISH_DATE)
+// window.addEventListener('load', () => {
+//   const FINISH_DATE = 'January, 7, 2023'
+//   const targetDate = new Date(FINISH_DATE)
 
-  const timer = document.querySelector('.landing--section-hero__timer')
-  if (!timer) return
+//   const timer = document.querySelector('.landing--section-hero__timer')
+//   if (!timer) return
 
-  const numbers = timer.querySelectorAll('.landing--section-hero__timer-number')
-  if (!numbers || !numbers.length) return
+//   const numbers = timer.querySelectorAll('.landing--section-hero__timer-number')
+//   if (!numbers || !numbers.length) return
 
-  const numbers_days = [...numbers].filter(number => number.classList.contains('days'))[0]
-  const numbers_hours = [...numbers].filter(number => number.classList.contains('hours'))[0]
-  const numbers_minutes = [...numbers].filter(number => number.classList.contains('minutes'))[0]
-  const numbers_seconds = [...numbers].filter(number => number.classList.contains('seconds'))[0]
+//   const numbers_days = [...numbers].filter(number => number.classList.contains('days'))[0]
+//   const numbers_hours = [...numbers].filter(number => number.classList.contains('hours'))[0]
+//   const numbers_minutes = [...numbers].filter(number => number.classList.contains('minutes'))[0]
+//   const numbers_seconds = [...numbers].filter(number => number.classList.contains('seconds'))[0]
 
-  setInterval(() => {
-    const currentDate = new Date()
-    const dateDiff = targetDate - currentDate
+//   setInterval(() => {
+//     const currentDate = new Date()
+//     const dateDiff = targetDate - currentDate
 
-    const resultDate = getDHMS(dateDiff)
-    numbers_days.textContent = resultDate.days
-    numbers_hours.textContent = resultDate.hours
-    numbers_minutes.textContent = resultDate.minutes
-    numbers_seconds.textContent = resultDate.seconds
-  }, 1000)
-})
+//     const resultDate = getDHMS(dateDiff)
+//     numbers_days.textContent = resultDate.days
+//     numbers_hours.textContent = resultDate.hours
+//     numbers_minutes.textContent = resultDate.minutes
+//     numbers_seconds.textContent = resultDate.seconds
+//   }, 1000)
+// })
 
 function getDHMS (ms) {
   const days = Math.floor(ms / (24 * 60 * 60 * 1000))
