@@ -77,59 +77,59 @@ window.addEventListener('resize', () => {
 })
 
 function landingFadeUp () {
-  if (window.innerWidth > 991) {
-    const INITIAL_DELAY = 600 // ms
-    const STEP_DELAY = 300 // ms
+  const INITIAL_DELAY = 600 // ms
+  const STEP_DELAY = 300 // ms
 
-    const sections = document.querySelectorAll('.landing--section')
-    if (!sections || !sections.length) return
+  const sections = document.querySelectorAll('.landing--section')
+  if (!sections || !sections.length) return
 
-    // animate first slide on load
+  // animate first slide on load
 
-    const elements = sections[0].querySelectorAll('.landing--animated')
-    if (elements && elements.length) {
-      setTimeout(() => {
-        for (let i = 0; i < elements.length; i++) {
-          setTimeout(() => elements[i].classList.add('fade-up'), i * STEP_DELAY)
-        }
-      }, INITIAL_DELAY)
-    }
+  const elements = sections[0].querySelectorAll('.landing--animated')
+  if (elements && elements.length) {
+    setTimeout(() => {
+      for (let i = 0; i < elements.length; i++) {
+        setTimeout(() => elements[i].classList.add('fade-up'), i * STEP_DELAY)
+      }
+    }, INITIAL_DELAY)
+  }
 
-    landingSlider.on('slideChange', () => {
-      const active = landingSlider.activeIndex;
+  landingSlider.on('slideChange', () => {
+    const active = landingSlider.activeIndex;
 
+    if (window.innerWidth > 991) {
       [...sections].forEach(section => {
         const elements = section.querySelectorAll('.landing--animated')
         if (elements && elements.length) {
           [...elements].forEach(element => element.classList.remove('fade-up'))
         }
-
+  
         const fadein = section.querySelectorAll('.landing--fade')
         if (fadein && fadein.length) {
           [...fadein].forEach(element => element.classList.remove('fade-in'))
         }
       })
+    }
 
-      const current = [...sections].filter(section => section.dataset.landingSection == active)[0]
-      if (current) {
-        const elements = current.querySelectorAll('.landing--animated')
-        if (elements && elements.length) {
-          setTimeout(() => {
-            for (let i = 0; i < elements.length; i++) {
-              setTimeout(() => elements[i].classList.add('fade-up'), i * STEP_DELAY)
-            }
-          }, INITIAL_DELAY)
-        }
-
-        const fadein = current.querySelectorAll('.landing--fade')
-        if (fadein && fadein.length) {
-          setTimeout(() => {
-            [...fadein].forEach(element => element.classList.add('fade-in'))
-          }, INITIAL_DELAY + STEP_DELAY + 800)
-        }
+    const current = [...sections].filter(section => section.dataset.landingSection == active)[0]
+    if (current) {
+      const elements = current.querySelectorAll('.landing--animated')
+      if (elements && elements.length) {
+        setTimeout(() => {
+          for (let i = 0; i < elements.length; i++) {
+            setTimeout(() => elements[i].classList.add('fade-up'), i * STEP_DELAY)
+          }
+        }, INITIAL_DELAY)
       }
-    })
-  }
+
+      const fadein = current.querySelectorAll('.landing--fade')
+      if (fadein && fadein.length) {
+        setTimeout(() => {
+          [...fadein].forEach(element => element.classList.add('fade-in'))
+        }, INITIAL_DELAY + STEP_DELAY + 800)
+      }
+    }
+  })
 }
 
 // Timer

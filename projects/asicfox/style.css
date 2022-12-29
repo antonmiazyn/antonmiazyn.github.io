@@ -1503,14 +1503,14 @@ body.page-template-landing,
   opacity: 1;
 }
 
-@media only screen and (max-width: 1199px) {
+/* @media only screen and (max-width: 1199px) {
   .landing--animated {
     -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
     opacity: 1;
   }
-}
+} */
 
 .landing--fade {
   opacity: 0;
@@ -1521,12 +1521,6 @@ body.page-template-landing,
 
 .landing--fade.fade-in {
   opacity: 1;
-}
-
-@media only screen and (max-width: 1199px) {
-  .landing--fade {
-    opacity: 1;
-  }
 }
 
 /* ANIMATION: SNOW */
