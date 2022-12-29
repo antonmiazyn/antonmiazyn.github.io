@@ -38,12 +38,31 @@ window.addEventListener('load', () => {
   if (!anchors || !anchors.length) return;
 
   [...anchors].forEach(anchor => {
-    anchor.addEventListener('click', () => {
+    anchor.addEventListener('click', event => {
+      event.stopPropagation()
       const target = anchor.dataset.landingSlide
 
       if (target) {
         landingSlider.slideTo(target)
         menu.classList.remove('visible')
+      }
+    })
+  })
+})
+
+// Anchors
+
+window.addEventListener('load', () => {
+  const anchors = document.querySelectorAll('.landing--cta')
+  if (!anchors || !anchors.length) return;
+
+  [...anchors].forEach(anchor => {
+    anchor.addEventListener('click', event => {
+      event.stopPropagation()
+      const target = anchor.dataset.landingSlide
+
+      if (target) {
+        landingSlider.slideTo(target)
       }
     })
   })
@@ -101,7 +120,7 @@ function landingFadeUp () {
   }
 }
 
-// timer
+// Timer
 
 window.addEventListener('load', () => {
   const FINISH_DATE = 'January, 7, 2023'

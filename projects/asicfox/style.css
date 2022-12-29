@@ -183,6 +183,8 @@ body.page-template-landing,
 }
 
 .landing--cta {
+  all: unset;
+  cursor: pointer;
   display: block;
   min-width: 270px;
   text-align: center;
