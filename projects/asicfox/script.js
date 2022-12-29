@@ -52,7 +52,10 @@ window.addEventListener('load', () => {
 // Animation: Fade-up
 
 window.addEventListener('load', landingFadeUp)
-window.addEventListener('resize', landingFadeUp)
+window.addEventListener('resize', () => {
+  landingFadeUp()
+  landingSlider.slideTo(0)
+})
 
 function landingFadeUp () {
   if (window.innerWidth > 991) {
@@ -158,8 +161,6 @@ const Snowflake = (function() {
 
 	var flakes;
 	var flakesTotal = 20;
-	var mouseX;
-	var mouseY;
 
   if (window.innerWidth > 1199) {
     flakesTotal = 120
@@ -205,9 +206,9 @@ const Snowflake = (function() {
 			this.melt = false;
 		}
 
-		var dx = mouseX - this.x;
-		var dy = mouseY - this.y;
-		this.hit = !this.melt && this.y < mouseY && dx * dx + dy * dy < 2400;
+		var dx = this.x;
+		var dy = this.y;
+		this.hit = !this.melt && this.y && dx * dx + dy * dy < 2400;
 	};
 
 	Snowflake.prototype.draw = function() {
