@@ -323,7 +323,8 @@ body.page-template-landing,
     padding-bottom: 35px;
     height: auto;
     background-color: rgba(21, 21, 21, 0.1);
-    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
     border-bottom: solid 1px rgba(21, 21, 21, 0.05);
   }
 }
@@ -1066,6 +1067,67 @@ body.page-template-landing,
      object-position: center center;
 }
 
+.landing--section-prizes__item {
+  width: 42%;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  top: 34.8%;
+  left: 50%;
+  -webkit-transform: translateX(-48%);
+      -ms-transform: translateX(-48%);
+          transform: translateX(-48%);
+}
+
+.landing--section-prizes__item > img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+@-webkit-keyframes prizeGlowPulse {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+@keyframes prizeGlowPulse {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+.landing--section-prizes__card > .landing--section-prizes__item::before {
+  content: "";
+  display: block;
+  width: 70%;
+  aspect-ratio: 1 / 1;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-filter: blur(17px);
+          filter: blur(17px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-animation: prizeGlowPulse 3s infinite ease-in-out;
+          animation: prizeGlowPulse 3s infinite ease-in-out;
+}
+
 .landing--section-prizes__content,
 .landing--section-prizes__cover {
   position: absolute;
@@ -1446,6 +1508,23 @@ body.page-template-landing,
     -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.landing--fade {
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+  transition: opacity 2s ease-out;
+}
+
+.landing--fade.fade-in {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1199px) {
+  .landing--fade {
     opacity: 1;
   }
 }

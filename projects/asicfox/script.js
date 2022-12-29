@@ -68,7 +68,7 @@ window.addEventListener('load', () => {
   })
 })
 
-// Animation: Fade-up
+// Animation: Fade-up / Fade-in
 
 window.addEventListener('load', landingFadeUp)
 window.addEventListener('resize', () => {
@@ -103,6 +103,11 @@ function landingFadeUp () {
         if (elements && elements.length) {
           [...elements].forEach(element => element.classList.remove('fade-up'))
         }
+
+        const fadein = section.querySelectorAll('.landing--fade')
+        if (fadein && fadein.length) {
+          [...fadein].forEach(element => element.classList.remove('fade-in'))
+        }
       })
 
       const current = [...sections].filter(section => section.dataset.landingSection == active)[0]
@@ -114,6 +119,13 @@ function landingFadeUp () {
               setTimeout(() => elements[i].classList.add('fade-up'), i * STEP_DELAY)
             }
           }, INITIAL_DELAY)
+        }
+
+        const fadein = current.querySelectorAll('.landing--fade')
+        if (fadein && fadein.length) {
+          setTimeout(() => {
+            [...fadein].forEach(element => element.classList.add('fade-in'))
+          }, INITIAL_DELAY + STEP_DELAY + 800)
         }
       }
     })
