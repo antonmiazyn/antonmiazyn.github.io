@@ -1088,44 +1088,42 @@ body.page-template-landing,
      object-position: center center;
 }
 
-@-webkit-keyframes prizeGlowPulse {
-  0% {
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    -webkit-transform: translate(-50%, -50%) scale(1.2);
-            transform: translate(-50%, -50%) scale(1.2);
-  }
-}
-
-@keyframes prizeGlowPulse {
-  0% {
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    -webkit-transform: translate(-50%, -50%) scale(1.2);
-            transform: translate(-50%, -50%) scale(1.2);
-  }
-}
-
-.landing--section-prizes__card > .landing--section-prizes__item::before {
-  content: "";
+.landing--section-prizes__card > svg.svg--rays {
   display: block;
-  width: 70%;
-  aspect-ratio: 1 / 1;
-  background-color: rgba(255, 255, 255, 0.15);
-  -webkit-filter: blur(17px);
-          filter: blur(17px);
   position: absolute;
-  top: 50%;
+  width: 150%;
+  height: 150%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-      -ms-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  -webkit-animation: prizeGlowPulse 3s infinite ease-in-out;
-          animation: prizeGlowPulse 3s infinite ease-in-out;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  background: -o-radial-gradient(rgba(255, 255, 255, 0.2), transparent);
+  background: radial-gradient(rgba(255, 255, 255, 0.2), transparent);
+}
+
+.landing--section-prizes__card > svg.svg--rays.fade-in {
+  opacity: 0.1;
+}
+
+.landing--section-prizes__card .c-rays {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.2);
+  stroke-width: 100%;
+  stroke-dasharray: 12%;
+  -webkit-animation: raysRotate 40s linear infinite;
+          animation: raysRotate 40s linear infinite;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+@keyframes raysRotate {
+  100% {
+      transform: rotate(360deg);
+  }
 }
 
 .landing--section-prizes__content,
