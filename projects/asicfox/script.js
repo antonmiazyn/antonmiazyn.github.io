@@ -135,7 +135,7 @@ function landingFadeUp () {
 // Timer
 
 window.addEventListener('load', () => {
-  const FINISH_DATE = 'January, 7, 2023'
+  const FINISH_DATE = 'November, 16, 2023'
   const targetDate = new Date(FINISH_DATE)
 
   const timer = document.querySelector('.landing--section-hero__timer')
