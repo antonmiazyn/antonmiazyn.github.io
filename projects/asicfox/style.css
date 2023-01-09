@@ -1098,8 +1098,6 @@ body.page-template-landing,
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
   background: -o-radial-gradient(rgba(255, 255, 255, 0.2), transparent);
   background: radial-gradient(rgba(255, 255, 255, 0.2), transparent);
 }
