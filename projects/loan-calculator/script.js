@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     :rules="depositRules"
                     color="#F58220"
                     prefix="$"
-                    placeholder="5,000 – $ 50,000"
+                    placeholder="5,000 – $ 100,000"
                     required
                     :class="[
                       'mt-0',
@@ -85,7 +85,7 @@ window.addEventListener('DOMContentLoaded', () => {
           depositRules: [
             v => !!v || 'Please, fill in the field',
             v => (v.toString().split('.').join('').split(',').join('').split(' ').join('') >= 5000) || 'Deposit can\'t be less than $5,000',
-            v => (v.toString().split('.').join('').split(',').join('').split(' ').join('') <= 50000) || 'Deposit can\'t be more than $50,000'
+            v => (v.toString().split('.').join('').split(',').join('').split(' ').join('') <= 50000) || 'Deposit can\'t be more than $100,000'
           ],
 
           periods: 12,
@@ -181,7 +181,7 @@ window.addEventListener('DOMContentLoaded', () => {
           if (
               this.loan.deposit &&
               Number(this.loan.deposit.replace(/[^0-9]/g, '')) >= 5000 &&
-              Number(this.loan.deposit.replace(/[^0-9]/g, '')) <= 50000
+              Number(this.loan.deposit.replace(/[^0-9]/g, '')) <= 100000
           ) {
               this.fillInit = true
           } else {
