@@ -85,7 +85,7 @@ window.addEventListener('DOMContentLoaded', () => {
           depositRules: [
             v => !!v || 'Please, fill in the field',
             v => (v.toString().split('.').join('').split(',').join('').split(' ').join('') >= 5000) || 'Deposit can\'t be less than $5,000',
-            v => (v.toString().split('.').join('').split(',').join('').split(' ').join('') <= 50000) || 'Deposit can\'t be more than $100,000'
+            v => (v.toString().split('.').join('').split(',').join('').split(' ').join('') <= 100000) || 'Deposit can\'t be more than $100,000'
           ],
 
           periods: 12,
