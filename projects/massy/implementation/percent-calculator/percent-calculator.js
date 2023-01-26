@@ -110,7 +110,7 @@ window.addEventListener('load', () => {
                                 },
                                 {
                                     years: 5,
-                                    value: '4'
+                                    value: '4.00'
                                 }
                             ],
                             rangeDLR: [
