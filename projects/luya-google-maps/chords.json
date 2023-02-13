@@ -1574,5 +1574,2675 @@
     "Ort": "Bern",
     "X-Koordinaten": "46.94877893890265",
     "Y-Koordinaten": "7.4408536512590455"
+  },
+     {
+    "Betr-bez":"Liestal",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Liestal",
+    "Strasse und Hausnummer":"Kasernenstrasse 8",
+    "Pstlz":4410,
+    "Ort":"Liestal",
+    "X-Koordinaten":47.4826186,
+    "Y-Koordinaten":7.7360487
+  },
+  {
+    "Betr-bez":"Allschwilerstrasse",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Allschwilerstrasse",
+    "Strasse und Hausnummer":"Allschwilerstrasse 31",
+    "Pstlz":4055,
+    "Ort":"Basel",
+    "X-Koordinaten":47.556004,
+    "Y-Koordinaten":7.5734503
+  },
+  {
+    "Betr-bez":"Ziegelei",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Ziegelei",
+    "Strasse und Hausnummer":"Baslerstrasse 191",
+    "Pstlz":4123,
+    "Ort":"Allschwil",
+    "X-Koordinaten":47.5537796020507,
+    "Y-Koordinaten":7.55310726165771
+  },
+  {
+    "Betr-bez":"Pratteln",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Pratteln",
+    "Strasse und Hausnummer":"Burggartenstrasse 21",
+    "Pstlz":4133,
+    "Ort":"Pratteln",
+    "X-Koordinaten":47.5203781127929,
+    "Y-Koordinaten":7.69348955154418
+  },
+  {
+    "Betr-bez":"Neuweilerplatz",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Neuweilerplatz",
+    "Strasse und Hausnummer":"Neuweilerplatz 7",
+    "Pstlz":4054,
+    "Ort":"Basel",
+    "X-Koordinaten":47.5469654,
+    "Y-Koordinaten":7.5643633
+  },
+  {
+    "Betr-bez":"Gorenmatt",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Gorenmatt",
+    "Strasse und Hausnummer":"Gorenmattstrasse 17",
+    "Pstlz":4102,
+    "Ort":"Binningen",
+    "X-Koordinaten":47.5323299,
+    "Y-Koordinaten":7.572735
+  },
+  {
+    "Betr-bez":"Efringerstrasse",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Efringerstrasse",
+    "Strasse und Hausnummer":"Efringerstrasse 32",
+    "Pstlz":4057,
+    "Ort":"Basel",
+    "X-Koordinaten":47.56926,
+    "Y-Koordinaten":7.5964884
+  },
+  {
+    "Betr-bez":"Juniors Market",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Juniors Market",
+    "Strasse und Hausnummer":"Grenzacherstrasse 62/64",
+    "Pstlz":4058,
+    "Ort":"Basel",
+    "X-Koordinaten":47.5586733,
+    "Y-Koordinaten":7.6018528
+  },
+  {
+    "Betr-bez":"Delémont",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Delémont",
+    "Strasse und Hausnummer":"Rue de la Maltière 12",
+    "Pstlz":2800,
+    "Ort":"Delémont",
+    "X-Koordinaten":47.363496,
+    "Y-Koordinaten":7.346629
+  },
+  {
+    "Betr-bez":"Muttenz",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Muttenz",
+    "Strasse und Hausnummer":"Rothausstrasse 17",
+    "Pstlz":4132,
+    "Ort":"Muttenz",
+    "X-Koordinaten":47.5263523,
+    "Y-Koordinaten":7.6556652
+  },
+  {
+    "Betr-bez":"Mischeli",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Mischeli",
+    "Strasse und Hausnummer":"Niederbergstrasse 1",
+    "Pstlz":4153,
+    "Ort":"Reinach BL",
+    "X-Koordinaten":47.5024247,
+    "Y-Koordinaten":7.5960558
+  },
+  {
+    "Betr-bez":"Birsfelden",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Birsfelden",
+    "Strasse und Hausnummer":"Chrischonastrasse 2",
+    "Pstlz":4127,
+    "Ort":"Birsfelden",
+    "X-Koordinaten":47.555405,
+    "Y-Koordinaten":7.6240225
+  },
+  {
+    "Betr-bez":"Burgfelderstrasse",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Burgfelderstrasse",
+    "Strasse und Hausnummer":"Burgfelderstrasse 11",
+    "Pstlz":4055,
+    "Ort":"Basel",
+    "X-Koordinaten":47.5623042,
+    "Y-Koordinaten":7.5728438
+  },
+  {
+    "Betr-bez":"Gartenstadt",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Gartenstadt",
+    "Strasse und Hausnummer":"Kaspar Pfeiffer-Strasse 2",
+    "Pstlz":4142,
+    "Ort":"Münchenstein",
+    "X-Koordinaten":47.5216609,
+    "Y-Koordinaten":7.6074542
+  },
+  {
+    "Betr-bez":"Aesch",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Aesch",
+    "Strasse und Hausnummer":"Hauptstrasse 95",
+    "Pstlz":4147,
+    "Ort":"Aesch",
+    "X-Koordinaten":47.4693583,
+    "Y-Koordinaten":7.5955183
+  },
+  {
+    "Betr-bez":"Chêne-Bourg",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Chêne-Bourg",
+    "Strasse und Hausnummer":"Avenue de Bel-Air 12",
+    "Pstlz":1225,
+    "Ort":"Chêne-Bourg",
+    "X-Koordinaten":46.1964647,
+    "Y-Koordinaten":6.1941766
+  },
+  {
+    "Betr-bez":"Plainpalais",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Plainpalais",
+    "Strasse und Hausnummer":"Rue de Carouge 64",
+    "Pstlz":1205,
+    "Ort":"Genève",
+    "X-Koordinaten":46.1931038,
+    "Y-Koordinaten":6.1435867
+  },
+  {
+    "Betr-bez":"Eaux-Vives",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Eaux-Vives",
+    "Strasse und Hausnummer":"Rue des Eaux-Vives 17-19",
+    "Pstlz":1207,
+    "Ort":"Genève",
+    "X-Koordinaten":46.203403,
+    "Y-Koordinaten":6.1574745
+  },
+  {
+    "Betr-bez":"Gland",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Gland",
+    "Strasse und Hausnummer":"Rue de Mauverney 22",
+    "Pstlz":1196,
+    "Ort":"Gland",
+    "X-Koordinaten":46.4184,
+    "Y-Koordinaten":6.2696
+  },
+  {
+    "Betr-bez":"Jonction",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Jonction",
+    "Strasse und Hausnummer":"Boulevard Carl-Vogt 6",
+    "Pstlz":1205,
+    "Ort":"Genève",
+    "X-Koordinaten":46.2008642,
+    "Y-Koordinaten":6.1305374
+  },
+  {
+    "Betr-bez":"Meyrin",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Meyrin",
+    "Strasse und Hausnummer":"Avenue de Feuillasse 24",
+    "Pstlz":1217,
+    "Ort":"Meyrin",
+    "X-Koordinaten":46.2320224,
+    "Y-Koordinaten":6.0824249
+  },
+  {
+    "Betr-bez":"Palettes",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Palettes",
+    "Strasse und Hausnummer":"Av. des Communes-Réunies 52",
+    "Pstlz":1212,
+    "Ort":"Grand-Lancy",
+    "X-Koordinaten":46.1749719,
+    "Y-Koordinaten":6.1223942
+  },
+  {
+    "Betr-bez":"Plan-les-Ouates",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Plan-les-Ouates",
+    "Strasse und Hausnummer":"Route de Saint-Julien 176",
+    "Pstlz":1228,
+    "Ort":"Plan-les-Ouates",
+    "X-Koordinaten":46.1675126,
+    "Y-Koordinaten":6.1152402
+  },
+  {
+    "Betr-bez":"Vidollet",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Vidollet",
+    "Strasse und Hausnummer":"Rue du Vidollet 5",
+    "Pstlz":1202,
+    "Ort":"Genève",
+    "X-Koordinaten":46.2163079,
+    "Y-Koordinaten":6.1392281
+  },
+  {
+    "Betr-bez":"Echallens",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Echallens",
+    "Strasse und Hausnummer":"Rue de Praz-Palud 2",
+    "Pstlz":1040,
+    "Ort":"Echallens",
+    "X-Koordinaten":46.6390803,
+    "Y-Koordinaten":6.6357033
+  },
+  {
+    "Betr-bez":"Epalinges",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Epalinges",
+    "Strasse und Hausnummer":"Place de la Croix-Blanche 11",
+    "Pstlz":1066,
+    "Ort":"Epalinges",
+    "X-Koordinaten":46.5484273,
+    "Y-Koordinaten":6.6709109
+  },
+  {
+    "Betr-bez":"Montagny",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Montagny",
+    "Strasse und Hausnummer":"En Chamard",
+    "Pstlz":1442,
+    "Ort":"Montagny-près-Yverdon",
+    "X-Koordinaten":46.7921136,
+    "Y-Koordinaten":6.6196914
+  },
+  {
+    "Betr-bez":"Morges",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Morges",
+    "Strasse und Hausnummer":"Rue de la gare 19",
+    "Pstlz":1110,
+    "Ort":"Morges",
+    "X-Koordinaten":46.5098409,
+    "Y-Koordinaten":6.4944953
+  },
+  {
+    "Betr-bez":"Bussigny",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bussigny",
+    "Strasse und Hausnummer":"Rue de la Gare 2",
+    "Pstlz":1030,
+    "Ort":"Bussigny-Lausanne",
+    "X-Koordinaten":46.5476436,
+    "Y-Koordinaten":6.5527352
+  },
+  {
+    "Betr-bez":"Payerne",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Payerne",
+    "Strasse und Hausnummer":"Rue du Temple 19",
+    "Pstlz":1530,
+    "Ort":"Payerne",
+    "X-Koordinaten":46.8201992,
+    "Y-Koordinaten":6.9397169
+  },
+  {
+    "Betr-bez":"Rolle",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Rolle",
+    "Strasse und Hausnummer":"Av. de la Gare 17",
+    "Pstlz":1180,
+    "Ort":"Rolle",
+    "X-Koordinaten":46.4611195,
+    "Y-Koordinaten":6.3384548
+  },
+  {
+    "Betr-bez":"Montreux",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Montreux",
+    "Strasse und Hausnummer":"Place du Marché 6",
+    "Pstlz":1820,
+    "Ort":"Montreux",
+    "X-Koordinaten":46.4315775,
+    "Y-Koordinaten":6.9093662
+  },
+  {
+    "Betr-bez":"Métropole Renens",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Métropole Renens",
+    "Strasse und Hausnummer":"Rue de la Mèbre 9",
+    "Pstlz":1020,
+    "Ort":"Renens",
+    "X-Koordinaten":46.5382159,
+    "Y-Koordinaten":6.5809406
+  },
+  {
+    "Betr-bez":"Bahnhof Luzern",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bahnhof Luzern",
+    "Strasse und Hausnummer":"Zentralstrasse 1",
+    "Pstlz":6003,
+    "Ort":"Luzern",
+    "X-Koordinaten":47.0499217,
+    "Y-Koordinaten":8.3094046
+  },
+  {
+    "Betr-bez":"Waldstätter Luzern",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Waldstätter Luzern",
+    "Strasse und Hausnummer":"Winkelriedstrasse 58",
+    "Pstlz":6003,
+    "Ort":"Luzern",
+    "X-Koordinaten":47.0461897,
+    "Y-Koordinaten":8.3071456
+  },
+  {
+    "Betr-bez":"Ruopigen Zentrum Luzern",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Ruopigen Zentrum Luzern",
+    "Strasse und Hausnummer":"Ruopigeplatz",
+    "Pstlz":6015,
+    "Ort":"Luzern",
+    "X-Koordinaten":47.0640523,
+    "Y-Koordinaten":8.2786991
+  },
+  {
+    "Betr-bez":"Rigimärt Küssnacht",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Rigimärt Küssnacht",
+    "Strasse und Hausnummer":"Siegwartstrasse 11",
+    "Pstlz":6403,
+    "Ort":"Küssnacht am Rigi",
+    "X-Koordinaten":47.0837996,
+    "Y-Koordinaten":8.4414643
+  },
+  {
+    "Betr-bez":"Cham",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Cham",
+    "Strasse und Hausnummer":"Zugerstrasse 15/17",
+    "Pstlz":6330,
+    "Ort":"Cham",
+    "X-Koordinaten":47.1825379,
+    "Y-Koordinaten":8.4612037
+  },
+  {
+    "Betr-bez":"Unterägeri",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Unterägeri",
+    "Strasse und Hausnummer":"Zugerstrasse 32",
+    "Pstlz":6314,
+    "Ort":"Unterägeri",
+    "X-Koordinaten":47.1381682,
+    "Y-Koordinaten":8.5793078
+  },
+  {
+    "Betr-bez":"Bruchstrasse Luzern",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bruchstrasse Luzern",
+    "Strasse und Hausnummer":"Bruchstrasse 18",
+    "Pstlz":6003,
+    "Ort":"Luzern",
+    "X-Koordinaten":47.0505994,
+    "Y-Koordinaten":8.2993724
+  },
+  {
+    "Betr-bez":"Sarnen-Center",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Sarnen-Center",
+    "Strasse und Hausnummer":"Nelkenstrasse 5",
+    "Pstlz":6060,
+    "Ort":"Sarnen",
+    "X-Koordinaten":46.8965968,
+    "Y-Koordinaten":8.2491714
+  },
+  {
+    "Betr-bez":"Ladengasse Ebikon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Ladengasse Ebikon",
+    "Strasse und Hausnummer":"Zentralstrasse 16",
+    "Pstlz":6030,
+    "Ort":"Ebikon",
+    "X-Koordinaten":47.0812736,
+    "Y-Koordinaten":8.341086
+  },
+  {
+    "Betr-bez":"Urnertor Bürglen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Urnertor Bürglen",
+    "Strasse und Hausnummer":"Gotthardstrasse 67",
+    "Pstlz":6460,
+    "Ort":"Altdorf",
+    "X-Koordinaten":46.8727406,
+    "Y-Koordinaten":8.651044
+  },
+  {
+    "Betr-bez":"Dorfmärt Wolhusen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Dorfmärt Wolhusen",
+    "Strasse und Hausnummer":"Entlebucherstr. 36",
+    "Pstlz":6110,
+    "Ort":"Wolhusen",
+    "X-Koordinaten":47.0559837,
+    "Y-Koordinaten":8.0703718
+  },
+  {
+    "Betr-bez":"Seetal-Center Hochdorf",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Seetal-Center Hochdorf",
+    "Strasse und Hausnummer":"Hauptstrasse 5",
+    "Pstlz":6280,
+    "Ort":"Hochdorf",
+    "X-Koordinaten":47.1661696,
+    "Y-Koordinaten":8.2911941
+  },
+  {
+    "Betr-bez":"Sonnenplatz Emmenbrücke",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Sonnenplatz Emmenbrücke",
+    "Strasse und Hausnummer":"Sonnenplatz 1",
+    "Pstlz":6020,
+    "Ort":"Emmenbrücke",
+    "X-Koordinaten":47.0778669,
+    "Y-Koordinaten":8.2747874
+  },
+  {
+    "Betr-bez":"Hofmatt Kriens",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Hofmatt Kriens",
+    "Strasse und Hausnummer":"Luzernerstrasse 30",
+    "Pstlz":6010,
+    "Ort":"Kriens",
+    "X-Koordinaten":47.0337643,
+    "Y-Koordinaten":8.2826546
+  },
+  {
+    "Betr-bez":"Marly",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Marly",
+    "Strasse und Hausnummer":"Route des Pralettes 1",
+    "Pstlz":1723,
+    "Ort":"Marly",
+    "X-Koordinaten":46.7757606,
+    "Y-Koordinaten":7.1608896
+  },
+  {
+    "Betr-bez":"Le Locle",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Le Locle",
+    "Strasse und Hausnummer":"Rue Bournot 35",
+    "Pstlz":2400,
+    "Ort":"Le Locle",
+    "X-Koordinaten":47.0562021,
+    "Y-Koordinaten":6.7474225
+  },
+  {
+    "Betr-bez":"Buchs",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Buchs",
+    "Strasse und Hausnummer":"Churerstrasse 10",
+    "Pstlz":9470,
+    "Ort":"Buchs SG",
+    "X-Koordinaten":47.164063,
+    "Y-Koordinaten":9.472799
+  },
+  {
+    "Betr-bez":"Gäuggelistrasse",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Gäuggelistrasse",
+    "Strasse und Hausnummer":"Gäuggelistrasse 28",
+    "Pstlz":7000,
+    "Ort":"Chur",
+    "X-Koordinaten":46.8516483,
+    "Y-Koordinaten":9.5275214
+  },
+  {
+    "Betr-bez":"Wil",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Wil",
+    "Strasse und Hausnummer":"Obere Bahnhofstrasse 5",
+    "Pstlz":9500,
+    "Ort":"Wil SG",
+    "X-Koordinaten":47.462723,
+    "Y-Koordinaten":9.0428048
+  },
+  {
+    "Betr-bez":"Pizolpark",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Pizolpark",
+    "Strasse und Hausnummer":"Grossfeldstrasse 56",
+    "Pstlz":8879,
+    "Ort":"Pizolpark",
+    "X-Koordinaten":47.0420383,
+    "Y-Koordinaten":9.4312833
+  },
+  {
+    "Betr-bez":"Rheinpark",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Rheinpark",
+    "Strasse und Hausnummer":"Neudorfstrasse 60",
+    "Pstlz":9430,
+    "Ort":"St. Margrethen",
+    "X-Koordinaten":47.4500882,
+    "Y-Koordinaten":9.6513713
+  },
+  {
+    "Betr-bez":"Rüti",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Rüti",
+    "Strasse und Hausnummer":"Bandwiesstrasse 6",
+    "Pstlz":8630,
+    "Ort":"Rüti ZH",
+    "X-Koordinaten":47.2581404,
+    "Y-Koordinaten":8.8489606
+  },
+  {
+    "Betr-bez":"Frauenfeld",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Frauenfeld",
+    "Strasse und Hausnummer":"Bahnhofstrasse 70-72",
+    "Pstlz":8500,
+    "Ort":"Frauenfeld",
+    "X-Koordinaten":47.5567386,
+    "Y-Koordinaten":8.8963143
+  },
+  {
+    "Betr-bez":"Herblingen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Herblingen",
+    "Strasse und Hausnummer":"Stüdliackerstrasse 4",
+    "Pstlz":8207,
+    "Ort":"Schaffhausen",
+    "X-Koordinaten":47.7202328,
+    "Y-Koordinaten":8.6637223
+  },
+  {
+    "Betr-bez":"Wetzikon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Wetzikon",
+    "Strasse und Hausnummer":"Bahnhofstrasse 151",
+    "Pstlz":8620,
+    "Ort":"Wetzikon ZH",
+    "X-Koordinaten":47.3280334,
+    "Y-Koordinaten":8.7997978
+  },
+  {
+    "Betr-bez":"Neuwiesen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Neuwiesen",
+    "Strasse und Hausnummer":"Strickerstrasse 3",
+    "Pstlz":8400,
+    "Ort":"Winterthur",
+    "X-Koordinaten":47.4991633,
+    "Y-Koordinaten":8.7211532
+  },
+  {
+    "Betr-bez":"Biasca",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Biasca",
+    "Strasse und Hausnummer":"Via General Guisan 26",
+    "Pstlz":6710,
+    "Ort":"Biasca",
+    "X-Koordinaten":46.35,
+    "Y-Koordinaten":8.9667
+  },
+  {
+    "Betr-bez":"Crocifisso",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Crocifisso",
+    "Strasse und Hausnummer":"Via San Gottardo 150",
+    "Pstlz":6942,
+    "Ort":"Savosa",
+    "X-Koordinaten":46.0186527,
+    "Y-Koordinaten":8.9361217
+  },
+  {
+    "Betr-bez":"Minusio",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Minusio",
+    "Strasse und Hausnummer":"Via S.Gottardo 56",
+    "Pstlz":6648,
+    "Ort":"Minusio",
+    "X-Koordinaten":46.1783035,
+    "Y-Koordinaten":8.818719
+  },
+  {
+    "Betr-bez":"Radio",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Radio",
+    "Strasse und Hausnummer":"Via Besso 74",
+    "Pstlz":6900,
+    "Ort":"Massagno",
+    "X-Koordinaten":46.0112193,
+    "Y-Koordinaten":8.9363702
+  },
+  {
+    "Betr-bez":"Giubiasco",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Giubiasco",
+    "Strasse und Hausnummer":"Via Bellinzona 33",
+    "Pstlz":6512,
+    "Ort":"Giubiasco",
+    "X-Koordinaten":46.1725271,
+    "Y-Koordinaten":9.01068
+  },
+  {
+    "Betr-bez":"Bellinzona",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bellinzona",
+    "Strasse und Hausnummer":"Piazza Rinaldo Simen 8",
+    "Pstlz":6500,
+    "Ort":"Bellinzona",
+    "X-Koordinaten":46.1935708,
+    "Y-Koordinaten":9.0237613
+  },
+  {
+    "Betr-bez":"Zermatt",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Zermatt",
+    "Strasse und Hausnummer":"Hofmattstrasse 12",
+    "Pstlz":3920,
+    "Ort":"Zermatt",
+    "X-Koordinaten":46.0217606,
+    "Y-Koordinaten":7.7481937
+  },
+  {
+    "Betr-bez":"Sierre",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Sierre",
+    "Strasse und Hausnummer":"Avenue Général Guisan",
+    "Pstlz":3960,
+    "Ort":"Sierre",
+    "X-Koordinaten":46.2921979,
+    "Y-Koordinaten":7.5298873
+  },
+  {
+    "Betr-bez":"Stadelhofen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Stadelhofen",
+    "Strasse und Hausnummer":"Falkenstrasse 19 - 21",
+    "Pstlz":8008,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.3656781,
+    "Y-Koordinaten":8.5480408
+  },
+  {
+    "Betr-bez":"Wengihof",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Wengihof",
+    "Strasse und Hausnummer":"Wengistrasse 7",
+    "Pstlz":8004,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.3748981,
+    "Y-Koordinaten":8.5234086
+  },
+  {
+    "Betr-bez":"Horgen-Schinzenhof",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Horgen-Schinzenhof",
+    "Strasse und Hausnummer":"Alte Landstrasse 24",
+    "Pstlz":8810,
+    "Ort":"Horgen",
+    "X-Koordinaten":47.2603539,
+    "Y-Koordinaten":8.5972571
+  },
+  {
+    "Betr-bez":"Adliswil",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Adliswil",
+    "Strasse und Hausnummer":"Albisstrasse 10",
+    "Pstlz":8134,
+    "Ort":"Adliswil",
+    "X-Koordinaten":47.3112966,
+    "Y-Koordinaten":8.5249665
+  },
+  {
+    "Betr-bez":"Meilen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Meilen",
+    "Strasse und Hausnummer":"Rosengartenstrasse 10",
+    "Pstlz":8706,
+    "Ort":"Meilen",
+    "X-Koordinaten":47.2683172,
+    "Y-Koordinaten":8.6454171
+  },
+  {
+    "Betr-bez":"Kloten",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Kloten",
+    "Strasse und Hausnummer":"Kirchgasse 5",
+    "Pstlz":8302,
+    "Ort":"Kloten",
+    "X-Koordinaten":47.4508486,
+    "Y-Koordinaten":8.5817962
+  },
+  {
+    "Betr-bez":"Höschgasse",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Höschgasse",
+    "Strasse und Hausnummer":"Seefeldstrasse 111-113",
+    "Pstlz":8008,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.3583667,
+    "Y-Koordinaten":8.5540739
+  },
+  {
+    "Betr-bez":"Küsnacht",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Küsnacht",
+    "Strasse und Hausnummer":"Zürichstrasse 149",
+    "Pstlz":8700,
+    "Ort":"Küsnacht ZH",
+    "X-Koordinaten":47.3184585,
+    "Y-Koordinaten":8.5819748
+  },
+  {
+    "Betr-bez":"Oberengstringen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Oberengstringen",
+    "Strasse und Hausnummer":"Im Zentrum 2",
+    "Pstlz":8102,
+    "Ort":"Oberengstringen",
+    "X-Koordinaten":47.4088693,
+    "Y-Koordinaten":8.4644703
+  },
+  {
+    "Betr-bez":"Jona",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Jona",
+    "Strasse und Hausnummer":"Molkereistrasse 5",
+    "Pstlz":8645,
+    "Ort":"Jona",
+    "X-Koordinaten":47.2314561,
+    "Y-Koordinaten":8.8372849
+  },
+  {
+    "Betr-bez":"Uznach",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Uznach",
+    "Strasse und Hausnummer":"Zürcherstrasse 25",
+    "Pstlz":8730,
+    "Ort":"Uznach",
+    "X-Koordinaten":47.2261912,
+    "Y-Koordinaten":8.9803292
+  },
+  {
+    "Betr-bez":"Niederhasli",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Niederhasli",
+    "Strasse und Hausnummer":"Dorfstrasse 20",
+    "Pstlz":8155,
+    "Ort":"Niederhasli",
+    "X-Koordinaten":47.4799969,
+    "Y-Koordinaten":8.4852371
+  },
+  {
+    "Betr-bez":"Hombrechtikon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Hombrechtikon",
+    "Strasse und Hausnummer":"Rütistrasse 16",
+    "Pstlz":8634,
+    "Ort":"Hombrechtikon",
+    "X-Koordinaten":47.2517624,
+    "Y-Koordinaten":8.7694764
+  },
+  {
+    "Betr-bez":"Gossau",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Gossau",
+    "Strasse und Hausnummer":"Im Zentrum 3",
+    "Pstlz":8625,
+    "Ort":"Gossau ZH",
+    "X-Koordinaten":47.3063992,
+    "Y-Koordinaten":8.757649
+  },
+  {
+    "Betr-bez":"Hauptbahnhof",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Hauptbahnhof",
+    "Strasse und Hausnummer":"Hauptbahnhof",
+    "Pstlz":8001,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.3785951,
+    "Y-Koordinaten":8.5365241
+  },
+  {
+    "Betr-bez":"Niederurnen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Niederurnen",
+    "Strasse und Hausnummer":"Ziegelbrückstrasse 21",
+    "Pstlz":8867,
+    "Ort":"Niederurnen",
+    "X-Koordinaten":47.1283889,
+    "Y-Koordinaten":9.0556246
+  },
+  {
+    "Betr-bez":"Birmensdorf",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Birmensdorf",
+    "Strasse und Hausnummer":"Zürcherstrasse 15",
+    "Pstlz":8903,
+    "Ort":"Birmensdorf ZH",
+    "X-Koordinaten":47.3542702,
+    "Y-Koordinaten":8.4367008
+  },
+  {
+    "Betr-bez":"Yverdon Sud",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Yverdon Sud",
+    "Strasse und Hausnummer":"Rue de Lausanne 10",
+    "Pstlz":1400,
+    "Ort":"Yverdon-les-Bains",
+    "X-Koordinaten":46.7787,
+    "Y-Koordinaten":6.6339
+  },
+  {
+    "Betr-bez":"Forch-Burgwies",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Forch-Burgwies",
+    "Strasse und Hausnummer":"Forchstrasse 260",
+    "Pstlz":8008,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.3576104,
+    "Y-Koordinaten":8.5713693
+  },
+  {
+    "Betr-bez":"Arbedo Castione",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Arbedo Castione",
+    "Strasse und Hausnummer":"Via Corogna",
+    "Pstlz":6532,
+    "Ort":"Castione",
+    "X-Koordinaten":46.2249247,
+    "Y-Koordinaten":9.0446567
+  },
+  {
+    "Betr-bez":"Uster West",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Uster West",
+    "Strasse und Hausnummer":"Winterthurerstrasse 18",
+    "Pstlz":8610,
+    "Ort":"Uster",
+    "X-Koordinaten":47.3544624,
+    "Y-Koordinaten":8.7132591
+  },
+  {
+    "Betr-bez":"Egghölzli",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Egghölzli",
+    "Strasse und Hausnummer":"Egghölzlistrasse 1 / 1a",
+    "Pstlz":3006,
+    "Ort":"Bern",
+    "X-Koordinaten":46.9337239,
+    "Y-Koordinaten":7.4691484
+  },
+  {
+    "Betr-bez":"Möhlin",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Möhlin",
+    "Strasse und Hausnummer":"Hauptstrasse 91",
+    "Pstlz":4313,
+    "Ort":"Möhlin",
+    "X-Koordinaten":47.556334,
+    "Y-Koordinaten":7.8467796
+  },
+  {
+    "Betr-bez":"Zollikofen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Zollikofen",
+    "Strasse und Hausnummer":"Bernstrasse 103",
+    "Pstlz":3052,
+    "Ort":"Zollikofen",
+    "X-Koordinaten":46.9932994,
+    "Y-Koordinaten":7.4569705
+  },
+  {
+    "Betr-bez":"Goldau",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Goldau",
+    "Strasse und Hausnummer":"Parkstrasse 25",
+    "Pstlz":6410,
+    "Ort":"Goldau",
+    "X-Koordinaten":47.0508444,
+    "Y-Koordinaten":8.5509558
+  },
+  {
+    "Betr-bez":"Horw",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Horw",
+    "Strasse und Hausnummer":"Gemeindehausplatz 14+15",
+    "Pstlz":6048,
+    "Ort":"Horw",
+    "X-Koordinaten":47.019095,
+    "Y-Koordinaten":8.309215
+  },
+  {
+    "Betr-bez":"Ipsach",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Ipsach",
+    "Strasse und Hausnummer":"Dorfstrasse 1",
+    "Pstlz":2563,
+    "Ort":"Ipsach",
+    "X-Koordinaten":47.1156472,
+    "Y-Koordinaten":7.2350903
+  },
+  {
+    "Betr-bez":"Hünibach",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Hünibach",
+    "Strasse und Hausnummer":"Staatsstrasse 134",
+    "Pstlz":3626,
+    "Ort":"Hünibach",
+    "X-Koordinaten":46.7451174,
+    "Y-Koordinaten":7.6453871
+  },
+  {
+    "Betr-bez":"Biel Bözingen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Biel Bözingen",
+    "Strasse und Hausnummer":"Schlösslistrasse 7",
+    "Pstlz":2504,
+    "Ort":"Biel",
+    "X-Koordinaten":47.1484765,
+    "Y-Koordinaten":7.2688842
+  },
+  {
+    "Betr-bez":"Uetendorf",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Uetendorf",
+    "Strasse und Hausnummer":"Dorfstrasse 21",
+    "Pstlz":3661,
+    "Ort":"Uetendorf",
+    "X-Koordinaten":46.7743459,
+    "Y-Koordinaten":7.573237
+  },
+  {
+    "Betr-bez":"Wohncenter Emmen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Wohncenter Emmen",
+    "Strasse und Hausnummer":"Seetalstrasse 50",
+    "Pstlz":6020,
+    "Ort":"Emmenbrücke",
+    "X-Koordinaten":47.0737083,
+    "Y-Koordinaten":8.2922426
+  },
+  {
+    "Betr-bez":"Grancia",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Grancia",
+    "Strasse und Hausnummer":"ia Cantonale 28",
+    "Pstlz":6916,
+    "Ort":"Grancia",
+    "X-Koordinaten":45.968,
+    "Y-Koordinaten":8.9268
+  },
+  {
+    "Betr-bez":"Schmiede-Wiedikon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Schmiede-Wiedikon",
+    "Strasse und Hausnummer":"Birmensdorferstrasse 140",
+    "Pstlz":8003,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.3701218,
+    "Y-Koordinaten":8.5200924
+  },
+  {
+    "Betr-bez":"Eschenbach",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Eschenbach",
+    "Strasse und Hausnummer":"Rickenstrasse 12",
+    "Pstlz":8733,
+    "Ort":"Eschenbach SG",
+    "X-Koordinaten":47.2346154,
+    "Y-Koordinaten":8.9101513
+  },
+  {
+    "Betr-bez":"Cormanon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Cormanon",
+    "Strasse und Hausnummer":"Rue du centre 4",
+    "Pstlz":1752,
+    "Ort":"Villars-sur-Glâne",
+    "X-Koordinaten":46.793519,
+    "Y-Koordinaten":7.1336142
+  },
+  {
+    "Betr-bez":"Cugy",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Cugy",
+    "Strasse und Hausnummer":"Route de Bottens 1",
+    "Pstlz":1053,
+    "Ort":"Cugy VD",
+    "X-Koordinaten":46.5855313,
+    "Y-Koordinaten":6.6401405
+  },
+  {
+    "Betr-bez":"Bubendorf",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bubendorf",
+    "Strasse und Hausnummer":"Grüngenstrasse 1",
+    "Pstlz":4416,
+    "Ort":"Bubendorf",
+    "X-Koordinaten":47.4570259,
+    "Y-Koordinaten":7.743167
+  },
+  {
+    "Betr-bez":"Centre la Tour",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Centre la Tour",
+    "Strasse und Hausnummer":"Route de Pra-Riond 2",
+    "Pstlz":1635,
+    "Ort":"La Tour-de-Trême",
+    "X-Koordinaten":46.6003378,
+    "Y-Koordinaten":7.0758858
+  },
+  {
+    "Betr-bez":"Châtel-St-Denis",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Châtel-St-Denis",
+    "Strasse und Hausnummer":"Rte de Montreux 56",
+    "Pstlz":1618,
+    "Ort":"Châtel-St-Denis",
+    "X-Koordinaten":46.523815,
+    "Y-Koordinaten":6.9050015
+  },
+  {
+    "Betr-bez":"Düdingen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Düdingen",
+    "Strasse und Hausnummer":"Käsereistrasse 3",
+    "Pstlz":3186,
+    "Ort":"Düdingen",
+    "X-Koordinaten":46.8469845,
+    "Y-Koordinaten":7.1919462
+  },
+  {
+    "Betr-bez":"Uitikon-Waldegg",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Uitikon-Waldegg",
+    "Strasse und Hausnummer":"Zürcherstrasse 8",
+    "Pstlz":8142,
+    "Ort":"Uitikon Waldegg",
+    "X-Koordinaten":47.368409,
+    "Y-Koordinaten":8.4630252
+  },
+  {
+    "Betr-bez":"Biberist",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Biberist",
+    "Strasse und Hausnummer":"Hauptstrasse 21",
+    "Pstlz":4562,
+    "Ort":"Biberist",
+    "X-Koordinaten":47.1830894,
+    "Y-Koordinaten":7.5617992
+  },
+  {
+    "Betr-bez":"Blonay",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Blonay",
+    "Strasse und Hausnummer":"Route du Village 37",
+    "Pstlz":1807,
+    "Ort":"Blonay",
+    "X-Koordinaten":46.4653317,
+    "Y-Koordinaten":6.8954035
+  },
+  {
+    "Betr-bez":"Pünt-Albisrieden",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Pünt-Albisrieden",
+    "Strasse und Hausnummer":"Albisriederstrasse 365",
+    "Pstlz":8047,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.3750957,
+    "Y-Koordinaten":8.4855737
+  },
+  {
+    "Betr-bez":"Thun Dürrenast",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Thun Dürrenast",
+    "Strasse und Hausnummer":"Frutigenstrasse 60",
+    "Pstlz":3604,
+    "Ort":"Thun",
+    "X-Koordinaten":46.7405,
+    "Y-Koordinaten":7.6207
+  },
+  {
+    "Betr-bez":"Steffisburg",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Steffisburg",
+    "Strasse und Hausnummer":"Oberdorfstrasse 33",
+    "Pstlz":3612,
+    "Ort":"Steffisburg",
+    "X-Koordinaten":46.7810635,
+    "Y-Koordinaten":7.6338985
+  },
+  {
+    "Betr-bez":"Balsthal",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Balsthal",
+    "Strasse und Hausnummer":"Goldgasse 13",
+    "Pstlz":4710,
+    "Ort":"Balsthal",
+    "X-Koordinaten":47.3167934,
+    "Y-Koordinaten":7.6953332
+  },
+  {
+    "Betr-bez":"Nussbaumen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Nussbaumen",
+    "Strasse und Hausnummer":"Hertensteinstrasse",
+    "Pstlz":5415,
+    "Ort":"Nussbaumen b.Baden",
+    "X-Koordinaten":47.4878766,
+    "Y-Koordinaten":8.2931623
+  },
+  {
+    "Betr-bez":"Etoy",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Etoy",
+    "Strasse und Hausnummer":"Route de Noyer-Girod 3",
+    "Pstlz":1163,
+    "Ort":"Etoy",
+    "X-Koordinaten":46.4751782,
+    "Y-Koordinaten":6.4186374
+  },
+  {
+    "Betr-bez":"remgarten BE Kalchacke",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros remgarten BE Kalchacke",
+    "Strasse und Hausnummer":"Kalchackerstrasse 9",
+    "Pstlz":3047,
+    "Ort":"Bremgarten b. Bern",
+    "X-Koordinaten":46.9771,
+    "Y-Koordinaten":7.4361
+  },
+  {
+    "Betr-bez":"Frick",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Frick",
+    "Strasse und Hausnummer":"Hauptstrasse 44",
+    "Pstlz":5070,
+    "Ort":"Frick",
+    "X-Koordinaten":47.5081087,
+    "Y-Koordinaten":8.0191736
+  },
+  {
+    "Betr-bez":"Kirchberg",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Kirchberg",
+    "Strasse und Hausnummer":"Solothurnstrasse 17a",
+    "Pstlz":3422,
+    "Ort":"Kirchberg BE",
+    "X-Koordinaten":47.0889525,
+    "Y-Koordinaten":7.5807636
+  },
+  {
+    "Betr-bez":"Derendingen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Derendingen",
+    "Strasse und Hausnummer":"Hauptstrasse 22",
+    "Pstlz":4552,
+    "Ort":"Derendingen",
+    "X-Koordinaten":47.1973504,
+    "Y-Koordinaten":7.5837586
+  },
+  {
+    "Betr-bez":"Schönenwerd",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Schönenwerd",
+    "Strasse und Hausnummer":"C.F. Ballystrasse 14",
+    "Pstlz":5012,
+    "Ort":"Schönenwerd",
+    "X-Koordinaten":47.3733668,
+    "Y-Koordinaten":8.0031319
+  },
+  {
+    "Betr-bez":"Lupfig",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Lupfig",
+    "Strasse und Hausnummer":"Flachsacherstrasse 17",
+    "Pstlz":5242,
+    "Ort":"Lupfig",
+    "X-Koordinaten":47.4400546,
+    "Y-Koordinaten":8.2083483
+  },
+  {
+    "Betr-bez":"Sainte-Thérèse",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Sainte-Thérèse",
+    "Strasse und Hausnummer":"Route de Sainte-Thérèse 2a",
+    "Pstlz":1700,
+    "Ort":"Fribourg",
+    "X-Koordinaten":46.8043,
+    "Y-Koordinaten":7.1667
+  },
+  {
+    "Betr-bez":"Fislisbach",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Fislisbach",
+    "Strasse und Hausnummer":"Badenerstrasse 7d",
+    "Pstlz":5442,
+    "Ort":"Fislisbach",
+    "X-Koordinaten":47.4362085,
+    "Y-Koordinaten":8.2899101
+  },
+  {
+    "Betr-bez":"Näfels",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Näfels",
+    "Strasse und Hausnummer":"Oberdorf 44",
+    "Pstlz":8752,
+    "Ort":"Näfels",
+    "X-Koordinaten":47.0936368,
+    "Y-Koordinaten":9.0595708
+  },
+  {
+    "Betr-bez":"Zuchwil",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Zuchwil",
+    "Strasse und Hausnummer":"Hauptstrasse 60-62",
+    "Pstlz":4528,
+    "Ort":"Zuchwil",
+    "X-Koordinaten":47.2034641,
+    "Y-Koordinaten":7.5603451
+  },
+  {
+    "Betr-bez":"Baar",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Baar",
+    "Strasse und Hausnummer":"Bahnhofstrasse 5",
+    "Pstlz":6340,
+    "Ort":"Baar",
+    "X-Koordinaten":47.1955485,
+    "Y-Koordinaten":8.5248613
+  },
+  {
+    "Betr-bez":"Murgenthal",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Murgenthal",
+    "Strasse und Hausnummer":"Fahrackerstrasse 1",
+    "Pstlz":4853,
+    "Ort":"Murgenthal",
+    "X-Koordinaten":47.2649349,
+    "Y-Koordinaten":7.8292999
+  },
+  {
+    "Betr-bez":"Männedorf",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Männedorf",
+    "Strasse und Hausnummer":"Alte Landstrasse 262",
+    "Pstlz":8708,
+    "Ort":"Männedorf",
+    "X-Koordinaten":47.253025,
+    "Y-Koordinaten":8.6957963
+  },
+  {
+    "Betr-bez":"Rosenberg",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Rosenberg",
+    "Strasse und Hausnummer":"Schaffhauserstrasse 154",
+    "Pstlz":8401,
+    "Ort":"Winterthur",
+    "X-Koordinaten":47.5185366,
+    "Y-Koordinaten":8.719438
+  },
+  {
+    "Betr-bez":"Oensingen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Oensingen",
+    "Strasse und Hausnummer":"Mühlefeldstrasse 53",
+    "Pstlz":4702,
+    "Ort":"Oensingen",
+    "X-Koordinaten":47.2889646,
+    "Y-Koordinaten":7.719135
+  },
+  {
+    "Betr-bez":"Hasle Rüegsau",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Hasle Rüegsau",
+    "Strasse und Hausnummer":"Emmenau 3",
+    "Pstlz":3415,
+    "Ort":"Hasle-Rüegsau",
+    "X-Koordinaten":47.0137,
+    "Y-Koordinaten":7.6406
+  },
+  {
+    "Betr-bez":"Höngg",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Höngg",
+    "Strasse und Hausnummer":"Regensdorferstrasse 20",
+    "Pstlz":8049,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.4038519,
+    "Y-Koordinaten":8.4974554
+  },
+  {
+    "Betr-bez":"Wädenswil Zürisee Cente",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Wädenswil Zürisee Cente",
+    "Strasse und Hausnummer":"Rütistrasse 1",
+    "Pstlz":8820,
+    "Ort":"Wädenswil",
+    "X-Koordinaten":47.2353206,
+    "Y-Koordinaten":8.6375562
+  },
+  {
+    "Betr-bez":"Schlieren-Zentrum",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Schlieren-Zentrum",
+    "Strasse und Hausnummer":"Güterstrasse 5",
+    "Pstlz":8952,
+    "Ort":"Schlieren",
+    "X-Koordinaten":47.3985499,
+    "Y-Koordinaten":8.4471021
+  },
+  {
+    "Betr-bez":"Menziken",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Menziken",
+    "Strasse und Hausnummer":"Sagiweg 8",
+    "Pstlz":5737,
+    "Ort":"Menziken",
+    "X-Koordinaten":47.2416084,
+    "Y-Koordinaten":8.1865524
+  },
+  {
+    "Betr-bez":"Rotkreuz",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Rotkreuz",
+    "Strasse und Hausnummer":"Buonaserstrasse 1",
+    "Pstlz":6343,
+    "Ort":"Rotkreuz",
+    "X-Koordinaten":47.1413116,
+    "Y-Koordinaten":8.4287189
+  },
+  {
+    "Betr-bez":"Bern Bethlehem",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bern Bethlehem",
+    "Strasse und Hausnummer":"Riedbachstrasse 10",
+    "Pstlz":3027,
+    "Ort":"Bern",
+    "X-Koordinaten":46.9474515,
+    "Y-Koordinaten":7.3831536
+  },
+  {
+    "Betr-bez":"Rümlang Hofwisen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Rümlang Hofwisen",
+    "Strasse und Hausnummer":"Hofwisenstrasse 40A",
+    "Pstlz":8153,
+    "Ort":"Rümlang",
+    "X-Koordinaten":47.4507281,
+    "Y-Koordinaten":8.5374676
+  },
+  {
+    "Betr-bez":"Thun Bälliz",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Thun Bälliz",
+    "Strasse und Hausnummer":"Bälliz 2",
+    "Pstlz":3600,
+    "Ort":"Thun",
+    "X-Koordinaten":46.7602024,
+    "Y-Koordinaten":7.6265109
+  },
+  {
+    "Betr-bez":"Visp",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Visp",
+    "Strasse und Hausnummer":"Brückenweg 10",
+    "Pstlz":3930,
+    "Ort":"Visp",
+    "X-Koordinaten":46.2931367,
+    "Y-Koordinaten":7.8809728
+  },
+  {
+    "Betr-bez":"Gümligen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Gümligen",
+    "Strasse und Hausnummer":"Turbenweg 1",
+    "Pstlz":3073,
+    "Ort":"Gümligen",
+    "X-Koordinaten":46.9333836,
+    "Y-Koordinaten":7.5036085
+  },
+  {
+    "Betr-bez":"Spreitenbach Shopping-C",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Spreitenbach Shopping-C",
+    "Strasse und Hausnummer":"Shopping-Center",
+    "Pstlz":8957,
+    "Ort":"Spreitenbach",
+    "X-Koordinaten":47.4205156,
+    "Y-Koordinaten":8.3684644
+  },
+  {
+    "Betr-bez":"Olten Hammer",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Olten Hammer",
+    "Strasse und Hausnummer":"Solothurnerstrasse 21",
+    "Pstlz":4600,
+    "Ort":"Olten",
+    "X-Koordinaten":47.3498922,
+    "Y-Koordinaten":7.8986189
+  },
+  {
+    "Betr-bez":"Biel Madretsch",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Biel Madretsch",
+    "Strasse und Hausnummer":"Brüggstrasse 5",
+    "Pstlz":2503,
+    "Ort":"Biel",
+    "X-Koordinaten":47.1317508,
+    "Y-Koordinaten":7.2527785
+  },
+  {
+    "Betr-bez":"Bad Zurzach",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bad Zurzach",
+    "Strasse und Hausnummer":"Promenadenstrasse 10",
+    "Pstlz":5330,
+    "Ort":"Bad Zurzach",
+    "X-Koordinaten":47.592,
+    "Y-Koordinaten":8.2948
+  },
+  {
+    "Betr-bez":"Huttwil",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Huttwil",
+    "Strasse und Hausnummer":"Bernstrasse 6",
+    "Pstlz":4950,
+    "Ort":"Huttwil",
+    "X-Koordinaten":47.1135161,
+    "Y-Koordinaten":7.8401905
+  },
+  {
+    "Betr-bez":"Rothrist",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Rothrist",
+    "Strasse und Hausnummer":"Neue Aarburgstrasse 20",
+    "Pstlz":4852,
+    "Ort":"Rothrist",
+    "X-Koordinaten":47.298,
+    "Y-Koordinaten":7.8857
+  },
+  {
+    "Betr-bez":"Collombey",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Collombey",
+    "Strasse und Hausnummer":"Entre-deux-Fossaux",
+    "Pstlz":1868,
+    "Ort":"Collombey",
+    "X-Koordinaten":46.2672129,
+    "Y-Koordinaten":6.9554687
+  },
+  {
+    "Betr-bez":"Bern Bachmätteli",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bern Bachmätteli",
+    "Strasse und Hausnummer":"Bottigenstrasse 7",
+    "Pstlz":3018,
+    "Ort":"Bern",
+    "X-Koordinaten":46.9393448,
+    "Y-Koordinaten":7.3899387
+  },
+  {
+    "Betr-bez":"Langnau",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Langnau",
+    "Strasse und Hausnummer":"Schlossstrasse 1a",
+    "Pstlz":3550,
+    "Ort":"Langnau i. E.",
+    "X-Koordinaten":46.9398302,
+    "Y-Koordinaten":7.7876463
+  },
+  {
+    "Betr-bez":"Meiringen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Meiringen",
+    "Strasse und Hausnummer":"Bahnhofstrasse 1",
+    "Pstlz":3860,
+    "Ort":"Meiringen",
+    "X-Koordinaten":46.7284382,
+    "Y-Koordinaten":8.1849611
+  },
+  {
+    "Betr-bez":"Biel Bielerhof",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Biel Bielerhof",
+    "Strasse und Hausnummer":"Bahnhofstrasse 15",
+    "Pstlz":2502,
+    "Ort":"Biel",
+    "X-Koordinaten":47.1350197,
+    "Y-Koordinaten":7.2442294
+  },
+  {
+    "Betr-bez":"Ittigen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Ittigen",
+    "Strasse und Hausnummer":"Talweg 6",
+    "Pstlz":3063,
+    "Ort":"Ittigen",
+    "X-Koordinaten":46.9742613,
+    "Y-Koordinaten":7.4851349
+  },
+  {
+    "Betr-bez":"Herti Zug",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Herti Zug",
+    "Strasse und Hausnummer":"Hertizentrum 10",
+    "Pstlz":6300,
+    "Ort":"Zug",
+    "X-Koordinaten":47.1780112,
+    "Y-Koordinaten":8.5058336
+  },
+  {
+    "Betr-bez":"Biel Stadion",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Biel Stadion",
+    "Strasse und Hausnummer":"Sportallee 20",
+    "Pstlz":2503,
+    "Ort":"Biel",
+    "X-Koordinaten":47.1311,
+    "Y-Koordinaten":7.2519
+  },
+  {
+    "Betr-bez":"Riazzino",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Riazzino",
+    "Strasse und Hausnummer":"Via Cantonale 40",
+    "Pstlz":6595,
+    "Ort":"Riazzino",
+    "X-Koordinaten":46.1693,
+    "Y-Koordinaten":8.8959
+  },
+  {
+    "Betr-bez":"Romont",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Romont",
+    "Strasse und Hausnummer":"Avenue de la Gare 7",
+    "Pstlz":1680,
+    "Ort":"Romont FR",
+    "X-Koordinaten":46.6925134,
+    "Y-Koordinaten":6.912314
+  },
+  {
+    "Betr-bez":"Agy",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Agy",
+    "Strasse und Hausnummer":"route d'Agy 2",
+    "Pstlz":1763,
+    "Ort":"Granges-Paccot",
+    "X-Koordinaten":46.8210055,
+    "Y-Koordinaten":7.153799
+  },
+  {
+    "Betr-bez":"Märt Roospark Wollerau",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Märt Roospark Wollerau",
+    "Strasse und Hausnummer":"Roosstrasse 23",
+    "Pstlz":8832,
+    "Ort":"Wollerau",
+    "X-Koordinaten":47.1918481,
+    "Y-Koordinaten":8.721596
+  },
+  {
+    "Betr-bez":"Caslano",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Caslano",
+    "Strasse und Hausnummer":"Via Stazione 80",
+    "Pstlz":6987,
+    "Ort":"Caslano",
+    "X-Koordinaten":45.9774772,
+    "Y-Koordinaten":8.8768432
+  },
+  {
+    "Betr-bez":"Wilderswil Matten",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Wilderswil Matten",
+    "Strasse und Hausnummer":"Aegertiweg 33",
+    "Pstlz":3812,
+    "Ort":"Wilderswil",
+    "X-Koordinaten":46.6737847,
+    "Y-Koordinaten":7.8670086
+  },
+  {
+    "Betr-bez":"Grossmatte Luzern",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Grossmatte Luzern",
+    "Strasse und Hausnummer":"Luzernerstrasse 143",
+    "Pstlz":6014,
+    "Ort":"Luzern",
+    "X-Koordinaten":47.0490532,
+    "Y-Koordinaten":8.262399
+  },
+  {
+    "Betr-bez":"Zweisimmen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Zweisimmen",
+    "Strasse und Hausnummer":"Thunstrasse 11",
+    "Pstlz":3770,
+    "Ort":"Zweisimmen",
+    "X-Koordinaten":46.5554975,
+    "Y-Koordinaten":7.372845
+  },
+  {
+    "Betr-bez":"Dübendorf Stettbach",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Dübendorf Stettbach",
+    "Strasse und Hausnummer":"Am Stadtrand 5",
+    "Pstlz":8600,
+    "Ort":"Dübendorf",
+    "X-Koordinaten":47.3968758,
+    "Y-Koordinaten":8.5970455
+  },
+  {
+    "Betr-bez":"Reichenburg",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Reichenburg",
+    "Strasse und Hausnummer":"Gewerbestrasse 4",
+    "Pstlz":8864,
+    "Ort":"Reichenburg",
+    "X-Koordinaten":47.1727524,
+    "Y-Koordinaten":8.9699273
+  },
+  {
+    "Betr-bez":"Solothurn Öufi",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Solothurn Öufi",
+    "Strasse und Hausnummer":"Bielstrasse 80",
+    "Pstlz":4500,
+    "Ort":"Solothurn",
+    "X-Koordinaten":47.2112376,
+    "Y-Koordinaten":7.525911
+  },
+  {
+    "Betr-bez":"Konolfingen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Konolfingen",
+    "Strasse und Hausnummer":"Thunstrasse 17",
+    "Pstlz":3510,
+    "Ort":"Konolfingen",
+    "X-Koordinaten":46.8777936,
+    "Y-Koordinaten":7.6205953
+  },
+  {
+    "Betr-bez":"Ostermundigen Poststras",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Ostermundigen Poststras",
+    "Strasse und Hausnummer":"Poststr. 1",
+    "Pstlz":3072,
+    "Ort":"Ostermundigen",
+    "X-Koordinaten":46.9561882,
+    "Y-Koordinaten":7.4828337
+  },
+  {
+    "Betr-bez":"Heimberg",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Heimberg",
+    "Strasse und Hausnummer":"Bernstrasse 223",
+    "Pstlz":3627,
+    "Ort":"Heimberg",
+    "X-Koordinaten":46.8014947,
+    "Y-Koordinaten":7.6037318
+  },
+  {
+    "Betr-bez":"Oberglatt",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Oberglatt",
+    "Strasse und Hausnummer":"Lägernstrasse 6",
+    "Pstlz":8154,
+    "Ort":"Oberglatt ZH",
+    "X-Koordinaten":47.4758697,
+    "Y-Koordinaten":8.507505
+  },
+  {
+    "Betr-bez":"Malley",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Malley",
+    "Strasse und Hausnummer":"Chemin du Viaduc 1",
+    "Pstlz":1008,
+    "Ort":"Prilly",
+    "X-Koordinaten":46.5272555,
+    "Y-Koordinaten":6.6025623
+  },
+  {
+    "Betr-bez":"Neumarkt",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Neumarkt",
+    "Strasse und Hausnummer":"Altstetterstrasse 145",
+    "Pstlz":8048,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.3882833,
+    "Y-Koordinaten":8.4875671
+  },
+  {
+    "Betr-bez":"Sissach",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Sissach",
+    "Strasse und Hausnummer":"Hauptstrasse 17",
+    "Pstlz":4450,
+    "Ort":"Sissach",
+    "X-Koordinaten":47.4621753,
+    "Y-Koordinaten":7.816325
+  },
+  {
+    "Betr-bez":"Basel",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bahnhof",
+    "Strasse und Hausnummer":"Centralbahnstrasse 10",
+    "Pstlz":4051,
+    "Ort":"Basel",
+    "X-Koordinaten":47.5476823,
+    "Y-Koordinaten":7.5889594
+  },
+  {
+    "Betr-bez":"Basel",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Clara Markt",
+    "Strasse und Hausnummer":"Untere Rebgasse 11",
+    "Pstlz":4058,
+    "Ort":"Basel",
+    "X-Koordinaten":47.5616852,
+    "Y-Koordinaten":7.5922601
+  },
+  {
+    "Betr-bez":"Basel",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Drachencenter",
+    "Strasse und Hausnummer":"Aeschenvorstadt 24",
+    "Pstlz":4051,
+    "Ort":"Basel",
+    "X-Koordinaten":47.5526701,
+    "Y-Koordinaten":7.5927128
+  },
+  {
+    "Betr-bez":"Riehen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Riehen",
+    "Strasse und Hausnummer":"Webergässchen 8",
+    "Pstlz":4125,
+    "Ort":"Riehen",
+    "X-Koordinaten":47.5852901,
+    "Y-Koordinaten":7.6517854
+  },
+  {
+    "Betr-bez":"Gelterkinden",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Gelterkinden",
+    "Strasse und Hausnummer":"Badweg 2",
+    "Pstlz":4460,
+    "Ort":"Gelterkinden",
+    "X-Koordinaten":47.466099,
+    "Y-Koordinaten":7.8506124
+  },
+  {
+    "Betr-bez":"Füllinsdorf",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Schönthal",
+    "Strasse und Hausnummer":"Ergolzstrasse 2",
+    "Pstlz":4414,
+    "Ort":"Füllinsdorf",
+    "X-Koordinaten":47.5024467,
+    "Y-Koordinaten":7.7251961
+  },
+  {
+    "Betr-bez":"Breitenbach",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Breitenbach",
+    "Strasse und Hausnummer":"Laufenstrasse 4",
+    "Pstlz":4226,
+    "Ort":"Breitenbach",
+    "X-Koordinaten":47.4083114,
+    "Y-Koordinaten":7.542603
+  },
+  {
+    "Betr-bez":"Basel",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Gundeltor",
+    "Strasse und Hausnummer":"Güterstrasse 180",
+    "Pstlz":4053,
+    "Ort":"Basel",
+    "X-Koordinaten":47.5434561,
+    "Y-Koordinaten":7.5918763
+  },
+  {
+    "Betr-bez":"Ettingen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Ettingen",
+    "Strasse und Hausnummer":"Therwilerstrasse 9",
+    "Pstlz":4107,
+    "Ort":"Ettingen",
+    "X-Koordinaten":47.484908,
+    "Y-Koordinaten":7.5476011
+  },
+  {
+    "Betr-bez":"Arlesheim",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Arlesheim",
+    "Strasse und Hausnummer":"Postplatz 7",
+    "Pstlz":4144,
+    "Ort":"Arlenheim",
+    "X-Koordinaten":47.4942782,
+    "Y-Koordinaten":7.6184684
+  },
+  {
+    "Betr-bez":"Genf",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Charmilles",
+    "Strasse und Hausnummer":"Promenade de l'Europe 11",
+    "Pstlz":1203,
+    "Ort":"Genf",
+    "X-Koordinaten":46.2082468,
+    "Y-Koordinaten":6.1241668
+  },
+  {
+    "Betr-bez":"Genf",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Les Cygnes",
+    "Strasse und Hausnummer":"Rue de Lausanne 20",
+    "Pstlz":1201,
+    "Ort":"Genf",
+    "X-Koordinaten":46.2114679,
+    "Y-Koordinaten":6.1446076
+  },
+  {
+    "Betr-bez":"Petit-Lancy",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Lancy-Onex",
+    "Strasse und Hausnummer":"Rue des Bossons",
+    "Pstlz":1213,
+    "Ort":"Petit-Lancy",
+    "X-Koordinaten":46.1883421,
+    "Y-Koordinaten":6.1102062
+  },
+  {
+    "Betr-bez":"Lausanne",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bergières",
+    "Strasse und Hausnummer":"Avenue des Bergières 50",
+    "Pstlz":1004,
+    "Ort":"Lausanne",
+    "X-Koordinaten":46.5313852,
+    "Y-Koordinaten":6.6186661
+  },
+  {
+    "Betr-bez":"Pully",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Pully",
+    "Strasse und Hausnummer":"Chemin du Pré-de-la-Tour 3",
+    "Pstlz":1009,
+    "Ort":"Pully",
+    "X-Koordinaten":46.5116006,
+    "Y-Koordinaten":6.6597671
+  },
+  {
+    "Betr-bez":"Luzern",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Schönbühl",
+    "Strasse und Hausnummer":"Langensandstrasse 23",
+    "Pstlz":6005,
+    "Ort":"Luzern",
+    "X-Koordinaten":47.0370396,
+    "Y-Koordinaten":8.3283777
+  },
+  {
+    "Betr-bez":"Stans",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Länderpark",
+    "Strasse und Hausnummer":"Bitzistrasse 2",
+    "Pstlz":6370,
+    "Ort":"Stans",
+    "X-Koordinaten":46.9648089,
+    "Y-Koordinaten":8.3553554
+  },
+  {
+    "Betr-bez":"Neuenburg",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Hôpital",
+    "Strasse und Hausnummer":"Rue de l'hopital 12",
+    "Pstlz":2000,
+    "Ort":"Neuenburg",
+    "X-Koordinaten":46.9012156,
+    "Y-Koordinaten":6.5800845
+  },
+  {
+    "Betr-bez":"Murten",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Morat",
+    "Strasse und Hausnummer":"Bernstrasse 18",
+    "Pstlz":3280,
+    "Ort":"Murten",
+    "X-Koordinaten":46.9292413,
+    "Y-Koordinaten":7.1193339
+  },
+  {
+    "Betr-bez":"Locarno",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Locarno",
+    "Strasse und Hausnummer":"Via Stefano Franscini 31",
+    "Pstlz":6600,
+    "Ort":"Locarno",
+    "X-Koordinaten":46.1665954,
+    "Y-Koordinaten":8.799295
+  },
+  {
+    "Betr-bez":"Morbio Inferiore",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Serfontana",
+    "Strasse und Hausnummer":"Viale Serfontana 20",
+    "Pstlz":6834,
+    "Ort":"Morbio Inferiore",
+    "X-Koordinaten":45.8452236,
+    "Y-Koordinaten":9.0165235
+  },
+  {
+    "Betr-bez":"Agno",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Agno Uno",
+    "Strasse und Hausnummer":"Via Lugano 21",
+    "Pstlz":6982,
+    "Ort":"Agno",
+    "X-Koordinaten":45.9981571,
+    "Y-Koordinaten":8.9021937
+  },
+  {
+    "Betr-bez":"Zürich",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Wollishofen",
+    "Strasse und Hausnummer":"Etzelstrasse 3",
+    "Pstlz":8038,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.3447487,
+    "Y-Koordinaten":8.5299814
+  },
+  {
+    "Betr-bez":"Zürich",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Schwamendingen",
+    "Strasse und Hausnummer":"Winterthurerstrasse 524",
+    "Pstlz":8051,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.4037955,
+    "Y-Koordinaten":8.5730423
+  },
+  {
+    "Betr-bez":"Zürich",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Zürich-Affoltern",
+    "Strasse und Hausnummer":"Jonas-Furrer-Strasse 21",
+    "Pstlz":8046,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.4204198,
+    "Y-Koordinaten":8.5082174
+  },
+  {
+    "Betr-bez":"Zürich",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Wiedikon",
+    "Strasse und Hausnummer":"Birmensdorferstrasse 320",
+    "Pstlz":8055,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.3702412,
+    "Y-Koordinaten":8.5084445
+  },
+  {
+    "Betr-bez":"Bülach",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bülach",
+    "Strasse und Hausnummer":"Bahnhofstrasse 28",
+    "Pstlz":8180,
+    "Ort":"Bülach",
+    "X-Koordinaten":47.520962,
+    "Y-Koordinaten":8.5398893
+  },
+  {
+    "Betr-bez":"Dietikon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Dietikon",
+    "Strasse und Hausnummer":"Löwenstrasse 28",
+    "Pstlz":8953,
+    "Ort":"Dietikon",
+    "X-Koordinaten":47.4050955,
+    "Y-Koordinaten":8.4020814
+  },
+  {
+    "Betr-bez":"Stäfa",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Stäfa",
+    "Strasse und Hausnummer":"Goethestrasse 18",
+    "Pstlz":8712,
+    "Ort":"Stäfa",
+    "X-Koordinaten":47.2406969,
+    "Y-Koordinaten":8.7235591
+  },
+  {
+    "Betr-bez":"Zürich",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Rigiplatz",
+    "Strasse und Hausnummer":"Winterthurerstrasse 2-4",
+    "Pstlz":8006,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.3859928,
+    "Y-Koordinaten":8.5486931
+  },
+  {
+    "Betr-bez":"Urdorf",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Urdorf",
+    "Strasse und Hausnummer":"Birmensdorferstrasse 87",
+    "Pstlz":8902,
+    "Ort":"Urdorf",
+    "X-Koordinaten":47.3850141,
+    "Y-Koordinaten":8.4221039
+  },
+  {
+    "Betr-bez":"Greifensee",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Greifensee",
+    "Strasse und Hausnummer":"Meierwis",
+    "Pstlz":8606,
+    "Ort":"Greifensee",
+    "X-Koordinaten":47.3691132,
+    "Y-Koordinaten":8.6784148
+  },
+  {
+    "Betr-bez":"Dietlikon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Dietlikon-Brunnenwiese",
+    "Strasse und Hausnummer":"Pappelstrasse 2",
+    "Pstlz":8305,
+    "Ort":"Dietlikon",
+    "X-Koordinaten":47.4191849,
+    "Y-Koordinaten":8.6215852
+  },
+  {
+    "Betr-bez":"Zollikon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Zollikon-Dorf",
+    "Strasse und Hausnummer":"Rotfluhstrasse 100",
+    "Pstlz":8702,
+    "Ort":"Zollikon",
+    "X-Koordinaten":47.3378072,
+    "Y-Koordinaten":8.5760427
+  },
+  {
+    "Betr-bez":"Zumikon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Zumikon",
+    "Strasse und Hausnummer":"Dorfstrasse 17",
+    "Pstlz":8126,
+    "Ort":"Zumikon",
+    "X-Koordinaten":47.3365173,
+    "Y-Koordinaten":8.6190273
+  },
+  {
+    "Betr-bez":"Zürich",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Albisriederplatz",
+    "Strasse und Hausnummer":"Badenerstrasse 376",
+    "Pstlz":8004,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.3791999,
+    "Y-Koordinaten":8.5087992
+  },
+  {
+    "Betr-bez":"Bremgarten",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bremgarten",
+    "Strasse und Hausnummer":"Zufikerstrasse 2",
+    "Pstlz":5620,
+    "Ort":"Bremgarten AG",
+    "X-Koordinaten":47.3526298,
+    "Y-Koordinaten":8.3496696
+  },
+  {
+    "Betr-bez":"Erlinsbach",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Erlinsbach",
+    "Strasse und Hausnummer":"Zentrum Rössli",
+    "Pstlz":5018,
+    "Ort":"Erlinsbach AG",
+    "X-Koordinaten":47.4051634,
+    "Y-Koordinaten":8.0087486
+  },
+  {
+    "Betr-bez":"Zürich",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Seebach",
+    "Strasse und Hausnummer":"Schaffhauserstrasse 470",
+    "Pstlz":8052,
+    "Ort":"Zürich",
+    "X-Koordinaten":47.4195222,
+    "Y-Koordinaten":8.548286
+  },
+  {
+    "Betr-bez":"Pfäffikon SZ",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Sedamm-Center",
+    "Strasse und Hausnummer":"Gwattstrasse 11",
+    "Pstlz":8808,
+    "Ort":"Pfäffikon SZ",
+    "X-Koordinaten":47.2005237,
+    "Y-Koordinaten":8.7926654
+  },
+  {
+    "Betr-bez":"Ecublens",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Croset",
+    "Strasse und Hausnummer":"chemin du Croset 7",
+    "Pstlz":1024,
+    "Ort":"Ecublens VD",
+    "X-Koordinaten":46.5338412,
+    "Y-Koordinaten":6.5644711
+  },
+  {
+    "Betr-bez":"Bern",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bern Breitenrain",
+    "Strasse und Hausnummer":"Breitenrainstrasse 11",
+    "Pstlz":3013,
+    "Ort":"Bern",
+    "X-Koordinaten":46.9580646,
+    "Y-Koordinaten":7.4532424
+  },
+  {
+    "Betr-bez":"Bern",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Westside",
+    "Strasse und Hausnummer":"Gilberte-de-Courgenay-Platz 4",
+    "Pstlz":3027,
+    "Ort":"Bern",
+    "X-Koordinaten":46.9441266,
+    "Y-Koordinaten":7.37346
+  },
+  {
+    "Betr-bez":"Fällanden",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Fällanden",
+    "Strasse und Hausnummer":"Unterdorfstrasse 2",
+    "Pstlz":8117,
+    "Ort":"Fällanden",
+    "X-Koordinaten":47.3738098,
+    "Y-Koordinaten":8.6410653
+  },
+  {
+    "Betr-bez":"Gerlafingen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Gerlafingen",
+    "Strasse und Hausnummer":"Friedhofstrasse 1",
+    "Pstlz":4563,
+    "Ort":"Gerlafingen",
+    "X-Koordinaten":47.1710859,
+    "Y-Koordinaten":7.5740275
+  },
+  {
+    "Betr-bez":"Unterentfelden",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Unterentfelden",
+    "Strasse und Hausnummer":"Binzmattweg 8",
+    "Pstlz":5035,
+    "Ort":"Unterentfelden",
+    "X-Koordinaten":47.3620678,
+    "Y-Koordinaten":8.0456229
+  },
+  {
+    "Betr-bez":"Lachen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Lachen",
+    "Strasse und Hausnummer":"Feldstrasse 6",
+    "Pstlz":8853,
+    "Ort":"Lachen",
+    "X-Koordinaten":47.1916974,
+    "Y-Koordinaten":8.8551943
+  },
+  {
+    "Betr-bez":"Basel",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Stücki",
+    "Strasse und Hausnummer":"Hochbergerstrasse 70",
+    "Pstlz":4057,
+    "Ort":"Basel",
+    "X-Koordinaten":47.5802689,
+    "Y-Koordinaten":7.5960668
+  },
+  {
+    "Betr-bez":"Windisch",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Windisch",
+    "Strasse und Hausnummer":"Bachmattstrasse 35",
+    "Pstlz":5210,
+    "Ort":"Windisch",
+    "X-Koordinaten":47.4749355,
+    "Y-Koordinaten":8.2126802
+  },
+  {
+    "Betr-bez":"Münchenbuchsee",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Tanne",
+    "Strasse und Hausnummer":"Bernstrasse 14",
+    "Pstlz":3053,
+    "Ort":"Münchenbuchsee",
+    "X-Koordinaten":47.0199856,
+    "Y-Koordinaten":7.4512598
+  },
+  {
+    "Betr-bez":"Döttingen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Döttingen",
+    "Strasse und Hausnummer":"Hauptstrasse 17",
+    "Pstlz":5312,
+    "Ort":"Döttingen",
+    "X-Koordinaten":47.5741296,
+    "Y-Koordinaten":8.2558575
+  },
+  {
+    "Betr-bez":"Rüschlikon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Parkside",
+    "Strasse und Hausnummer":"Zürcherstrasse 4",
+    "Pstlz":8803,
+    "Ort":"Rüschlikon",
+    "X-Koordinaten":47.3003679,
+    "Y-Koordinaten":8.5488069
+  },
+  {
+    "Betr-bez":"Dielsdorf",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Dielsdorf",
+    "Strasse und Hausnummer":"Ruchwiesenstrasse 2",
+    "Pstlz":8157,
+    "Ort":"Dielsdorf",
+    "X-Koordinaten":47.4801222,
+    "Y-Koordinaten":8.4634119
+  },
+  {
+    "Betr-bez":"Schöftland",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Schöftland",
+    "Strasse und Hausnummer":"Picardiestrasse 3",
+    "Pstlz":5040,
+    "Ort":"Schöftland",
+    "X-Koordinaten":47.3028814,
+    "Y-Koordinaten":8.0476665
+  },
+  {
+    "Betr-bez":"Berikon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Mutschellen",
+    "Strasse und Hausnummer":"Bellikerstrasse 13",
+    "Pstlz":8965,
+    "Ort":"Berikon",
+    "X-Koordinaten":47.3633926,
+    "Y-Koordinaten":8.3659275
+  },
+  {
+    "Betr-bez":"Thun",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Panorama-Center",
+    "Strasse und Hausnummer":"Weststrasse 14",
+    "Pstlz":3604,
+    "Ort":"Thun",
+    "X-Koordinaten":46.7405,
+    "Y-Koordinaten":7.6207
+  },
+  {
+    "Betr-bez":"Pregassona",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Pregassona",
+    "Strasse und Hausnummer":"Via alla Bozzoreda 39",
+    "Pstlz":6963,
+    "Ort":"Pregassona",
+    "X-Koordinaten":46.0195093,
+    "Y-Koordinaten":8.9727665
+  },
+  {
+    "Betr-bez":"Burgdorf",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Neumarkt",
+    "Strasse und Hausnummer":"Lyssachstrasse 27",
+    "Pstlz":3400,
+    "Ort":"Burgdorf",
+    "X-Koordinaten":47.0591662,
+    "Y-Koordinaten":7.6208073
+  },
+  {
+    "Betr-bez":"Aarau",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Igelweid",
+    "Strasse und Hausnummer":"Igelweid 18",
+    "Pstlz":5000,
+    "Ort":"Aarau",
+    "X-Koordinaten":47.3916942,
+    "Y-Koordinaten":8.046187
+  },
+  {
+    "Betr-bez":"Baden",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros City",
+    "Strasse und Hausnummer":"Bahnhofstrasse 40/42",
+    "Pstlz":5400,
+    "Ort":"Baden",
+    "X-Koordinaten":47.4768338,
+    "Y-Koordinaten":8.3085492
+  },
+  {
+    "Betr-bez":"Muri AG",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Muri",
+    "Strasse und Hausnummer":"Kirchfeldstrasse 8",
+    "Pstlz":5630,
+    "Ort":"Muri",
+    "X-Koordinaten":47.2733,
+    "Y-Koordinaten":8.3386
+  },
+  {
+    "Betr-bez":"Köniz",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bläuacker",
+    "Strasse und Hausnummer":"Bläuacker 10",
+    "Pstlz":3098,
+    "Ort":"Köniz",
+    "X-Koordinaten":46.9230163,
+    "Y-Koordinaten":7.4139573
+  },
+  {
+    "Betr-bez":"Oftringen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Oftringen",
+    "Strasse und Hausnummer":"Zürichstrasse 2",
+    "Pstlz":4665,
+    "Ort":"Oftringen",
+    "X-Koordinaten":47.312271,
+    "Y-Koordinaten":7.9216331
+  },
+  {
+    "Betr-bez":"Biel",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Neumarkt",
+    "Strasse und Hausnummer":"Kanalgasse 36",
+    "Pstlz":2502,
+    "Ort":"Biel",
+    "X-Koordinaten":47.141104,
+    "Y-Koordinaten":7.2478102
+  },
+  {
+    "Betr-bez":"Nyon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Porte de Nyon",
+    "Strasse und Hausnummer":"chemin de la Fontaine 1",
+    "Pstlz":1260,
+    "Ort":"Nyon",
+    "X-Koordinaten":46.3884773,
+    "Y-Koordinaten":6.2205046
+  },
+  {
+    "Betr-bez":"Münsingen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Münsingen",
+    "Strasse und Hausnummer":"Bahnhofplatz 5",
+    "Pstlz":3110,
+    "Ort":"Münsingen",
+    "X-Koordinaten":46.873158,
+    "Y-Koordinaten":7.5601521
+  },
+  {
+    "Betr-bez":"Spiez",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Terminus",
+    "Strasse und Hausnummer":"Bahnhofstrasse",
+    "Pstlz":3700,
+    "Ort":"Spiez",
+    "X-Koordinaten":46.6865846,
+    "Y-Koordinaten":7.6800353
+  },
+  {
+    "Betr-bez":"Taverne",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Taverne",
+    "Strasse und Hausnummer":"Via Cantonale",
+    "Pstlz":6807,
+    "Ort":"Taverne",
+    "X-Koordinaten":46.0285392,
+    "Y-Koordinaten":8.9192793
+  },
+  {
+    "Betr-bez":"Herzogenbuchsee",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Herzogenbuchsee",
+    "Strasse und Hausnummer":"Bernstrasse 33",
+    "Pstlz":3360,
+    "Ort":"Herzogenbuchsee",
+    "X-Koordinaten":47.1865987,
+    "Y-Koordinaten":7.7037027
+  },
+  {
+    "Betr-bez":"Rheinfelden",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Rheinfelden",
+    "Strasse und Hausnummer":"Lindenstrasse 3",
+    "Pstlz":4310,
+    "Ort":"Rheinfelden",
+    "X-Koordinaten":47.5553188,
+    "Y-Koordinaten":7.7977519
+  },
+  {
+    "Betr-bez":"Langenthal",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Langenthal",
+    "Strasse und Hausnummer":"Wiesenstrasse 28",
+    "Pstlz":4900,
+    "Ort":"Langenthal",
+    "X-Koordinaten":47.2144731,
+    "Y-Koordinaten":7.7841206
+  },
+  {
+    "Betr-bez":"Mellingen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Mellingen",
+    "Strasse und Hausnummer":"Lenzburgerstrasse 50",
+    "Pstlz":5507,
+    "Ort":"Mellingen",
+    "X-Koordinaten":47.4132639,
+    "Y-Koordinaten":8.2668592
+  },
+  {
+    "Betr-bez":"Wettingen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Landstrasse",
+    "Strasse und Hausnummer":"Landstrasse 69",
+    "Pstlz":5430,
+    "Ort":"Wettingen",
+    "X-Koordinaten":47.4672036,
+    "Y-Koordinaten":8.3243917
+  },
+  {
+    "Betr-bez":"Worb",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Worb",
+    "Strasse und Hausnummer":"Richigenstrasse 1",
+    "Pstlz":3076,
+    "Ort":"Worb",
+    "X-Koordinaten":46.9268113,
+    "Y-Koordinaten":7.5652314
+  },
+  {
+    "Betr-bez":"Wabern",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Chly Wabere",
+    "Strasse und Hausnummer":"Seftigenstrasse 368",
+    "Pstlz":3084,
+    "Ort":"Wabern",
+    "X-Koordinaten":46.922439,
+    "Y-Koordinaten":7.4596817
+  },
+  {
+    "Betr-bez":"Bassersdorf",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bassersdorf",
+    "Strasse und Hausnummer":"Baltenswilerstrasse 5a",
+    "Pstlz":8303,
+    "Ort":"Bassersdorf",
+    "X-Koordinaten":47.4422347,
+    "Y-Koordinaten":8.629772
+  },
+  {
+    "Betr-bez":"Solothurn",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Solothurn",
+    "Strasse und Hausnummer":"Wenigstrasse 13",
+    "Pstlz":4500,
+    "Ort":"Solothurn",
+    "X-Koordinaten":47.2069649,
+    "Y-Koordinaten":7.5331385
+  },
+  {
+    "Betr-bez":"Hinterkappelen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Hinterkappelen",
+    "Strasse und Hausnummer":"Kappelenring 2",
+    "Pstlz":3032,
+    "Ort":"Hinterkappelen",
+    "X-Koordinaten":46.9669487,
+    "Y-Koordinaten":7.3765712
+  },
+  {
+    "Betr-bez":"Olten",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Sälipark",
+    "Strasse und Hausnummer":"Louis Giroud-Strasse 20",
+    "Pstlz":4600,
+    "Ort":"Olten",
+    "X-Koordinaten":47.346669,
+    "Y-Koordinaten":7.9094486
+  },
+  {
+    "Betr-bez":"Egerkingen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Gäupark",
+    "Strasse und Hausnummer":"Hausimollstrasse 1",
+    "Pstlz":4622,
+    "Ort":"Egerkingen",
+    "X-Koordinaten":47.3180504,
+    "Y-Koordinaten":7.8017601
+  },
+  {
+    "Betr-bez":"Lyss",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Lyssbachpark",
+    "Strasse und Hausnummer":"Steinweg 28",
+    "Pstlz":3250,
+    "Ort":"Lyss",
+    "X-Koordinaten":47.0787878,
+    "Y-Koordinaten":7.3039734
+  },
+  {
+    "Betr-bez":"Ostermundigen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Ostermundigen",
+    "Strasse und Hausnummer":"Bernstrasse 114",
+    "Pstlz":3072,
+    "Ort":"Ostermundigen",
+    "X-Koordinaten":46.9568291,
+    "Y-Koordinaten":7.4960411
+  },
+  {
+    "Betr-bez":"Bern",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bubenberg",
+    "Strasse und Hausnummer":"Bubenbergplatz 8",
+    "Pstlz":3011,
+    "Ort":"Bern",
+    "X-Koordinaten":46.9474424,
+    "Y-Koordinaten":7.438253
+  },
+  {
+    "Betr-bez":"Reinach AG",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Reinach",
+    "Strasse und Hausnummer":"Sandgasse 6",
+    "Pstlz":5734,
+    "Ort":"Reinach",
+    "X-Koordinaten":47.2580582,
+    "Y-Koordinaten":8.1817621
+  },
+  {
+    "Betr-bez":"Opfikon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Glattpark",
+    "Strasse und Hausnummer":"Thurgauerstrasse 106",
+    "Pstlz":8152,
+    "Ort":"Opfikon",
+    "X-Koordinaten":47.4211326,
+    "Y-Koordinaten":8.557843
+  },
+  {
+    "Betr-bez":"Bern",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Bahnhof",
+    "Strasse und Hausnummer":"Bahnhofplatz 10",
+    "Pstlz":3011,
+    "Ort":"Bern",
+    "X-Koordinaten":46.948594,
+    "Y-Koordinaten":7.4398739
+  },
+  {
+    "Betr-bez":"Solothurn",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Baselstrasse",
+    "Strasse und Hausnummer":"Baselstrasse 30",
+    "Pstlz":4500,
+    "Ort":"Solothurn",
+    "X-Koordinaten":47.2207904,
+    "Y-Koordinaten":7.5558276
+  },
+  {
+    "Betr-bez":"Versoix",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Porte de Versoix",
+    "Strasse und Hausnummer":"Versoix",
+    "Pstlz":1260,
+    "Ort":"Versoix",
+    "X-Koordinaten":46.2751371,
+    "Y-Koordinaten":6.1674224
+  },
+  {
+    "Betr-bez":"Seon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Seon",
+    "Strasse und Hausnummer":"Seon",
+    "Pstlz":5703,
+    "Ort":"Seon",
+    "X-Koordinaten":47.347822,
+    "Y-Koordinaten":8.1612756
+  },
+  {
+    "Betr-bez":"Affoltern am Albis",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Affoltern am Albis",
+    "Strasse und Hausnummer":"Affoltern am Albis",
+    "Pstlz":8910,
+    "Ort":"Affoltern am Albis",
+    "X-Koordinaten":47.2783381,
+    "Y-Koordinaten":8.4538088
+  },
+  {
+    "Betr-bez":"Suhr",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Suhrepark",
+    "Strasse und Hausnummer":"Suhr",
+    "Pstlz":5034,
+    "Ort":"Suhr",
+    "X-Koordinaten":47.3730679,
+    "Y-Koordinaten":8.0820037
+  },
+  {
+    "Betr-bez":"Ebikon",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Mall of Switzerland",
+    "Strasse und Hausnummer":"Ebikon",
+    "Pstlz":6030,
+    "Ort":"Ebikon",
+    "X-Koordinaten":47.0936014,
+    "Y-Koordinaten":8.3575307
+  },
+  {
+    "Betr-bez":"Villmergen",
+    "Enterprise":"Einzelhandel",
+    "Name":"Migros Villmergen",
+    "Strasse und Hausnummer":"Villmergen",
+    "Pstlz":5612,
+    "Ort":"Villmergen",
+    "X-Koordinaten":47.3474203,
+    "Y-Koordinaten":8.2443461
   }
 ]
