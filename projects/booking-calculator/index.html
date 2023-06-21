@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+<body>
+
+  <main>
+    <h3>Fields:</h3>
+
+    <label for="attendees">Attendees:</label>
+    <input type="number" id="attendees"><br>
+    
+    <label for="percentage">Percentage 1:</label>
+    <input type="range" id="percentage" min="0" max="100" value="0"><br>
+    
+    <label for="percentage2">Percentage 2:</label>
+    <input type="range" id="percentage2" min="0" max="100" value="0"><br>
+    
+    <label for="eventLength">Event Length:</label>
+    <input type="number" id="eventLength"><br>
+    
+    <input type="radio" name="check" value="10"> Option 1<br>
+    <input type="radio" name="check" value="20"> Option 2<br>
+    <input type="radio" name="check" value="30"> Option 3<br>
+    
+    <button id="btn1">Calculate</button><br>
+
+    <h3>Result:</h3>
+    <h4>Result 1:</h4>
+    <div id="res1"></div>
+
+    <h4>Result 2:</h4>
+    <div id="res2"></div>
+  </main>
+
+  <script>
+// this allows only 1 avg cost to be selected
+function onlyOne(checkbox) {
+  var checkboxes = document.getElementsByName('check')
+  checkboxes.forEach((item) => {
+      if (item !== checkbox) item.checked = false
+  })
+}
+
+//percentage slider animation
+
+var slider = document.getElementById('percentage');
+
+slider.addEventListener('mousemove', function() {
+  var x = slider.value;
+  //mess around with the x in the middle and far right below to change the gradient percentage
+  var color = 'linear-gradient(90deg, rgb(235,104,47)' + x + '%, rgb(244,244,244)' + 3 + '%)';
+  slider.style.background = color;
+})
+
+//This function works out the nights booked
+const nightsBooked = () => {
+
+    const attendees = Number(document.getElementById('attendees').value);
+    const percentage = [Number(document.getElementById('percentage').value), Number(document.getElementById('percentage2').value)];
+    const eventLength = Number(document.getElementById('eventLength').value);
+    const avgCost = document.querySelector('input[name="check"]:checked').value;
+    nfObject = new Intl.NumberFormat('en-US')
+
+    //BELOW Change element => 10 - element=> 1       this allows the script to produce percentages of 1's instead of 10's
+    const found = percentage.find(element => element >= 1);
+
+  
+    const calcpercentage = () => {
+      if( !isNaN( attendees ) && !isNaN( found ) ) {
+        return (( attendees / 100 ) * found) * eventLength;
+          
+      }
+        return 0;
+    };
+
+
+    const commis = () => {
+      if( !isNaN( avgCost ) && !isNaN( calcpercentage() ) ) {
+      const rev = avgCost * calcpercentage();
+      return (0.03 * rev);
+      } 
+      return 0
+    };
+  
+    document.getElementById("res2").innerHTML = nfObject.format(Math.floor(calcpercentage()));
+    document.getElementById("res1").innerHTML = '£' + nfObject.format(Math.floor(commis()));
+  };
+  
+  
+  document.getElementById('btn1').addEventListener('click', (e)=> {
+    nightsBooked();
+  });
+  </script>
+</body>
+</html>
