@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendly</title>
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+</head>
+<body>
+    <div class="calendly-inline-widget" style="min-width:320px; height:580px;" data-auto-load="false"></div>
+
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            Calendly.initBadgeWidget({
+                url: 'https://calendly.com/yaroslavzinenko',
+                text: 'Book a 30-min call',
+                color: '#000000',
+                textColor: '#06FFFF',
+                branding: true 
+            });
+        }</script>
+    <!-- Calendly badge widget end -->
+</body>
+</html>
